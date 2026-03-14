@@ -10,6 +10,28 @@ import base64, uuid
 MODEL_PATH = "/home/colton/.openclaw/workspace/kalshi/model.pkl"
 API_KEY = "7c519784-3932-46e6-8547-fa945541304e"
 KEY_PATH = "/home/colton/.openclaw/workspace/secrets/kalshi.pem"
+
+TRADE_LOG = "/home/colton/.openclaw/workspace/kalshi/trade_log.json"
+
+def log_trade(action, ticker, price, pnl=None):
+    import datetime
+    import json
+    try:
+        with open(TRADE_LOG) as f:
+            trades = json.load(f)
+    except: trades = []
+    
+    trades.append({
+        "time": str(datetime.datetime.now()),
+        "action": action,
+        "ticker": ticker,
+        "price": price,
+        "pnl": pnl
+    })
+    
+    with open(TRADE_LOG, "w") as f:
+        json.dump(trades, f, indent=2)
+
 STATE_FILE = "/home/colton/.openclaw/workspace/kalshi/executor_state.json"
 
 def load_state():
@@ -108,7 +130,7 @@ def execute_trade(ticker, direction, price):
     h = {"KALSHI-ACCESS-KEY": API_KEY, "KALSHI-ACCESS-SIGNATURE": base64.b64encode(sig).decode(), 
          "KALSHI-ACCESS-TIMESTAMP": ts, "Content-Type": "application/json"}
     data = {"ticker": ticker, "action": "buy" if direction == "yes" else "sell", 
-            "side": direction, "count": 5, "type": "limit", f"{direction}_price": int(price * 100), 
+            "side": direction, "count": 5, "type": "limit", f"{direction}_price": max(1, int(price * 100)), 
             "client_order_id": str(uuid.uuid4())}
     
     r = requests.post("https://api.elections.kalshi.com" + path, headers=h, json=data)
@@ -125,13 +147,14 @@ if __name__ == "__main__":
     
     trades = should_trade(signals, state)
     
-    # Check stop loss / take profit
+    # Check exit first - if we have position and signal, exit
     exit_signal = check_stop_loss(signals, state)
     if exit_signal:
-        print(f"=== {exit_signal} - would exit position ===")
-        # Could add exit order here
-    
-    if trades:
+        print(f"=== {exit_signal} - exiting position ===")
+        # Clear position
+        save_state({"last_market": None, "entry_price": None, "position": None})
+        log_trade("CLOSE", state.get("last_market"), signals["kalshi"], "profit" if state.get("entry_price") else None)
+    elif trades:
         print(f"=== Trade Signals: {trades} ===")
         direction = signals['ml_direction'].lower()
         price = signals['kalshi']
