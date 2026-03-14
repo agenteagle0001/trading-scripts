@@ -1,0 +1,7 @@
+__pycache__/
+*.log
+*.csv
+*.json
+secrets/
+gh_2.87.3_linux_amd64/
+gh.tar.gz
