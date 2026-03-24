@@ -129,6 +129,44 @@ def select_spread_strategy(ml, tech):
     
     return spread_type, direction, price
 
+def get_signal():
+    """Compatibility function for paper_trader.py"""
+    ml, tech = get_combined_signal()
+    spread_type, decision, price = select_spread_strategy(ml, tech)
+    
+    if spread_type is None:
+        return {'signal': 'SKIP', 'confidence': 0}
+    
+    # Calculate strikes
+    atm = round(price)
+    if spread_type == "BULL_CALL_SPREAD":
+        long_strike = atm
+        short_strike = atm + 5
+    elif spread_type == "BEAR_PUT_SPREAD":
+        long_strike = atm
+        short_strike = atm - 5
+    elif spread_type == "BULL_PUT_SPREAD":
+        long_strike = atm - 5
+        short_strike = atm
+    elif spread_type == "BEAR_CALL_SPREAD":
+        short_strike = atm
+        long_strike = atm + 5
+    else:
+        long_strike = atm
+        short_strike = atm + 5 if decision == "BULLISH" else atm - 5
+    
+    return {
+        'direction': decision,
+        'confidence': tech['confidence'],
+        'spread_type': spread_type,
+        'strikes': {
+            'spread_type': spread_type,
+            'long_strike': long_strike,
+            'short_strike': short_strike,
+        },
+        'price': price,
+    }
+
 def main():
     print("=== SPY Options Scanner v2 ===")
     print(f"Time: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
@@ -152,53 +190,21 @@ def main():
     for r in tech['reasons']:
         print(f"    - {r}")
     
-    spread_type, decision, price = select_spread_strategy(ml, tech)
+    signal = get_signal()
     
     print(f"\n=== Decision ===")
-    if spread_type is None:
-        print(f"SKIP: {decision}")
+    if signal.get('signal') == 'SKIP':
+        print(f"SKIP: {signal.get('decision', 'LOW_CONFIDENCE')}")
     else:
-        print(f"Direction: {decision}")
-        print(f"Strategy: {spread_type}")
-        print(f"SPY Price: ${price:.2f}")
-        
-        # Calculate strikes
-        atm = round(price)
-        if spread_type == "BULL_CALL_SPREAD":
-            long_strike = atm
-            short_strike = atm + 5
-        elif spread_type == "BEAR_PUT_SPREAD":
-            long_strike = atm
-            short_strike = atm - 5
-        elif spread_type == "BULL_PUT_SPREAD":
-            # Sell put at ATM, buy put further OTM
-            long_strike = atm - 5
-            short_strike = atm
-        elif spread_type == "BEAR_CALL_SPREAD":
-            # Short call at ATM, long call at higher strike
-            short_strike = atm
-            long_strike = atm + 5
-        elif spread_type == "IRON_CONDOR":
-            # For iron condor
-            put_buy = atm - 10
-            put_sell = atm - 5
-            call_sell = atm + 5
-            call_buy = atm + 10
-            print(f"  Put spread: Buy ${put_buy} put, Sell ${put_sell} put")
-            print(f"  Call spread: Sell ${call_sell} call, Buy ${call_buy} call")
-            return
-        else:
-            long_strike = atm
-            short_strike = atm + 5 if decision == "BULLISH" else atm - 5
-        
-        print(f"  Strikes: Long ${long_strike} / Short ${short_strike}")
+        print(f"Direction: {signal['direction']}")
+        print(f"Strategy: {signal['spread_type']}")
+        print(f"SPY Price: ${signal['price']:.2f}")
+        print(f"  Strikes: Long ${signal['strikes']['long_strike']} / Short ${signal['strikes']['short_strike']}")
     
     return {
         'ml_signal': ml,
         'tech_signal': tech,
-        'spread_type': spread_type,
-        'decision': decision,
-        'price': price
+        'signal': signal,
     }
 
 if __name__ == "__main__":
