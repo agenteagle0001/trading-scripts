@@ -12,7 +12,8 @@ SCAN_DIR = "/home/colton/.openclaw/workspace/agents/stock-scanner/scans"
 
 # Exit rules
 TAKE_PROFIT_PCT = 0.55  # Close when we've earned 55% of premium
-STOP_LOSS_PCT = 0.25   # Close when we've lost 25% of premium
+TAKE_PROFIT_PCT = 0.55  # Keep 55% of premium
+STOP_LOSS_PCT = 0.25   # Lose premium + 25% of premium = 1.25x premium
 
 def get_alpaca_option(symbol, option_type="put"):
     """Get option in Alpaca format using yfinance"""
