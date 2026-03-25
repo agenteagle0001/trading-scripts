@@ -42,6 +42,9 @@ def get_alpaca_option(symbol, option_type="put"):
         exp_str = expiry.replace('-', '')[2:]
         strike_str = str(int(strike * 1000)).zfill(8)
         
+        # Collateral needed: strike price × 100 (for cash-secured put)
+        collateral_needed = strike * 100
+        
         return {
             'alpaca_symbol': f"{symbol.upper()}{exp_str}P{strike_str}",
             'strike': strike,
@@ -49,7 +52,8 @@ def get_alpaca_option(symbol, option_type="put"):
             'ask': closest['ask'],
             'expiry': expiry,
             'premium_collected': closest['bid'],  # What we collect when selling
-            'current_price': current_price
+            'current_price': current_price,
+            'collateral_needed': collateral_needed
         }
     except Exception as e:
         print(f"Error getting option for {symbol}: {e}")
@@ -69,11 +73,12 @@ def get_latest_scan():
     symbols = []
     with open(latest) as f:
         for line in f:
-            match = re.search(r'\d+\.\s+([A-Z]+)\s+\|', line)
+            # Match lines like "1. MU (Micron Technology)" or "1. AMAT  | $374.70"
+            match = re.match(r'\s*\d+\.\s+([A-Z]+)\s*\(', line)
             if match:
                 symbols.append(match.group(1))
-            elif re.search(r'\|\s+\$', line):
-                sym = re.search(r'([A-Z]{2,5})\s+\$', line)
+            elif re.search(r'\d+\.\s+([A-Z]+)\s+\|', line):
+                sym = re.search(r'\d+\.\s+([A-Z]+)\s+\|', line)
                 if sym:
                     symbols.append(sym.group(1))
     return symbols[:3]
@@ -205,13 +210,23 @@ def main():
             print(f"{symbol}: Could not get option data")
             continue
         
+        # Check if we can afford the collateral (need buying power >= strike * 100)
+        headers = {'APCA-API-KEY-ID': API_KEY, 'APCA-API-SECRET-KEY': SECRET_KEY}
+        r = requests.get(f'{PAPER_URL}/v2/account', headers=headers)
+        if r.status_code == 200:
+            account = r.json()
+            buying_power = float(account.get('buying_power', 0))
+            if opt['collateral_needed'] > buying_power:
+                print(f"{symbol}: Need ${opt['collateral_needed']:,.0f} collateral, have ${buying_power:,.0f} - skipping")
+                continue
+        
         # Place sell to open order
         order = {
             "symbol": opt['alpaca_symbol'],
             "qty": "1",
             "side": "sell",
             "type": "market",
-            "time_in_force": "day"
+            "time_in_force": "gtc"
         }
         
         headers = {'APCA-API-KEY-ID': API_KEY, 'APCA-API-SECRET-KEY': SECRET_KEY}
