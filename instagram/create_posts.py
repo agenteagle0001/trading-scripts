@@ -9,6 +9,7 @@ RAW_DIR = f"{CONTENT_DIR}/raw_images"
 FINISHED_DIR = f"{CONTENT_DIR}/finished"
 QUOTE_DB = f"{CONTENT_DIR}/../quotes_db.json"
 LOCK_FILE = f"{CONTENT_DIR}/../quotes_db.lock"
+USED_IMAGES_FILE = f"{CONTENT_DIR}/../used_images.json"
 
 os.makedirs(FINISHED_DIR, exist_ok=True)
 
@@ -26,22 +27,50 @@ def get_quote():
         fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
         try:
             db = load_quotes()
-            available = [q for q in db["quotes"] if q["quote"] not in db.get("used", [])]
+            # Normalize used quotes for comparison
+            used_normalized = set(u.rstrip('.').strip().lower() for u in db.get("used", []))
+            available = [q for q in db["quotes"] 
+                        if q["quote"].rstrip('.').strip().lower() not in used_normalized]
             if not available:
                 print("All quotes used! Resetting...")
                 db["used"] = []
                 available = db["quotes"]
             q = random.choice(available)
-            db["used"].append(q["quote"])
+            # Normalize before adding to used
+            db["used"].append(q["quote"].rstrip('.'))
             save_quotes(db)
         finally:
             fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
     return q
 
+def load_used_images():
+    try:
+        with open(USED_IMAGES_FILE) as f:
+            return set(json.load(f))
+    except:
+        return set()
+
+def save_used_images(images):
+    with open(USED_IMAGES_FILE, 'w') as f:
+        json.dump(list(images), f)
+
+def pick_unused_bokeh_image():
+    """Pick a bokeh image that hasn't been used yet"""
+    used = load_used_images()
+    available = [f for f in os.listdir(RAW_DIR) if f.startswith('bokeh_') and f not in used]
+    if not available:
+        print("All bokeh images used! Resetting...")
+        used = set()
+        available = [f for f in os.listdir(RAW_DIR) if f.startswith('bokeh_')]
+    chosen = random.choice(available)
+    used.add(chosen)
+    save_used_images(used)
+    return chosen
+
 def create_post(output_name=None):
-    # Get random background
-    images = [f for f in os.listdir(RAW_DIR) if f.endswith('.jpg')]
-    if not images:
+    # Pick unused bokeh background
+    bg_image = pick_unused_bokeh_image()
+        print("No bokeh images found!")
         print("No images found!")
         return
     img_file = random.choice(images)
