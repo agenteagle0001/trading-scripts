@@ -1,0 +1,21 @@
+TOP 5 BULLISH STOCKS - 2026-03-11
+=============================================
+Symbol    Price      RSI    RS vs SPY
+---------------------------------------------
+INTC     $   48.04   59.3      88.8%
+ORCL     $  162.59   55.3     -48.7%
+MU       $  420.56   50.9     170.3%
+AMAT     $  350.73   43.1      99.9%
+AMD      $  205.14   51.1      27.4%
+
+---------------------------------------------
+Filters: RSI 40-70, MACD bull cross, Volume >1.2x avg
+
+Passes:
+INTC: RSI=✓ MACD=✓ VOL=✗
+ORCL: RSI=✓ MACD=✗ VOL=✓
+MU: RSI=✓ MACD=✗ VOL=✗
+AMAT: RSI=✓ MACD=✗ VOL=✗
+AMD: RSI=✓ MACD=✗ VOL=✗
+
+Note: No stocks passing all 3 criteria today. Weak market breadth.

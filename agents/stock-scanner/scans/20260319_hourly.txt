@@ -1,0 +1,19 @@
+TOP 5 BULLISH STOCKS - 2026-03-19
+=============================================
+Symbol    Price      RSI    RS vs SPY
+---------------------------------------------
+MU       $  438.86   55.9     172.0%
+AMAT     $  352.07   41.7      87.2%
+INTC     $   45.26   49.1      54.2%
+AMD      $  198.34   48.5      27.0%
+GOOGL    $  304.14   41.9      20.5%
+
+---------------------------------------------
+Filters: RSI 40-70, MACD bull cross, Volume >1.2x avg
+
+Passes:
+MU: RSI=✓ MACD=✗ VOL=✗
+AMAT: RSI=✓ MACD=✗ VOL=✗
+INTC: RSI=✓ MACD=✗ VOL=✗
+AMD: RSI=✓ MACD=✗ VOL=✗
+GOOGL: RSI=✓ MACD=✗ VOL=✗

@@ -180,7 +180,7 @@ def get_all_signals():
                          headers={"apikey": API_KEY}).json()['markets']
     market = markets[0]
     ticker = market['ticker']
-    strike = float(market.get('strike', btc_price))
+    strike = float(market.get('floor_strike', btc_price))
     
     yes_bid = float(market.get('yes_bid_dollars', 50) or 50)
     yes_ask = float(market.get('yes_ask_dollars', 50) or 50)

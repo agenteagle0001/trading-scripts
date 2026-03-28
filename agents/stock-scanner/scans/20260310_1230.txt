@@ -1,0 +1,24 @@
+# Bullish Stock Scan - March 10, 2026 12:30 PM
+
+## Criteria: MACD bull cross, RSI 40-70, Volume >1.2x avg, RS vs SPY
+
+## Top 5 Results
+
+| Symbol | Price  | RSI | RS vs SPY % |
+|--------|--------|-----|-------------|
+| INTC   | $47.49 | 55.5| +2.1%       |
+| GOOGL  | $309.11| 55.7| -1.5%       |
+| META   | $658.14| 56.5| -0.5%       |
+| AMZN   | $215.20| 62.9| +5.3%       |
+| AVGO   | $347.36| 59.6| +3.4%       |
+
+## Notes
+- INTC: Only stock with MACD bull cross today + RSI sweet spot + positive RS
+- GOOGL/META: MACD bull cross but negative RS vs SPY
+- Volume filter failed on all (all below 1.2x avg) - market quiet today
+- AMZN/AVGO/ADBE/PYPL showing strongest RS vs SPY but no MACD cross
+
+## Scan Summary
+- Total scanned: 30 stocks
+- With bullish signals: 23
+- Top performer: INTC (80/100 score)

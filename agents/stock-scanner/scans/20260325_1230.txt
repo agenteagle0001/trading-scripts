@@ -1,0 +1,51 @@
+STOCK SCAN REPORT
+Scan Date: 2026-03-25 12:30 UTC
+Criteria: MACD Bull Cross (daily), RSI 40-70, Volume > 1.2x avg (20d), RS vs SPY
+Stocks Scanned: 30
+
+FULL SCAN RESULTS
+=================
+INTC   | Price=    $47.54 | RSI= 54.0 | Vol=0.78x | RS=+6.5% | [MACD|RSI]
+JPM    | Price=   $295.42 | RSI= 53.5 | Vol=1.00x | RS=+2.3% | [MACD|RSI]
+BAC    | Price=    $48.62 | RSI= 43.4 | Vol=0.83x | RS=-0.7% | [MACD|RSI]
+AMAT   | Price=   $367.86 | RSI= 59.6 | Vol=0.89x | RS=-2.2% | [MACD|RSI]
+TXN    | Price=   $197.70 | RSI= 49.7 | Vol=1.04x | RS=-3.0% | [MACD|RSI]
+WFC    | Price=    $80.16 | RSI= 43.1 | Vol=0.94x | RS=-3.0% | [MACD|RSI]
+GS     | Price=   $841.48 | RSI= 52.1 | Vol=0.63x | RS=-3.6% | [MACD|RSI]
+MA     | Price=   $503.20 | RSI= 35.9 | Vol=0.64x | RS=+3.7% | [MACD]
+GOOGL  | Price=   $291.48 | RSI= 41.1 | Vol=1.23x | RS=-2.1% | [RSI|VOL]
+QCOM   | Price=   $130.99 | RSI= 36.4 | Vol=0.64x | RS=-5.1% | [MACD]
+AMD    | Price=   $219.27 | RSI= 65.2 | Vol=0.83x | RS=+9.2% | [RSI]
+AMZN   | Price=   $212.56 | RSI= 42.7 | Vol=0.77x | RS=+6.0% | [RSI]
+ORCL   | Price=   $146.91 | RSI= 42.4 | Vol=0.86x | RS=+4.3% | [RSI]
+COST   | Price=   $977.27 | RSI= 47.5 | Vol=0.67x | RS=+3.2% | [RSI]
+AVGO   | Price=   $319.06 | RSI= 42.2 | Vol=0.65x | RS=+1.0% | [RSI]
+KO     | Price=    $75.60 | RSI= 43.2 | Vol=0.89x | RS=-0.7% | [RSI]
+CRM    | Price=   $181.10 | RSI= 27.5 | Vol=1.25x | RS=-0.8% | [VOL]
+TSLA   | Price=   $388.93 | RSI= 41.4 | Vol=0.99x | RS=-2.2% | [RSI]
+AAPL   | Price=   $254.18 | RSI= 40.9 | Vol=1.09x | RS=-2.7% | [RSI]
+MSFT   | Price=   $371.15 | RSI= 11.6 | Vol=1.26x | RS=-2.7% | [VOL]
+MU     | Price=   $382.01 | RSI= 46.7 | Vol=1.10x | RS=-6.5% | [RSI]
+NVDA   | Price=       N/A | RSI=  N/A | Vol=0.74x | RS=+nan% | [---]
+NFLX   | Price=    $92.26 | RSI= 27.8 | Vol=0.53x | RS=+17.1% | [---]
+IBM    | Price=   $242.35 | RSI= 37.2 | Vol=0.67x | RS=+7.1% | [---]
+V      | Price=   $306.05 | RSI= 31.1 | Vol=0.73x | RS=+2.7% | [---]
+PYPL   | Price=    $44.89 | RSI= 38.3 | Vol=0.90x | RS=-0.1% | [---]
+ADBE   | Price=   $238.09 | RSI= 14.5 | Vol=0.93x | RS=-3.0% | [---]
+META   | Price=   $600.55 | RSI= 29.4 | Vol=0.84x | RS=-3.5% | [---]
+DIS    | Price=    $96.28 | RSI= 20.1 | Vol=0.77x | RS=-3.8% | [---]
+PEP    | Price=   $151.46 | RSI= 28.0 | Vol=0.87x | RS=-5.2% | [---]
+
+SCAN NOTES
+==========
+No stocks met ALL 4 criteria simultaneously (MACD cross + RSI 40-70 + Vol >1.2x).
+Low volume day across the board - market in consolidation phase.
+SPY 20d momentum is weak for most names.
+
+TOP 5 BY SCORE + RS (MACD cross first, then RSI zone)
+======================================================
+1. INTC   | Price: $47.54 | RSI: 54.0 | RS vs SPY: +6.5%
+2. JPM    | Price: $295.42 | RSI: 53.5 | RS vs SPY: +2.3%
+3. BAC    | Price: $48.62  | RSI: 43.4 | RS vs SPY: -0.7%
+4. AMAT   | Price: $367.86 | RSI: 59.6 | RS vs SPY: -2.2%
+5. TXN    | Price: $197.70 | RSI: 49.7 | RS vs SPY: -3.0%

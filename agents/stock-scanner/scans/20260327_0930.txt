@@ -1,0 +1,16 @@
+BULLISH STOCK SCAN - 2026-03-27 09:30 CST
+Criteria: MACD Bull Cross, RSI 40-70, Volume > 1.2x Avg
+==================================================
+
+NO stocks meet all bullish criteria.
+Market is in risk-off mode with most stocks oversold.
+
+TOP 5 BY RELATIVE STRENGTH vs SPY:
+
+Symbol        Price    RSI  RS vs SPY
+----------------------------------------
+AMD      $  198.54   47.1      +6.5%
+IBM      $  235.80   33.4      +5.1%
+COST     $  982.77   37.3      +4.6%
+PYPL     $   44.19   41.5      +3.7%
+NFLX     $   93.85   36.3      +3.3%

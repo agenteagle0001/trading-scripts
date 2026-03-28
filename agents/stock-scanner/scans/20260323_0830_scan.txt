@@ -1,0 +1,41 @@
+BULLISH STOCK SCAN - 2026-03-23 08:30 UTC
+Criteria: MACD Bull Cross (daily), RSI 40-70, Volume >1.2x avg, RS vs SPY
+=============================================================
+
+SCANNED: 30/30 stocks
+
+NOTE: Volume is unusually light across the board today (all <0.2x avg).
+Reporting best candidates meeting other criteria.
+
+TOP 5 BULLISH CANDIDATES:
+
+ Symbol     Price         RSI   RS vs SPY %
+--------  --------  --------  --------------
+ QCOM      $133.01     41.4       +525.5%
+ JPM       $292.77     47.7       +134.6%
+ WFC        $79.39     45.1       +289.3%
+ MA        $503.80     44.8       +207.7%
+ CRM       $194.18     46.1       +600.1%
+
+ALL IN RSI 40-70 RANGE (sorted by RS vs SPY):
+
+ Symbol     Price         RSI   RS vs SPY %   Vol Ratio   MACD Cross
+--------  --------  --------  ------------   ----------   ----------
+ CRM      $194.18     46.1       +600.1%       0.04x        no
+ QCOM     $133.01     41.4       +525.5%       0.04x        YES
+ PYPL      $44.55     45.6       +510.6%       0.15x        no
+ ORCL     $151.07     45.8       +450.0%       0.03x        no
+ IBM      $246.44     43.5       +335.1%       0.03x        no
+ WFC       $79.39     45.1       +289.3%       0.01x        YES
+ BAC       $47.88     40.8       +250.8%       0.04x        no
+ V        $305.55     40.6       +236.2%       0.03x        no
+ MA       $503.80     44.8       +207.7%       0.02x        YES
+ JPM      $292.77     47.7       +134.6%       0.04x        YES
+ AMZN     $209.96     46.7       +121.5%       0.07x        no
+ AVGO     $320.55     46.3        +71.5%       0.07x        no
+ AAPL     $252.92     43.1        +62.3%       0.08x        no
+ GS       $834.99     46.7        +41.6%       0.05x        no
+ NVDA     $177.09     43.5        +28.8%       0.10x        no
+
+MACD BULL CROSS CANDIDATES (RSI 40-70):
+ QCOM, JPM, WFC, MA

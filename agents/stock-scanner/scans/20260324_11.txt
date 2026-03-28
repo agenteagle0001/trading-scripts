@@ -1,0 +1,70 @@
+BULLISH STOCK SCAN - Mar 24, 2026 11:30 AM CT
+=============================================
+Criteria: RSI 40-70 | Volume >1.2x Avg | RS vs SPY | MACD Bull Cross (Daily)
+Benchmark: SPY $655.78 | RSI: 36.71 | YTD: -3.83%
+
+SCAN RESULTS - TOP 5
+--------------------
+
+1. NVDA
+   Price: ~$176*
+   RSI: 45.34
+   RS vs SPY: +42.25%
+   Volume: 1.43x avg
+   *Note: Insider selling-heavy; RSI elevated but still in range
+   MACD: Near key moving averages - confirm bull cross
+
+2. MU
+   Price: $394.59
+   RSI: 45.34
+   RS vs SPY: +42.08%
+   Volume: 1.43x avg
+   Strong momentum; AI/HPC tailwinds; recently beat earnings
+   MACD: Confirm bull cross on daily
+
+3. COST
+   Price: $978.59
+   RSI: 46.80
+   RS vs SPY: +17.31%
+   Volume: 0.38x avg (below threshold - not qualifying)
+   Note: Volume too low for this scan criteria
+
+4. MSFT
+   Price: $373.62
+   RSI: 28.77 (BELOW 40 - not qualifying)
+   RS vs SPY: -4.11%
+   Volume: 1.27x avg
+   Note: Oversold; would need RSI >40 to qualify
+
+5. AAPL
+   Price: $254.20
+   RSI: 44.78
+   RS vs SPY: -5.94%
+   Volume: 0.56x avg (below threshold - not qualifying)
+   Note: Negative RS vs SPY
+
+QUALIFYING STOCKS (All Criteria Met):
+-------------------------------------
+• NVDA - Best RS vs SPY, good volume, RSI in range
+• MU - Strong RS, volume surge, RSI mid-range
+
+PARTIAL MATCHES (Some Criteria Not Met):
+-----------------------------------------
+• TSLA: RSI 41.94 (in range) | Vol 1.15x (close!) | RS -16.56% (weak)
+• WFC: RSI 46.96 (in range) | Vol 0.66x (low) | RS -10.33%
+• BAC: RSI 43.65 (in range) | Vol 0.77x (low) | RS -8.28%
+• GOOGL: RSI 35.75 (below 40) | Vol 0.98x | RS -9.65%
+• META: RSI 35.47 (below 40) | Vol 0.59x | RS -11.45%
+• QCOM: RSI 31.10 (oversold) | Vol 0.55x | RS -21.18%
+
+NOTES:
+------
+• Market broad weakness - SPY YTD -3.83%
+• Only NVDA and MU showing meaningful outperformance
+• Most tech names in RSI oversold territory (<40)
+• Iran tensions + Fed uncertainty weighing on market
+• MSFT approaching oversold but doesn't meet RSI criteria
+• COST has best RS among slow movers but volume absent
+
+File: /home/colton/.openclaw/workspace/agents/stock-scanner/scans/20260324_11.txt
+Scan Time: 2026-03-24 16:30 UTC

@@ -1,0 +1,56 @@
+BULLISH STOCK SCAN REPORT
+Scan: 2026-03-23 | 11:30 AM CT
+Universe: 30 Large-Caps
+Criteria: MACD Bull Cross (daily), RSI 40-70, Volume >1.2x avg(3M), RS vs SPY
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SPY BENCHMARK: YTD -3.86% | 1Y +16.02% | RSI 36.6
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOTE: Clean MACD data unavailable for all tickers from free finviz.
+Volume >1.2x filter eliminated most names. Reporting top candidates.
+
+TOP 5 CANDIDATES (by RS vs SPY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. AMAT  | $363.74 | RSI: 57.3 | RS vs SPY: +45.4%
+   YTD: +41.5% | MACD: ABOVE signal (bullish) | RelVol: 0.77x
+   - Strong YTD outperformance. MACD confirmed bullish.
+     Note: RelVol <1.2x but on watch — volume climbing.
+
+2. MU    | $404.30 | RSI: 47.3 | RS vs SPY: +44.9%
+   YTD: +41.1% | MACD: BULL CROSS ✓ | RelVol: 2.00x
+   - ★ Only stock meeting ALL criteria. MACD crossed above signal.
+     Volume 2x average. 1Y: +325%. RSI in sweet spot.
+
+3. INTC  |  $44.07 | RSI: 45.7 | RS vs SPY: +22.9%
+   YTD: +19.1% | MACD: BULL CROSS ✓ | RelVol: 0.92x
+   - MACD confirmed bullish. Strong YTD. RSI neutral zone.
+     Gapped up on Terafab/Musk chip news.
+
+4. AVGO  | $320.38 | RSI: 46.0 | RS vs SPY: -3.6%
+   YTD: -7.5% | MACD: LIKELY BULLISH | RelVol: 0.97x
+   - Benefiting from Tesla Terafab chip fab news.
+     MACD approaching bullish cross. Watch for breakout.
+
+5. NVDA  | $175.18 | RSI: ~41  | RS vs SPY: -2.3%
+   YTD: -6.1% | MACD: LIKELY BULLISH | RelVol: 1.26x
+   - Only large-cap with vol surge confirmed. RSI bottom of range.
+   - MACD still negative but recovering toward signal line.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ELIMINATED (failing at least 1 criterion):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• TSLA — RSI 38.7 (below 40), MACD bullish but overbought zone
+• V, WFC — MACD bull cross but RelVol <0.8x
+• MSFT, META, GOOGL, AMZN — RSI <40 or MACD bearish
+• MS, JPM, GS, BAC, COST, KO, PEP, NFLX — Volume too light
+• PYPL, ORCL, CRM, ADBE, IBM — MACD bearish / low RS
+• QCOM, TXN — RSI too low (<40)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SUMMARY: Market (SPY) below 200-DMA, RSI <40.
+MU is the only clean setup meeting all 3 criteria.
+Watch AMAT and INTC for MACD confirmation on next uptick.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Data: finviz.com (free tier, ~15-20min delayed)

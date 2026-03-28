@@ -1,0 +1,12 @@
+BULLISH STOCK SCAN - TOP 5 RESULTS
+Scan Date: 2026-03-24 08:35
+Criteria: MACD bull cross, RSI 40-70, Volume >1.2x avg
+
+No stocks met all criteria. Top by RS vs SPY:
+Symbol   Price        RSI      RS vs SPY %  Vol Ratio 
+--------------------------------------------------
+NFLX     $93.41      28.6        +18.6%     0.02      x
+ORCL     $152.86     50.5         +9.0%     0.03      x
+IBM      $243.25     44.1         +8.1%     0.02      x
+AMZN     $207.63     38.6         +4.2%     0.04      x
+CRM      $188.54     45.1         +4.0%     0.08      x

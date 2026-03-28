@@ -1,0 +1,23 @@
+BULLISH STOCK SCAN - March 20, 2026 11:30
+Criteria: MACD bull cross, RSI 40-70, Vol >1.2x, RS vs SPY
+
+TOP 5 BULLISH STOCKS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. JPM  | $287.83 | RSI: 31.4 | RS vs SPY: +1.1%
+   ✓ MACD bull cross, RS vs SPY +1.1%
+
+2. GOOGL | $301.81 | RSI: 44.7 | RS vs SPY: +1.4%
+   ✓ RSI sweet spot, RS vs SPY +1.4%
+
+3. AMZN | $206.55 | RSI: 47.7 | RS vs SPY: +5.0%
+   ✓ RSI sweet spot, RS vs SPY +5.0%
+
+4. AMD | $201.38 | RSI: 52.0 | RS vs SPY: +6.9%
+   ✓ RSI sweet spot, RS vs SPY +6.9%
+
+5. AVGO | $317.04 | RSI: 48.9 | RS vs SPY: +0.4%
+   ✓ RSI sweet spot, RS vs SPY +0.4%
+
+NOTE: Volume below 1.2x avg on all stocks today. JPM only MACD bull cross.
+
+Scanned 30 stocks, 20 with bullish signals.

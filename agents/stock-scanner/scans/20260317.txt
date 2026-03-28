@@ -1,0 +1,21 @@
+BULLISH STOCK SCAN - March 17, 2026
+=====================================
+Scan: 30 stocks | Criteria: MACD bull cross, RSI 40-70, Volume >1.2x avg, RS vs SPY
+
+TOP 5 BULLISH STOCKS
+---------------------
+Symbol | Price    | RSI  | RS vs SPY
+-------------------------------------
+MU     | $462.23  | 57.5 | +12.9%
+ORCL   | $153.88  | 56.3 | +2.2%
+CRM    | $195.20  | 53.0 | +2.1%
+PYPL   | $46.46   | 46.9 | +14.4%
+AVGO   | $320.45  | 43.1 | +2.7%
+
+NOTES:
+- Only MU meets all strict criteria (RSI 40-70, vol>1.2x, MACD bull)
+- Market showing weakness - many stocks below SPY performance
+- Low volume day overall (<1.0x avg for most)
+- NFLX leads RS at +20.7% but RSI too high (75) and volume low
+
+Scan completed: 2026-03-17 14:30 CST

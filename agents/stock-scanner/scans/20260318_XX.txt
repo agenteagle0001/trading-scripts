@@ -1,0 +1,21 @@
+TOP 5 BULLISH STOCKS - 2026-03-18
+=============================================
+Symbol    Price      RSI    RS vs SPY
+---------------------------------------------
+MU       $  469.45   62.6     14.3%
+INTC     $   45.11   49.1      2.1%
+ADBE     $  248.69   42.8     -2.7%
+PYPL     $   44.90   47.7     11.4%
+CRM      $  194.25   44.9      6.2%
+
+---------------------------------------------
+Filters: RSI 40-70, MACD bull cross, Volume >1.2x avg
+
+Passes:
+MU: RSI=✓ MACD=✓ VOL=✗
+INTC: RSI=✓ MACD=✗ VOL=✗
+ADBE: RSI=✓ MACD=✗ VOL=✓
+PYPL: RSI=✓ MACD=✗ VOL=✗
+CRM: RSI=✓ MACD=✗ VOL=✗
+
+Note: MU is the only stock with a MACD bull cross today. Top 5 sorted by RS vs SPY strength.

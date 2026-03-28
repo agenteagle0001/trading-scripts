@@ -1,0 +1,14 @@
+BULLISH STOCK SCAN - 2026-03-23 08:31 UTC
+Criteria: MACD Bull Cross (daily), RSI 40-70, Volume >1.2x avg, RS vs SPY
+======================================================================
+
+SCANNED: 30/30 stocks
+
+TOP 5 BULLISH CANDIDATES:
+Symbol        Price    RSI  RS vs SPY %  Vol Ratio
+--------------------------------------------------
+
+
+ALL QUALIFYING STOCKS:
+Symbol        Price    RSI  RS vs SPY %  Vol Ratio MACD Cross  
+------------------------------------------------------------

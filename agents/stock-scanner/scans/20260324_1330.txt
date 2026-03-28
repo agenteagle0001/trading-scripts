@@ -1,0 +1,48 @@
+# Bullish Stock Scan - 2026-03-24 13:33
+
+## Top 5 by Relative Strength vs SPY (RSI 40-70)
+
+| Symbol | Price  | RSI  | RS vs SPY % |
+|--------|--------|------|-------------|
+| GOOGL | $292.94 | 40.1 | -3.71% |
+| AMD | $204.96 | 52.7 | -0.65% |
+| AVGO | $319.63 | 51.1 | +0.71% |
+| ORCL | $148.02 | 45.9 | -4.16% |
+| CRM | $184.32 | 41.3 | -5.54% |
+
+## Filters Applied
+- RSI: 40-70 (healthy momentum)
+- Volume: >1.2x 20-day avg (if applicable)
+- MACD: Bull cross on daily
+
+## All Scanned Stocks (by RS vs SPY)
+AMAT: $374.87 | RSI 57.3 | RS +13.54% | Vol 0.53x   | MACD  
+NFLX: $91.48 | RSI 24.6 | RS +8.60% | Vol 0.3x   | MACD  
+COST: $977.37 | RSI 38.7 | RS +3.18% | Vol 0.32x   | MACD  
+KO: $75.21 | RSI 31.7 | RS +2.73% | Vol 0.36x   | MACD  
+MU: $393.28 | RSI 48.3 | RS +1.33% | Vol 0.81x   | MACD  
+JPM: $293.2 | RSI 39.8 | RS +0.95% | Vol 0.46x   | MACD  
+AVGO: $319.63 | RSI 51.1 | RS +0.71% | Vol 0.37x   | MACD  
+AAPL: $252.64 | RSI 35.5 | RS +0.66% | Vol 0.44x   | MACD  
+PEP: $151.11 | RSI 21.7 | RS +0.04% | Vol 0.45x   | MACD  
+MA: $501.58 | RSI 35.5 | RS -0.51% | Vol 0.35x   | MACD  
+AMD: $204.96 | RSI 52.7 | RS -0.65% | Vol 0.55x   | MACD  
+V: $305.39 | RSI 28.5 | RS -0.67% | Vol 0.41x   | MACD  
+NVDA: $175.66 | RSI 39.8 | RS -0.87% | Vol 0.49x   | MACD  
+TXN: $194.87 | RSI 41.2 | RS -1.28% | Vol 0.45x   | MACD  
+AMZN: $207.84 | RSI 38.8 | RS -1.48% | Vol 0.49x   | MACD  
+INTC: $43.97 | RSI 45.3 | RS -1.79% | Vol 0.55x   | MACD  
+BAC: $48.32 | RSI 38.1 | RS -1.82% | Vol 0.47x   | MACD  
+GS: $839.04 | RSI 41.7 | RS -1.97% | Vol 0.37x   | MACD  
+PYPL: $44.43 | RSI 40.1 | RS -2.26% | Vol 0.57x   | MACD  
+WFC: $80.1 | RSI 38.0 | RS -2.33% | Vol 0.44x   | MACD  
+TSLA: $383.86 | RSI 38.0 | RS -3.28% | Vol 0.75x   | MACD  
+GOOGL: $292.94 | RSI 40.1 | RS -3.71% | Vol 0.76x   | MACD  
+ORCL: $148.02 | RSI 45.9 | RS -4.16% | Vol 0.53x   | MACD  
+META: $595.34 | RSI 24.6 | RS -4.29% | Vol 0.52x   | MACD  
+DIS: $97.0 | RSI 20.3 | RS -4.55% | Vol 0.46x   | MACD  
+CRM: $184.32 | RSI 41.3 | RS -5.54% | Vol 0.66x   | MACD  
+QCOM: $128.83 | RSI 27.3 | RS -6.19% | Vol 0.31x   | MACD  
+MSFT: $374.38 | RSI 21.3 | RS -6.29% | Vol 0.83x   | MACD  
+IBM: $241.15 | RSI 42.5 | RS -6.78% | Vol 0.35x   | MACD  
+ADBE: $239.49 | RSI 25.5 | RS -8.75% | Vol 0.58x   | MACD

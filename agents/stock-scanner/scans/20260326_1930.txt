@@ -1,0 +1,40 @@
+BULLISH STOCK SCAN REPORT
+=========================
+Date: 2026-03-26 19:30 UTC
+Criteria: MACD bull cross (daily), RSI 40-70, Volume >1.2x avg, RS vs SPY
+
+TOP 5 BY RELATIVE STRENGTH vs SPY
+==================================
+
+1. NFLX  | $93.72  | RSI: 34.3 | RS vs SPY: +16.9%
+         ⚠ RSI below 40, No MACD cross
+
+2. AMD   | $204.01 | RSI: 57.7 | RS vs SPY: +6.2%
+         ✓ RSI in range, No MACD cross
+
+3. AMZN  | $208.01 | RSI: 43.7 | RS vs SPY: +6.1%
+         ✓ RSI in range, No MACD cross
+
+4. IBM   | $241.52 | RSI: 33.4 | RS vs SPY: +5.9%
+         ⚠ RSI below 40, No MACD cross
+
+5. PYPL  | $45.06  | RSI: 41.5 | RS vs SPY: +5.3%
+         ✓ RSI in range, ✓ MACD bull cross
+
+ADDITIONAL SIGNALS (MACD cross + RSI 40-70)
+============================================
+6. INTC  | $44.10  | RSI: 51.7 | RS vs SPY: +3.1%
+7. JPM   | $291.73 | RSI: 54.3 | RS vs SPY: +1.4%
+8. TXN   | $193.60 | RSI: 50.5 | RS vs SPY: -2.9%
+9. AMAT  | $340.43 | RSI: 56.7 | RS vs SPY: -3.3%
+10. GS   | $821.10 | RSI: 49.9 | RS vs SPY: -5.1%
+
+SUMMARY
+=======
+• No stocks met ALL 4 criteria today
+• Volume is below average across the board (no >1.2x)
+• 8 stocks have MACD bull cross + RSI 40-70
+• Top movers: NFLX leading on RS but RSI weak
+• Best combined signal: PYPL (RSI ok + MACD cross + RS positive)
+
+Scan by: agentEagle 🦅

@@ -1,0 +1,112 @@
+MULTI-TIMEFRAME BULLISH STOCK SCAN (TEST)
+=================================================
+Date: 2026-03-02 21:23
+
+Criteria: RSI < 70 | RS vs SPY > 0 | Score >= 5
+
+TOP 10 RESULTS:
+===============
+
+1. CVX
+   Price: $189.6
+   RSI: 69.0 (OK)
+   MACD Histogram: -0.23
+   Relative Strength vs SPY: +11.3%
+   Above SMA50: Yes
+   Score: 9/8
+   Signals: RSI:69, MACD+, 5M+, Vol, RS:11%, >50
+
+2. ABBV
+   Price: $234.26
+   RSI: 63.0 (OK)
+   MACD Histogram: 0.62
+   Relative Strength vs SPY: +5.1%
+   Above SMA50: Yes
+   Score: 9/8
+   Signals: RSI:63, MACD+, 5M+, Vol, RS:5%, >50
+
+3. BMY
+   Price: $62.34
+   RSI: 61.8 (OK)
+   MACD Histogram: 0.02
+   Relative Strength vs SPY: +12.8%
+   Above SMA50: Yes
+   Score: 9/8
+   Signals: RSI:62, MACD+, 5M+, Vol, RS:13%, >50
+
+4. JNJ
+   Price: $248.56
+   RSI: 69.5 (OK)
+   MACD Histogram: -0.32
+   Relative Strength vs SPY: +9.6%
+   Above SMA50: Yes
+   Score: 8/8
+   Signals: RSI:70, MACD+, 5M+, RS:10%, >50
+
+5. UNH
+   Price: $294.93
+   RSI: 64.5 (OK)
+   MACD Histogram: 2.99
+   Relative Strength vs SPY: +4.6%
+   Above SMA50: No
+   Score: 7/8
+   Signals: RSI:65, MACD+, 5M+, RS:5%
+
+6. MCD
+   Price: $334.82
+   RSI: 61.3 (OK)
+   MACD Histogram: 0.47
+   Relative Strength vs SPY: +6.4%
+   Above SMA50: Yes
+   Score: 7/8
+   Signals: RSI:61, MACD+, Vol, RS:6%, >50
+
+7. UPS
+   Price: $114.42
+   RSI: 44.8 (OK)
+   MACD Histogram: -0.58
+   Relative Strength vs SPY: +6.5%
+   Above SMA50: Yes
+   Score: 7/8
+   Signals: RSI:45, 5M+, RS:7%, >50
+
+8. HON
+   Price: $248.04
+   RSI: 67.2 (OK)
+   MACD Histogram: -0.62
+   Relative Strength vs SPY: +10.8%
+   Above SMA50: Yes
+   Score: 7/8
+   Signals: RSI:67, 5M+, RS:11%, >50
+
+9. XOM
+   Price: $154.22
+   RSI: 56.2 (OK)
+   MACD Histogram: -0.51
+   Relative Strength vs SPY: +13.5%
+   Above SMA50: Yes
+   Score: 6/8
+   Signals: RSI:56, Vol, RS:13%, >50
+
+10. PG
+   Price: $163.51
+   RSI: 61.9 (OK)
+   MACD Histogram: 0.06
+   Relative Strength vs SPY: +8.0%
+   Above SMA50: Yes
+   Score: 6/8
+   Signals: RSI:62, MACD+, RS:8%, >50
+
+
+Total matches: 29
+
+SCORING:
+- RSI < 70: +1
+- RSI > 30: +1  
+- MACD not deeply negative: +1
+- 5-min MACD+ (bullish momentum): +2
+- Volume > avg: +1
+- RS vs SPY > 0: +2
+- Price > SMA50: +1
+
+Scan completed.

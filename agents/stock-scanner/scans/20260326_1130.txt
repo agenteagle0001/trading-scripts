@@ -1,0 +1,21 @@
+BULLISH STOCK SCAN - 2026-03-26 11:30 UTC
+============================================
+Criteria: MACD bull cross (daily), RSI 40-70, Volume >1.2x avg, RS vs SPY
+Market: SPY -5.1% (20-day) — BROAD DOWNTURN
+
+TOP 5 BY RELATIVE STRENGTH vs SPY
+(Stocks closest to bullish criteria in current market)
+------------------------------------------------------------
+1. AMD  | $206.64 | RSI: 60 | RS vs SPY: +8.3%
+2. IBM  | $243.26 | RSI: 36 | RS vs SPY: +6.3%
+3. AMZN | $210.43 | RSI: 46 | RS vs SPY: +5.3%
+4. ORCL | $143.24 | RSI: 41 | RS vs SPY: +3.6%
+5. INTC |  $44.84 | RSI: 54 | RS vs SPY: +3.4%
+
+NOTES:
+- Only AAPL shows MACD bull cross; volume weak (0.41x avg)
+- META only stock with vol >1.2x (1.30x) but RSI 22, MACD deeply negative
+- Low volume across board — no fresh momentum entries
+- Market breadth negative; defensive names outperforming
+
+Full scan saved. Next run: hourly cron.

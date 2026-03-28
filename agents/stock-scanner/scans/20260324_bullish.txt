@@ -1,0 +1,13 @@
+BULLISH STOCK SCAN - 2026-03-24 10:34 UTC
+=============================================================
+Criteria: MACD Bull Cross, RSI 40-70, Vol >1.2x 20d avg, RS vs SPY
+SPY 3-Month Return: -4.8%
+
+TOP 5 BULLISH SIGNALS:
+1. AMAT   | $  376.78 | RSI:  58.0 | RS vs SPY:   +49.4% | Vol: 1.08x
+2. AMD    | $  204.36 | RSI:  52.2 | RS vs SPY:    -0.2% | Vol: 0.88x
+3. GS     | $  842.02 | RSI:  42.7 | RS vs SPY:    -2.3% | Vol: 0.78x
+4. JPM    | $  294.14 | RSI:  41.7 | RS vs SPY:    -5.5% | Vol: 1.06x
+5. IBM    | $  241.04 | RSI:  42.4 | RS vs SPY:   -15.6% | Vol: 0.89x
+
+Note: Vol = 5-day avg / 20-day avg. Scan time: 20260324_1034

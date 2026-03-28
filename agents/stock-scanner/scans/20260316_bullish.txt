@@ -1,0 +1,19 @@
+# Bullish Stock Scan - March 16, 2026
+
+**Criteria:** MACD bull cross, RSI 40-70, Volume >1.2x avg, RS vs SPY
+
+## Top 5 Results (Ranked by RS vs SPY)
+
+| Symbol | Price   | RSI  | RS vs SPY % |
+|--------|---------|------|-------------|
+| AAPL   | $172.65 | 68.7 | +15.4%      |
+| NVDA   | $145.66 | 77.9 | +11.9%      |
+| AMD    | $164.95 | 67.6 | +12.7%      |
+| AMAT   | $167.50 | 56.6 | +5.0%       |
+| MU     | $446.50 | 56.6 | +5.7%       |
+
+**Notes:**
+- MU is the only stock with MACD bull cross today
+- No stocks met all criteria (volume >1.2x avg)
+- Top 5 selected by RS vs SPY strength
+- Financials (GS, JPM, BAC, WFC) weak today - RSI oversold

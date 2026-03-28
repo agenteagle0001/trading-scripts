@@ -1,0 +1,27 @@
+BULLISH STOCK SCAN — Mar 23, 2026 (EOD)
+========================================
+Criteria: MACD bull cross (daily) | RSI 40-70 | Vol >1.2x avg | RS vs SPY
+
+SPY 3-Month Return: -4.1% (bearish backdrop)
+
+TOP 5 BULLISH CANDIDATES (by RS vs SPY)
+---------------------------------------
+1. MU    $406.74  RSI=56.0  Vol=1.22x  RS vs SPY=+51.4%  ✅ALL FILTERS
+2. AMAT  $363.24  RSI=55.3  Vol=0.58x  RS vs SPY=+43.9%  ⚠️Low vol
+3. INTC   $44.24  RSI=52.9  Vol=0.77x  RS vs SPY=+25.8%
+4. GOOGL $303.05  RSI=49.6  Vol=0.75x  RS vs SPY=+0.6%
+5. GS    $835.64  RSI=42.1  Vol=0.55x  RS vs SPY=-2.7%
+
+NOTES
+-----
+• MU is the only stock meeting ALL 4 criteria — strong RS vs market
+• AMAT & INTC have MACD bull cross + healthy RSI but below-avg volume today
+• GOOGL showing neutral RS; MACD turning bullish
+• GS: goldman Sachs flagged — RSI near oversold but MACD cross suggests bounce
+• Broad market (SPY -4.1% over 3mo) still under pressure
+
+VOLUME FLAGS (above avg, not confirmed >1.2x)
+---------------------------------------------
+• TSLA: Vol=1.09x — close but didn't hit 1.2x threshold
+
+SCAN COMPLETE — 30 stocks reviewed

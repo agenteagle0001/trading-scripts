@@ -1,0 +1,12 @@
+BULLISH STOCK SCAN - March 06, 2026 08:30
+Criteria: MACD bull cross, RSI 40-70, Vol >1.2x avg, RS vs SPY
+
+TOP 5 BULLISH STOCKS
+====================
+1. ORCL - $152.91 | RSI: 42.7 | RS vs SPY: +9.7%
+2. CRM - $201.64 | RSI: 59.8 | RS vs SPY: +8.0%
+3. ADBE - $281.26 | RSI: 64.1 | RS vs SPY: +7.4%
+4. AMAT - $332.13 | RSI: 40.7 | RS vs SPY: +5.7%
+5. MSFT - $411.04 | RSI: 58.1 | RS vs SPY: +5.3%
+
+Note: Most stocks showing weak volume and no fresh MACD bull cross. Market may be consolidating.

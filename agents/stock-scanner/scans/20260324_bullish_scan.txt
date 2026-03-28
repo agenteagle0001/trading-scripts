@@ -1,0 +1,16 @@
+BULLISH STOCK SCAN - 2026-03-24
+================================
+Criteria: MACD bull cross, RSI 40-70, Volume >1.2x avg, RS vs SPY
+
+TOP 5 RESULTS:
+1. AMAT  | $374.70 | RSI: 57.2 | RS vs SPY: +48.8% | Vol: 0.61x | MACD ✓
+2. MU    | $397.28 | RSI: 49.2 | RS vs SPY: +43.6% | Vol: 0.92x | MACD ✗
+3. INTC  | $44.16  | RSI: 45.9 | RS vs SPY: +27.1% | Vol: 0.63x | MACD ✗
+4. AMD   | $205.47 | RSI: 53.1 | RS vs SPY: +0.5%  | Vol: 0.65x | MACD ✓
+5. GS    | $838.07 | RSI: 41.4 | RS vs SPY: -2.5%  | Vol: 0.44x | MACD ✓
+
+NOTE: Volume below 1.2x average for all stocks today (low volume session).
+MACD bullish crossover filters: AMAT, AMD, GS, JPM, BAC, WFC, IBM, ORCL, PYPL.
+RSI in optimal range (40-70): AMAT, MU, INTC, TXN, AMD, GS, AVGO, IBM, ORCL, CRM.
+
+Data: Yahoo Finance via yfinance | Scan time: 2026-03-24 19:30 UTC

@@ -1,0 +1,40 @@
+BULLISH STOCK SCAN REPORT
+Generated: 2026-03-20 19:30 UTC
+Criteria: MACD Bull Cross (daily), RSI 40-70, Volume >1.2x Avg, RS vs SPY >0
+
+SCAN RESULTS:
+───────────────────────────────────────────────────────────────
+No stocks met ALL 4 criteria today.
+
+NOTE: Market in defensive posture - financials showing strength
+but RSI oversold (<40) with bearish MACD. Low volume across board.
+
+TOP CANDIDATES (closest to qualifying):
+───────────────────────────────────────────────────────────────
+
+1. INTC  | Price: $43.73 | RSI: 46.0 | RS vs SPY: -107.3%
+   MACD: BULL CROSS | Vol Ratio: 0.96x
+
+2. TSLA  | Price: $366.04 | RSI: 31.8 | RS vs SPY: +80.1%
+   MACD: BULL CROSS | Vol Ratio: 1.03x (near threshold)
+
+3. JPM   | Price: $286.74 | RSI: 30.2 | RS vs SPY: +25.1%
+   MACD: BULL CROSS | Vol Ratio: 0.72x
+
+WATCH LIST (2 of 4 criteria):
+───────────────────────────────────────────────────────────────
+- AMAT: RSI 41.7 ✓ | RS vs SPY: -3.5% | MACD: bear
+- AVGO: RSI 46.0 ✓ | RS vs SPY: -4.2% | Vol: 0.55x
+- GOOGL: RSI 42.4 ✓ | RS vs SPY: -23.4% | MACD: bear
+- ADBE: RSI 41.5 ✓ | RS vs SPY: -48.4% | MACD: bear
+- IBM: RSI 57.4 ✓ | RS vs SPY: -55.4% | MACD: bear
+- AMZN: RSI 46.7 ✓ | RS vs SPY: -70.5% | MACD: bear
+
+SUMMARY:
+───────────────────────────────────────────────────────────────
+Stocks Scanned: 30
+Full Qualifiers: 0
+MACD Bull Cross Only: INTC, TSLA, JPM
+Avg Volume Ratio: 0.77x (well below 1.2x threshold)
+Market Mode: DEFENSIVE
+───────────────────────────────────────────────────────────────

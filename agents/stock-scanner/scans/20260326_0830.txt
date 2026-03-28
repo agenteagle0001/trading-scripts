@@ -1,0 +1,11 @@
+BULLISH STOCK SCAN
+Scan Time: 2026-03-26 08:30 UTC
+Criteria: MACD bull cross (daily), RSI 40-70, Vol >1.2x avg, RS vs SPY
+
+TOP 5 RESULTS:
+--------------------------------------------------
+1. AMAT | $356.5 | RSI:65.8 | RS vs SPY: 20.45% | Vol: 1.09x
+2. MU | $372.95 | RSI:50.6 | RS vs SPY: 15.17% | Vol: 1.11x
+3. INTC | $46.22 | RSI:57.7 | RS vs SPY: 11.84% | Vol: 1.01x
+4. TXN | $195.28 | RSI:52.8 | RS vs SPY: -4.72% | Vol: 1.08x
+5. NVDA | $175.9 | RSI:47.4 | RS vs SPY: -23.51% | Vol: 0.84x

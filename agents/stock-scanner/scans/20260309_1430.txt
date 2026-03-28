@@ -1,0 +1,23 @@
+BULLISH STOCK SCAN - March 09, 2026
+Criteria: MACD bull cross, RSI 40-70, Vol >1.2x, RS vs SPY
+
+TOP 5 RESULTS
+==============
+
+1. AMD  | $201.62 | RSI: 49.1 | RS vs SPY: -4.1%
+   ✓ MACD bull cross, ✓ RSI sweet spot
+
+2. MSFT | $407.20 | RSI: 58.7 | RS vs SPY: +1.2%
+   ✓ RSI sweet spot, ✓ RS vs SPY
+
+3. AMZN | $212.59 | RSI: 63.5 | RS vs SPY: +4.4%
+   ✓ RSI sweet spot, ✓ RS vs SPY
+
+4. AVGO | $346.08 | RSI: 59.4 | RS vs SPY: +3.1%
+   ✓ RSI sweet spot, ✓ RS vs SPY
+
+5. COST | $1003.51 | RSI: 46.8 | RS vs SPY: +3.1%
+   ✓ RSI sweet spot, ✓ RS vs SPY
+
+---
+Scanned: 30 stocks | With bullish signals: 24

@@ -1,0 +1,14 @@
+BULLISH STOCK SCAN - 2026-03-23 12:30 UTC
+Criteria: MACD Bull Cross + RSI 40-70 + Vol >1.2x avg
+SPY 3-month return: -4.2%
+
+NO STOCKS met all 3 criteria.
+
+TOP 5 by RS vs SPY (closest candidates):
+  MU    | $404.00  | RSI: 47.9 | RS vs SPY: +50.5% | MACD: ✗ | Vol: 1.02x
+  AMAT  | $365.52  | RSI: 58.1 | RS vs SPY: +44.8% | MACD: ✗ | Vol: 0.47x
+  INTC  | $ 44.18  | RSI: 46.3 | RS vs SPY: +25.7% | MACD: ✗ | Vol: 0.64x
+  COST  | $968.57  | RSI: 43.2 | RS vs SPY: +17.6% | MACD: ✗ | Vol: 0.38x
+  KO    | $ 75.35  | RSI: 41.2 | RS vs SPY: +12.7% | MACD: ✗ | Vol: 0.41x
+
+Note: Market pulling back (SPY -4.2% over 3 months). No MACD bull crosses detected in last 5 days across the 30-stock universe. Low volume across the board.

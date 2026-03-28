@@ -1,0 +1,16 @@
+BULLISH STOCK SCAN - 2026-03-27 13:33 CT
+=========================================
+
+TOP 5 (RSI 40-70, MACD bullish, sorted by RS vs SPY):
+
+Symbol        Price      RSI    RS vs SPY %
+   AMD      $201.13     48.9        +4.72
+   WFC       $77.42     44.9        +3.03
+   BAC       $47.12     44.4        +2.52
+   JPM      $283.12     40.2        +2.10
+   GS       $802.66     40.5        +1.93
+
+Criteria: RSI 40-70, MACD above signal, RS vs SPY positive
+Note: Volume below 1.2x avg today - no stocks hit that threshold
+
+Flags: All showing positive relative strength vs SPY on 20-day basis

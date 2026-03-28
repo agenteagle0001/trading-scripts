@@ -1,0 +1,14 @@
+BULLISH STOCK SCAN - 2026-03-25 08:30 CST
+30 Stocks: AAPL, MSFT, GOOGL, AMZN, NVDA, META, TSLA, AMD, NFLX, AVGO, COST, ORCL, CRM, ADBE, PYPL, INTC, QCOM, TXN, AMAT, MU, IBM, GS, JPM, BAC, WFC, V, MA, DIS, KO, PEP
+
+Criteria: MACD bull cross (daily), RSI 40-70, Volume >1.2x avg, RS vs SPY
+
+TOP 5 BULLISH SIGNALS
+=======================================================
+Symbol       Price     RSI   RS vs SPY
+-------------------------------------------------------
+AMD     $   215.99    63.4      +6.97%
+ORCL    $   149.23    44.8      +5.44%
+AMZN    $   212.27    42.4      +5.31%
+MA      $   503.81    36.4      +3.44%
+COST    $   979.67    48.7      +3.02%

@@ -1,0 +1,22 @@
+BULLISH STOCK SCAN - March 6, 2026 | 2:30 PM CST
+==================================================
+
+SCAN PARAMETERS:
+- MACD bullish (above signal line) on daily
+- RSI in range 40-70
+- Volume > 1.2x 20-day average
+- Relative Strength vs SPY
+
+TOP 5 RESULTS:
+==================================================
+1. ORCL  | $152.72 | RSI: 42.6 | RS vs SPY: +9.6%
+2. TSLA  | $405.55 | RSI: 42.7 | RS vs SPY: +4.8%
+3. QCOM  | $135.19 | RSI: 41.3 | RS vs SPY: +1.8%
+4. AVGO  | $329.33 | RSI: 53.2 | RS vs SPY: +1.6%
+5. META  | $642.41 | RSI: 51.2 | RS vs SPY: -0.2%
+
+NOTES:
+- 12 stocks met relaxed criteria (score >= 2)
+- ORCL leading with strongest RS vs SPY
+- TSLA showing bullish momentum from oversold levels
+- Most tech names in healthy consolidation range

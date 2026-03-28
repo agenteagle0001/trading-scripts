@@ -1,0 +1,10 @@
+BULLISH STOCK SCAN - 2026-03-13 10:33
+Criteria: RSI 40-70, MACD Bullish, Vol>1.0x
+
+TOP 5 RESULTS:
+--------------------------------------------------
+INTC: $46.03 | RSI: 55.8 | RS vs SPY: 29.4%
+GOOGL: $304.05 | RSI: 41.4 | RS vs SPY: 1.2%
+AMD: $194.83 | RSI: 48.9 | RS vs SPY: 0.3%
+ADBE: $251.55 | RSI: 53.4 | RS vs SPY: -30.4%
+MU: $421.90 | RSI: 50.2 | RS vs SPY: 66.7%

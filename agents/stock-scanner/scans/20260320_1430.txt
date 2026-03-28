@@ -1,0 +1,19 @@
+BULLISH STOCK SCAN - March 20, 2026 09:30 CST
+Criteria: MACD bull cross, RSI 40-70, Vol >1.2x avg, RS vs SPY
+
+TOP 5 RESULTS (by score + RS vs SPY):
+Rank | Symbol | Price  | RSI  | RS vs SPY | MACD | Vol Ratio | Score
+-----|--------|--------|------|-----------|------|-----------|------
+1    | MU     | $432.40| 54.3 | +6.3%     | ✓    | 1.30      | 3/3
+2    | PYPL   | $44.21 | 43.7 | +11.8%    | ✗    | 0.66      | 2/3
+3    | CRM    | $195.21| 52.5 | +10.7%    | ✗    | 0.69      | 2/3
+4    | INTC   | $45.29 | 49.5 | +8.0%     | ✗    | 0.99      | 2/3
+5    | ORCL   | $150.60| 51.5 | +7.0%     | ✗    | 0.63      | 2/3
+
+Notes:
+- MU is the only stock meeting ALL 3 criteria (MACD bull cross + RSI in range + volume >1.2x avg)
+- PYPL & CRM lead on RS vs SPY but volume light
+- Vol ratios low across the board (Friday mid-morning)
+- Scan covers 30 tickers via yfinance 3mo daily data
+
+Saved: /home/colton/.openclaw/workspace/agents/stock-scanner/scans/20260320_1430.txt

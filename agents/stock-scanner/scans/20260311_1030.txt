@@ -1,0 +1,18 @@
+BULLISH STOCK SCAN - March 11, 2026 10:30 AM
+Criteria: MACD bull cross, RSI 40-70, Vol >1.2x avg, RS vs SPY
+============================================================
+
+TOP 5 BULLISH STOCKS:
+
+1. INTC - $48.24 | RSI: 59.8 | RS vs SPY: +2.4%
+2. ORCL - $164.56 | RSI: 56.7 | RS vs SPY: +7.3%
+3. MSFT - $402.60 | RSI: 53.1 | RS vs SPY: +2.4%
+4. GOOGL - $308.87 | RSI: 56.0 | RS vs SPY: +2.0%
+5. AMZN - $211.99 | RSI: 58.6 | RS vs SPY: +6.4%
+
+Notes:
+- INTC: Only stock with MACD bull cross today, strong momentum
+- ORCL: Best RS vs SPY among tech, volume 1.78x avg
+- AMZN: Strong RS at +6.4%, RSI in sweet spot
+
+Scan: 30 stocks | 22 with bullish signals

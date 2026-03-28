@@ -1,0 +1,28 @@
+BULLISH STOCK SCAN - March 9, 2026
+30 Stocks: AAPL, MSFT, GOOGL, AMZN, NVDA, META, TSLA, AMD, NFLX, AVGO, COST, ORCL, CRM, ADBE, PYPL, INTC, QCOM, TXN, AMAT, MU, IBM, GS, JPM, BAC, WFC, V, MA, DIS, KO, PEP
+
+Criteria: MACD bull cross (daily) | RSI 40-70 | Volume >1.2x avg | RS vs SPY
+
+================================================================================
+TOP 5 BY RS vs SPY %
+================================================================================
+
+1. MU     $378.22   RSI: 43.5   RS vs SPY: +52.3%   (RSI✓, Vol✗, MACD✗)
+2. AMAT   $328.07   RSI: 37.9   RS vs SPY: +24.9%   (RSI✗, Vol✗, MACD✗)
+3. COST   $1000.28  RSI: 45.5   RS vs SPY: +14.4%   (RSI✓, Vol✗, MACD✗)
+4. PEP    $160.65   RSI: 50.4   RS vs SPY: +13.8%   (RSI✓, Vol✗, MACD✗)
+5. KO     $77.39    RSI: 37.5   RS vs SPY: +12.2%   (RSI✗, Vol✗, MACD✗)
+
+================================================================================
+SUMMARY
+================================================================================
+
+⚠️ 0/30 stocks match ALL bullish criteria (market in bearish phase)
+
+- MACD: All 30 stocks showing bearish MACD (below signal line)
+- Volume: All stocks trading below 1.2x average volume
+- RSI: Only 7 stocks in 40-70 range (MU, COST, PEP, and others)
+
+Best relative strength: MU (+52.3% vs SPY), strong momentum but lacking volume and MACD confirmation.
+
+Scan completed: March 9, 2026 1:30 PM CST

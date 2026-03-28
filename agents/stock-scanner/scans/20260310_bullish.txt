@@ -1,0 +1,18 @@
+# Bullish Stock Scan - March 10, 2026
+
+## Criteria: RSI 40-70, MACD bullish (above signal line)
+
+## Top 5 Results
+
+| Symbol | Price  | RSI | RS vs SPY % |
+|--------|--------|-----|-------------|
+| PYPL   | $45.06 | 63.6| +11.7%      |
+| AMZN   | $214.38| 62.2| +4.6%       |
+| ADBE   | $273.81| 58.0| +4.5%       |
+| AVGO   | $347.01| 59.4| +2.8%       |
+| CRM    | $194.47| 55.6| +2.1%       |
+
+## Notes
+- Volume filter relaxed (all stocks showed below-average volume)
+- MACD bull cross not required (just MACD above signal)
+- RS vs SPY = relative strength vs S&P 500 over last 20 days

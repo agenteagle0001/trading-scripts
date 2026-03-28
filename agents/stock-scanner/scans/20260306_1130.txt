@@ -1,0 +1,20 @@
+BULLISH STOCK SCAN - 2026-03-06
+================================
+Scan Time: Friday March 6, 2026 11:30 AM CST
+Criteria: MACD bull cross (daily), RSI 40-70, Volume >1.2x avg, RS vs SPY
+
+TOP 5 BULLISH STOCKS
+------------------------------------------------------------
+1. AVGO  | $337.14 | RSI: 59.1 | RS vs SPY: +4.1% [MACD BULL]
+2. ADBE  | $279.00 | RSI: 61.8 | RS vs SPY: +7.8%
+3. CRM   | $200.57 | RSI: 58.8 | RS vs SPY: +7.1%
+4. ORCL  | $157.10 | RSI: 47.0 | RS vs SPY: +5.2%
+5. MSFT  | $409.72 | RSI: 57.0 | RS vs SPY: +4.1%
+
+NOTES:
+- Only AVGO has true MACD bull cross today
+- Today's volume is below average (Friday, pre-weekend)
+- Market in consolidation phase - SPY down ~1.9% vs 20d MA
+- ADBE, CRM, ORCL showing strong relative strength
+
+Scan completed: 2026-03-06 11:30:00
