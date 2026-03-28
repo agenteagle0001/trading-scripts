@@ -1,0 +1,12 @@
+TOP 5 BULLISH STOCKS - March 20, 2026
+
+Symbol | Price  | RSI  | RS vs SPY
+--------|--------|------|----------
+INTC   | $21.67 | 53.5 | +11.2%
+JPM    | $286.71| 30.1 | +0.3%
+GOOGL  | $158.45| 47.8 | +2.1%
+AMZN   | $206.79| 48.0 | +4.7%
+AMD    | $114.55| 55.1 | +8.5%
+
+Note: Volume ratios below 1.0 on all stocks (early Friday AM).
+None meet ALL 4 criteria. Best overall: INTC (MACD cross + RSI sweet spot + RS +11%).

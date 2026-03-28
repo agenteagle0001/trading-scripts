@@ -1,0 +1,112 @@
+================================================================================
+BULLISH STOCK SCAN REPORT
+Date: Fri Mar 27, 2026
+Scan: 30 stocks | Criteria: MACD Bull Cross + RSI 40-70 + Vol >1.2x + RS vs SPY
+Data Source: yfinance (5m intraday + 3mo daily)
+================================================================================
+
+BENCHMARK: SPY @ $641.69 | 20d Return: -6.3% | RSI: 26.1 (oversold broad market)
+NOTE: Market is in a broad pullback. Stocks outperforming SPY show real strength.
+
+================================================================================
+TOP 5 BULLISH SIGNALS
+================================================================================
+
+#1  PYPL  |  Price: $44.13
+    RSI: 41.3    |    RS vs SPY: +3.3%
+    Volume: 3.61x 20-day avg    |    MACD Histogram: Positive
+    20d Stock Return: -3.0% (vs SPY -6.3% → outperforming)
+    Signal: Strongest RS in the group + fresh MACD bull cross + RSI in sweet spot
+
+#2  BAC   |  Price: $47.80
+    RSI: 49.2    |    RS vs SPY: +2.8%
+    Volume: 2.94x 20-day avg    |    MACD Histogram: Positive
+    20d Stock Return: -3.5% (vs SPY -6.3% → outperforming)
+    Signal: Best RSI in group + positive MACD momentum + solid RS
+
+#3  INTC  |  Price: $43.76
+    RSI: 45.1    |    RS vs SPY: +2.4%
+    Volume: 3.83x 20-day avg    |    MACD Histogram: Negative (weakening)
+    20d Stock Return: -3.8% (vs SPY -6.3% → outperforming)
+    Signal: Strong volume surge + MACD bull cross just triggered. Note: histogram
+            still negative, suggesting momentum not yet confirmed.
+
+#4  GS    |  Price: $815.68
+    RSI: 44.3    |    RS vs SPY: +0.9%
+    Volume: 2.64x 20-day avg    |    MACD Histogram: Positive
+    20d Stock Return: -5.3% (vs SPY -6.3% → slightly outperforming)
+    Signal: MACD bull cross + positive histogram + defensive outperformer
+
+#5  WFC   |  Price: $77.87
+    RSI: 46.4    |    RS vs SPY: +0.6%
+    Volume: 3.00x 20-day avg    |    MACD Histogram: Positive
+    20d Stock Return: -5.7% (vs SPY -6.3% → slightly outperforming)
+    Signal: Banks leading bounce. MACD bull cross + positive histogram
+
+================================================================================
+RUNNER-UP CANDIDATES (meets all criteria, negative RS vs SPY)
+================================================================================
+
+  AMAT: $343.47 | RSI: 52.1 | Vol: 3.33x | MACD Cross ✓ | RS: -1.5%
+  TXN:  $192.07 | RSI: 44.4 | Vol: 2.89x | MACD Cross ✓ | RS: -2.2%
+
+================================================================================
+NOTABLE MENTION (no MACD cross, but strong RS)
+================================================================================
+
+  AMD: $201.39 | RSI: 49.0 | Vol: 4.72x | MACD Histogram: + | RS: +7.6%
+  → No fresh MACD bull cross but HIGHEST RS vs SPY. MACD histogram positive.
+    Watch for a pullback entry.
+
+================================================================================
+FULL SCAN (all 30 stocks)
+================================================================================
+
+Ticker  Price       RSI    VolRatio  MACD_X  Hist  RS vs SPY  20d Return
+---------------------------------------------------------------------------
+AAPL    $252.97     37.2   3.09x      ✓        +      +1.8%      N/A
+MSFT    $360.54      9.2   4.07x      ✗        -      -3.3%      N/A
+GOOGL   $278.32     23.6   4.49x      ✗        -      -2.9%      N/A
+AMZN    $201.40     37.2   3.59x      ✗        -      +2.9%      N/A
+NVDA    $169.75     33.2   3.85x      ✗        -      -0.7%      N/A
+META    $530.03     18.4   5.34x      ✗        -     -12.6%      N/A
+TSLA    $367.89     34.8   4.31x      ✗        -      -2.5%      N/A
+AMD     $201.39     49.0   4.72x      ✗        +      +7.6%      N/A
+NFLX    $ 93.90     36.5   3.54x      ✗        -      +3.0%      N/A
+AVGO    $305.04     24.3   2.58x      ✗        -      +1.9%      N/A
+COST    $984.79     38.7   2.39x      ✗        -      +4.5%      N/A
+ORCL    $141.10     40.3   2.79x      ✗        -      +0.8%      N/A
+CRM     $180.92     31.6   3.60x      ✗        -      +0.0%      N/A
+ADBE    $235.38     15.6   2.94x      ✗        -      -3.5%      N/A
+PYPL    $ 44.13     41.3   3.61x      ✓        +      +3.3%      N/A
+INTC    $ 43.76     45.1   3.83x      ✓        -      +2.4%      N/A
+QCOM    $128.81     26.4   2.48x      ✓        +      -1.8%      N/A
+TXN     $192.07     44.4   2.89x      ✓        +      -2.2%      N/A
+AMAT    $343.47     52.1   3.33x      ✓        -      -1.5%      N/A
+MU      $367.86     45.1   5.09x      ✗        -      -4.6%      N/A
+IBM     $238.06     34.9   2.43x      ✗        +      +5.7%      N/A
+GS      $815.68     44.3   2.64x      ✓        +      +0.9%      N/A
+JPM     $286.45     44.5   2.73x      ✗        +      +2.5%      N/A
+BAC     $ 47.80     49.2   2.94x      ✓        +      +2.8%      N/A
+WFC     $ 77.87     46.4   3.00x      ✓        +      +0.6%      N/A
+V       $296.45     26.3   3.39x      ✓        -      -1.2%      N/A
+MA      $485.86     31.4   2.98x      ✓        -      -0.5%      N/A
+DIS     $ 93.44     16.1   3.00x      ✗        -      -4.2%      N/A
+KO      $ 75.57     37.8   2.71x      ✗        -      +1.1%      N/A
+PEP     $152.43     25.1   2.78x      ✗        -      -1.8%      N/A
+
+================================================================================
+METHODOLOGY NOTES
+================================================================================
+- MACD Bull Cross: MACD line (12/26 EMA) crossed above signal line (9-period EMA)
+  within the last 5 trading days
+- RSI: 14-period Relative Strength Index
+- Volume: Today's total volume (5m data) vs 20-day average daily volume
+- RS vs SPY: Stock's 20-day return minus SPY's 20-day return (outperformance score)
+- MACD Histogram: MACD line minus signal line (>0 = bullish momentum)
+- Note: Broad market (SPY RSI=26.1) is deeply oversold — look for relative
+  strength leaders for the next bounce
+
+================================================================================
+Generated: 2026-03-27 by agentEagle stock scanner
+================================================================================

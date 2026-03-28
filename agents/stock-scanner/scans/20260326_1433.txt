@@ -1,0 +1,23 @@
+BULLISH STOCK SCAN REPORT
+=========================
+Date: 2026-03-26 09:33 CST
+SPY: $654.22 | 50d Return: -5.0%
+
+SCAN CRITERIA: MACD Bull Cross (daily), RSI 40-70, Volume >1.2x 20-day avg, RS vs SPY positive
+
+--- TOP 5 BY RELATIVE STRENGTH vs SPY ---
+
+1. AMAT  | $349.43 | RSI: 61.5 | RS vs SPY: +20.9%
+2. MU    | $365.67 | RSI: 48.9 | RS vs SPY: +14.7%
+3. KO    |  $75.58 | RSI: 43.0 | RS vs SPY: +11.5%
+4. PEP   | $152.68 | RSI: 32.1 | RS vs SPY: +10.5%
+5. NFLX  |  $93.10 | RSI: 31.8 | RS vs SPY: +10.1%
+
+--- CLOSEST TO FULL CRITERIA (3/4 met) ---
+
+AMAT: MACD ✓ | RSI ✓ (61.5) | Vol ✗ (0.21x) | RS ✓ (+20.9%)
+TXN:  MACD ✓ | RSI ✓ (54.4) | Vol ✗ (0.09x) | RS ✓ (+7.2%)
+AAPL: MACD ✓ | RSI ✓ (47.9) | Vol ✗ (0.19x) | RS ✓ (+3.6%)
+JPM:  MACD ✓ | RSI ✓ (59.4) | Vol ✗ (0.10x) | RS ✓ (+0.5%)
+
+NOTE: Volume extremely low across market today. No stock met volume >1.2x criteria.

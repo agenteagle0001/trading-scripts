@@ -1,0 +1,16 @@
+BULLISH STOCK SCAN — 2026-03-27 12:32 CST
+
+Criteria: MACD bull cross on daily, RSI 40-70, Volume >1.2x 20-day avg, RS vs SPY
+
+TOP 5 RESULTS:
+-------------------------------------------------------
+1. AMAT  | $  337.85 | RSI: 49.5 | RS vs SPY:+40.37% | Vol:0.35x [✗] | MACD:YES
+2. TXN   | $  191.40 | RSI: 43.6 | RS vs SPY:+20.76% | Vol:0.28x [✗] | MACD:YES
+3. INTC  | $   43.11 | RSI: 43.6 | RS vs SPY:+12.56% | Vol:0.51x [✗] | MACD:YES
+4. GS    | $  802.87 | RSI: 40.6 | RS vs SPY:+4.46% | Vol:0.47x [✗] | MACD:YES
+5. JPM   | $  283.92 | RSI: 41.1 | RS vs SPY:-2.64% | Vol:0.35x [✗] | MACD:YES
+
+-------------------------------------------------------
+Matched all 3 criteria: 0/30
+Volume filter (>1.2x) is restrictive — most stocks show avg or below-avg volume on scan date.
+Scan date is mid-session (12:30 PM) — volume data incomplete for today.

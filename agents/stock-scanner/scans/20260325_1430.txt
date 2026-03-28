@@ -1,0 +1,80 @@
+BULLISH STOCK SCAN REPORT
+============================
+Date: 2026-03-25
+Time: 09:30 AM CT / 14:30 UTC
+Scanner: agentEagle 🦅
+
+UNIVERSE: AAPL, MSFT, GOOGL, AMZN, NVDA, META, TSLA, AMD, NFLX, AVGO, COST, ORCL, CRM, ADBE, PYPL, INTC, QCOM, TXN, AMAT, MU, IBM, GS, JPM, BAC, WFC, V, MA, DIS, KO, PEP (30 stocks)
+
+FILTERS APPLIED:
+- RSI: 40-70 (neutral momentum zone)
+- Volume: >1.2x average (relative volume)
+- RS vs SPY: Positive (outperforming S&P 500)
+- MACD: Bull cross on daily (not directly scannable; flagged where SMA20 > SMA50)
+
+BENCHMARK: SPY (S&P 500 ETF)
+- SPY YTD: -3.51%
+- SPY RSI(14): 39.70
+
+============================
+TOP 5 BULLISH CANDIDATES
+============================
+
+#1 | MU (Micron Technology)
+   Price: $383.29
+   RSI: 42.75
+   RS vs SPY: +37.80%
+   Rel Volume: 3.25x avg ⚡ HIGH VOLUME
+   Note: Strong volume surge, semiconductor momentum, testing 200-day SMA resistance
+
+#2 | INTC (Intel Corp)
+   Price: $46.72
+   RSI: 53.81
+   RS vs SPY: +30.14%
+   Rel Volume: 1.56x avg
+   Note: Momentum building, above key moving averages
+
+#3 | AMD (Advanced Micro Devices)
+   Price: $218.37
+   RSI: 59.89
+   RS vs SPY: +5.47%
+   Rel Volume: 2.41x avg ⚡ HIGH VOLUME
+   Note: RSI in optimal zone, significant volume inflow
+
+#4 | NVDA (NVIDIA) ⭐ Just Missed Volume
+   Price: $179.56
+   RSI: 47.49
+   RS vs SPY: -0.21% (near neutral)
+   Rel Volume: 1.36x avg
+   Note: Volume acceptable but RS slightly negative vs SPY
+
+#5 | TSLA (Tesla) ⭐ Near Miss
+   Price: $392.99
+   RSI: 47.16
+   RS vs SPY: -9.10%
+   Rel Volume: 1.44x avg
+   Note: Volume confirms but underperforming SPY significantly
+
+============================
+HONORABLE MENTION
+============================
+
+AMAT (Applied Materials)
+- Price: $370.15 | RSI: 59.08 | RS vs SPY: +47.54% ⬆️ BEST RS
+- Note: Exceptional relative strength but Rel Vol 1.01x (just under 1.2x threshold)
+
+============================
+SUMMARY
+============================
+
+Confirmed bullish setups (RSI 40-70 + Vol >1.2x + RS positive):
+• MU (+37.80% RS, 3.25x vol)
+• INTC (+30.14% RS, 1.56x vol)
+• AMD (+5.47% RS, 2.41x vol)
+
+Note: MACD bull cross cannot be verified via screener data. These picks show strongest alignment with your criteria based on available data. AMAT shows best overall RS but volume just misses your 1.2x threshold.
+
+============================
+DISCLAIMER
+============================
+Data from finviz.com (delayed/incomplete). Not financial advice. Verify before trading.

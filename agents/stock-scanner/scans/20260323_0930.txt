@@ -1,0 +1,16 @@
+BULLISH SCAN - 2026-03-23 09:31 UTC
+Criteria: MACD Bull Cross (daily), RSI 40-70, Vol >1.2x avg, RS vs SPY
+
+Scanned: 30/30 stocks
+
+TOP 5 BY RELATIVE STRENGTH (no MACD cross today):
+Symbol        Price    RSI  RS vs SPY %  Vol Ratio
+--------------------------------------------------
+CRM      $   195.59   47.6      +671.5%      0.18x
+PYPL     $    45.17   48.3      +551.3%      0.26x
+TSLA     $   382.91   41.0      +518.3%      0.42x
+ORCL     $   154.34   49.1      +461.2%      0.21x
+IBM      $   249.83   46.1      +353.0%      0.14x
+
+Note: 0 stocks met ALL criteria. Volume light at market open.
+No MACD bull crosses detected in past 5 days for any of the 30 stocks.

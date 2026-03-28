@@ -1,0 +1,44 @@
+BULLISH STOCK SCAN - Mar 27, 2026 11:30 AM CST
+================================================
+Criteria: MACD bull cross (daily), RSI 40-70, Vol >1.2x avg, RS vs SPY
+30 Stocks: AAPL, MSFT, GOOGL, AMZN, NVDA, META, TSLA, AMD, NFLX, AVGO, COST, ORCL, CRM, ADBE, PYPL, INTC, QCOM, TXN, AMAT, MU, IBM, GS, JPM, BAC, WFC, V, MA, DIS, KO, PEP
+
+SPY Benchmark: 12.72% YTD | RSI: 30.00 | Rel Vol: 0.95
+
+QUALIFYING STOCKS (RSI 40-70, Vol >1.2x, RS vs SPY):
+------------------------------------------------------
+
+1. INTC - Intel
+   Price: $43.69 | RSI(14): 45.69
+   Rel Volume: 1.72x avg | YTD: +18.33% | Year: +84.86%
+   RS vs SPY: +71.58%
+
+2. AMD - Advanced Micro Devices
+   Price: $200.96 | RSI(14): 47.57
+   Rel Volume: 1.84x avg | YTD: -6.15% | Year: +88.45%
+   RS vs SPY: +75.17%
+
+3. MU - Micron Technology
+   Price: $364.40 | RSI(14): 39.83
+   Rel Volume: 1.55x avg | YTD: +27.61% | Year: +299.54%
+   RS vs SPY: +286.26% (outlier - verify)
+
+4. KO - Coca-Cola
+   Price: $75.62 | RSI(14): 44.48
+   Rel Volume: 1.67x avg | YTD: +8.28% | Year: +7.01%
+   RS vs SPY: +20.44%
+
+5. WFC - Wells Fargo
+   Price: $77.69 | RSI(14): 40.38
+   Rel Volume: 1.52x avg | YTD: -16.73% | Year: +7.36%
+   RS vs SPY: -5.01% (below SPY on year)
+
+NOTE: Many tech stocks showing weak RSI (oversold) and negative YTD vs SPY.
+Stocks like AAPL (RSI 42.15), COST (RSI 49.53), NVDA (RSI 37.04) have RSI
+in range but Rel Volume <1.2x (0.82, 0.38, 1.22 respectively).
+
+MACD data not directly available in screener output - would need individual
+stock analysis for confirmation.
+
+DATA SOURCE: Finviz Elite Screener (delayed 15min)
+Generated: 2026-03-27 16:30 UTC

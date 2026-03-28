@@ -1,0 +1,31 @@
+BULLISH STOCK SCAN - March 9, 2026
+===================================
+Criteria: RSI 40-70, Volume >1.2x avg, RS vs SPY
+
+TOP 5 BULLISH STOCKS
+--------------------
+
+1. AVGO | $342.97 | RSI: 58 | RS vs SPY: +5.3%
+   - Volume: 16.8M (1.49x avg) ✓
+   - SMA50: +2.63% (vs SPY -2.63%)
+
+2. MU | $378.61 | RSI: 45 | RS vs SPY: +2.9%
+   - Volume: 19.5M (5.1x avg) ✓
+   - SMA50: +0.22%
+
+3. INTC | $44.12 | RSI: 46 | RS vs SPY: +0.3%
+   - Volume: 36.7M (1.5x avg) ✓
+   - SMA50: -2.35%
+
+4. NVDA | $179.83 | RSI: 45 | RS vs SPY: -0.6%
+   - Volume: 76.3M (1.08x avg) - just under threshold
+   - SMA50: -3.22%
+
+5. AMD | $196.34 | RSI: 43 | RS vs SPY: -7.0%
+   - Volume: 17M (1.13x avg)
+   - SMA50: -9.62%
+
+NOTE: MACD data unavailable (not in finviz free screener)
+SPY Reference: $669.60, RSI 37, SMA50 -2.63%
+
+Scan Time: 11:30 AM CST

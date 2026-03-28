@@ -21,27 +21,32 @@ def save_quotes(db):
     with open(QUOTE_DB, "w") as f:
         json.dump(db, f, indent=2)
 
+def _norm(q):
+    """Normalize quote text for comparison - strips punctuation, whitespace, lowercases"""
+    return q.rstrip('.').strip().lower()
+
 def get_quote():
-    # Use file lock to prevent race conditions
-    with open(LOCK_FILE, 'w') as lock:
-        fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
-        try:
-            db = load_quotes()
-            # Normalize used quotes for comparison
-            used_normalized = set(u.rstrip('.').strip().lower() for u in db.get("used", []))
-            available = [q for q in db["quotes"] 
-                        if q["quote"].rstrip('.').strip().lower() not in used_normalized]
-            if not available:
-                print("All quotes used! Resetting...")
-                db["used"] = []
-                available = db["quotes"]
-            q = random.choice(available)
-            # Normalize before adding to used
-            db["used"].append(q["quote"].rstrip('.'))
-            save_quotes(db)
-        finally:
-            fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
-    return q
+    """Get a random unused quote with race-condition protection"""
+    for attempt in range(10):  # retry up to 10 times
+        with open(LOCK_FILE, 'w') as lock:
+            fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
+            try:
+                db = load_quotes()
+                used_normalized = set(_norm(u) for u in db.get("used", []))
+                available = [q for q in db["quotes"] 
+                            if _norm(q["quote"]) not in used_normalized]
+                if not available:
+                    print("All quotes used! Resetting...")
+                    db["used"] = []
+                    available = db["quotes"]
+                q = random.choice(available)
+                db["used"].append(q["quote"].rstrip('.'))
+                save_quotes(db)
+                return q
+            finally:
+                fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
+        # If we get here, something went wrong - retry
+    raise RuntimeError("Failed to get quote after 10 attempts")
 
 def load_used_images():
     try:
@@ -55,25 +60,31 @@ def save_used_images(images):
         json.dump(list(images), f)
 
 def pick_unused_bokeh_image():
-    """Pick a bokeh image that hasn't been used yet"""
-    used = load_used_images()
-    available = [f for f in os.listdir(RAW_DIR) if f.startswith('bokeh_') and f not in used]
-    if not available:
-        print("All bokeh images used! Resetting...")
-        used = set()
-        available = [f for f in os.listdir(RAW_DIR) if f.startswith('bokeh_')]
-    chosen = random.choice(available)
-    used.add(chosen)
-    save_used_images(used)
-    return chosen
+    """Pick a bokeh image that hasn't been used yet - race-condition safe"""
+    lock_path = USED_IMAGES_FILE + '.lock'
+    for attempt in range(10):
+        with open(lock_path, 'w') as lock:
+            fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
+            try:
+                used = load_used_images()
+                available = [f for f in os.listdir(RAW_DIR) if f.startswith('bokeh_') and f not in used]
+                if not available:
+                    print("All bokeh images used! Resetting...")
+                    used = set()
+                    available = [f for f in os.listdir(RAW_DIR) if f.startswith('bokeh_')]
+                    if not available:
+                        raise RuntimeError("No bokeh images found!")
+                chosen = random.choice(available)
+                used.add(chosen)
+                save_used_images(used)
+                return chosen
+            finally:
+                fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
+    raise RuntimeError("Failed to pick bokeh image after 10 attempts")
 
 def create_post(output_name=None):
     # Pick unused bokeh background
-    bg_image = pick_unused_bokeh_image()
-        print("No bokeh images found!")
-        print("No images found!")
-        return
-    img_file = random.choice(images)
+    img_file = pick_unused_bokeh_image()
     img_path = f"{RAW_DIR}/{img_file}"
     
     # Get quote
@@ -121,7 +132,16 @@ def create_post(output_name=None):
     
     # Save
     if not output_name:
-        output_name = f"{FINISHED_DIR}/post_{len(os.listdir(FINISHED_DIR))+1}.jpg"
+        # Find the highest post number to avoid collisions
+        existing = glob.glob(f"{FINISHED_DIR}/post_*.jpg")
+        max_num = 0
+        for f in existing:
+            try:
+                num = int(os.path.basename(f).split('_')[1].split('.')[0])
+                max_num = max(max_num, num)
+            except:
+                pass
+        output_name = f"{FINISHED_DIR}/post_{max_num + 1}.jpg"
     img.save(output_name, quality=95)
     print(f"Saved: {output_name}")
     return output_name

@@ -1,0 +1,107 @@
+BULLISH STOCK SCAN - 30 STOCKS
+Scan Date: 2026-03-25 11:30 CDT
+Criteria: MACD bull cross | RSI 40-70 | Volume >1.2x 20-day avg | RS vs SPY %
+SPY 30-Day Return: -4.00% (benchmark)
+
+================================================================================
+TOP 5 BULLISH STOCKS (Ranked by Overall Bullish Score)
+================================================================================
+
+#1  INTC (Intel)
+    Price:      $47.65
+    RSI(14):    54.1  ✓ (in sweet spot 40-70)
+    RS vs SPY:  +7.31%  ✓ (outperforming by 7.3%)
+    MACD:       BULL CROSS (confirmed - triggered yesterday)
+    Volume:     0.74x (below 1.2x threshold)
+    SCORE:      2.5/4 criteria met
+    NOTE: Only stock meeting 3 criteria including MACD bull cross. RS strong.
+
+#2  TXN (Texas Instruments)
+    Price:      $197.68
+    RSI(14):    49.6  ✓ (centered in 40-70 range)
+    RS vs SPY:  -3.35%  (underperforming SPY)
+    MACD:       BULL CROSS (confirmed - triggered yesterday)
+    Volume:     0.25x (below 1.2x threshold)
+    SCORE:      2/4 criteria met
+    NOTE: MACD bull cross + RSI in range, but lagging market RS.
+
+#3  AMZN (Amazon)
+    Price:      $212.19
+    RSI(14):    42.2  ✓ (lower end of 40-70)
+    RS vs SPY:  +5.74%  ✓
+    MACD:       Below signal (no cross)
+    Volume:     0.41x
+    SCORE:      1.5/4 criteria met
+    NOTE: No MACD bull cross, but strong RS vs SPY + healthy RSI.
+
+#4  AMD
+    Price:      $218.35
+    RSI(14):    64.7  ✓ (upper end of 40-70, not overbought yet)
+    RS vs SPY:  +6.11%  ✓
+    MACD:       Below signal (MACD recovering but not crossed yet)
+    Volume:     0.89x (below 1.2x)
+    SCORE:      1.5/4 criteria met
+    NOTE: Strong RS and solid RSI. MACD getting close to signal line.
+
+#5  JPM (JPMorgan)
+    Price:      $295.37
+    RSI(14):    53.4  ✓ (sweet spot)
+    RS vs SPY:  +3.35%  ✓
+    MACD:       Below signal
+    Volume:     0.34x
+    SCORE:      1.5/4 criteria met
+    NOTE: Healthy RSI, modest RS outperformance. No MACD cross yet.
+
+================================================================================
+NOTES / MARKET CONTEXT
+================================================================================
+- VOLUME NOTE: ALL 30 stocks showing volume < 1.2x their 20-day average.
+  Market-wide low volume day (SPY vol ratio = 0.50x). Volume criterion
+  cannot be satisfied for any stock in this environment.
+
+- MACD BULL CROSS TODAY: INTC, MA, TXN all triggered yesterday (Mar 24).
+  GS triggered Mar 21. AMAT triggered Mar 23.
+
+- DATA SOURCE: yfinance (3-month daily data). Prices are split-adjusted.
+  Data period end: ~Mar 24, 2026.
+
+- STOCKS WITH MACD BULL CROSS: INTC, MA, TXN, GS, AMAT
+  Only INTC and TXN also meet RSI 40-70 criterion.
+
+================================================================================
+ALL 30 STOCKS SUMMARY
+================================================================================
+Symbol  Price     RSI    MACD Cross  Vol Ratio  RS vs SPY   Score
+----------------------------------------------------------------------
+INTC    $47.65    54.1   YES         0.74x      +7.31%      2.5
+TXN     $197.68   49.6   YES         0.25x      -3.35%      2.0
+AMZN    $212.19   42.2   No         0.41x      +5.74%      1.5
+AMD     $218.35   64.7   No         0.89x      +6.11%      1.5
+AVGO    $319.70   42.2   No         0.29x      +2.22%      1.5
+COST    $977.57   47.7   No         0.22x      +1.91%      1.5
+ORCL    $146.44   42.0   No         0.33x      +4.20%      1.5
+AMAT    $369.54   60.5   Yes(Mar23) 0.34x      +1.78%      1.5
+JPM     $295.37   53.4   No         0.34x      +3.35%      1.5
+BAC     $48.69    44.0   No         0.32x      +1.14%      1.5
+GS      $842.24   52.4   Yes(Mar21) 0.24x      -2.15%      1.0
+MA      $502.36   35.2   YES        0.25x      +4.89%      1.0 (RSI<40)
+MU      $380.00   46.2   No         0.91x      -5.08%      1.0
+IBM     $241.83   36.6   No         0.25x      +9.47%      0.5 (RSI<40)
+KO      $75.33    40.8   No         0.36x      -2.01%      0.5
+V       $305.36   29.8   No         0.32x      +3.41%      0.5 (RSI<40)
+AAPL    $254.53   41.5   No         0.27x      -2.46%      0.5 (RSI near 40)
+WFC     $79.91    42.1   No         0.22x      -1.50%      0.5
+GOOGL   $291.76   41.4   No         0.56x      -2.08%      0.5
+NVDA    $179.19   44.9   No         0.51x      -3.06%      0.5
+PYPL    $44.80    37.8   No         0.39x      -0.42%      0.5 (RSI<40)
+QCOM    $131.27   37.2   No         0.23x      -4.73%      0.5 (RSI<40)
+ORCL    $146.43   42.0   No         0.33x      +4.21%      0.5
+META    $598.97   28.6   No         0.48x      -2.21%      0.0
+NFLX    $92.25    27.7   No         0.22x      +22.22%     0.0 (RSI<40)
+ADBE    $238.75   14.7   No         0.41x      -2.42%      0.0
+MSFT    $371.02   11.6   No         0.48x      -0.61%      0.0
+TSLA    $389.77   41.9   No         0.55x      -0.78%      0.5
+PEP     $151.00   26.1   No         0.25x      -6.12%      0.0
+DIS     $96.26    20.1   No         0.34x      -5.21%      0.0
+
+Scan completed: 2026-03-25 11:30 CDT

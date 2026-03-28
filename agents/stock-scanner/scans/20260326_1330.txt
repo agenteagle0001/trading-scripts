@@ -1,0 +1,13 @@
+BULLISH SCAN - 2026-03-26 13:30 CST
+=================================================================
+Criteria: MACD bull cross on daily, RSI 40-70, Vol>1.2x avg
+
+TOP 5 BY RS vs SPY (MACD cross + RSI in range):
+
+1. GS | $821.41 | RSI:50.0 | RS vs SPY: +87.6% | Vol: 0.42x
+2. AMAT | $340.71 | RSI:56.9 | RS vs SPY: +45.5% | Vol: 0.66x
+3. WFC | $79.08 | RSI:45.1 | RS vs SPY: +40.0% | Vol: 0.40x
+4. TXN | $195.68 | RSI:53.4 | RS vs SPY: +33.5% | Vol: 0.42x
+5. BAC | $48.29 | RSI:47.4 | RS vs SPY: +20.2% | Vol: 0.43x
+
+Note: All pass MACD cross + RSI filter. Vol shown for reference.

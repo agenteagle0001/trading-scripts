@@ -1,0 +1,25 @@
+BULLISH STOCK SCAN - March 12, 2026
+=====================================
+Criteria: MACD bull cross, RSI 40-70, Volume >1.2x avg
+
+SPY 6-Month Return: +2.2%
+
+*** NO STOCKS MATCH ALL THREE CRITERIA ***
+(Today's volume is below average across all stocks - mid-morning Thursday)
+
+=== TOP 5 BY RELATIVE STRENGTH VS SPY ===
+
+1. MU   | $401.27 | RSI: 42.9 | RS vs SPY: +153.3%
+2. AMAT | $337.98 | RSI: 37.2 | RS vs SPY: +99.9%
+3. INTC | $ 45.83 | RSI: 54.3 | RS vs SPY: +88.1%
+4. GOOGL| $302.02 | RSI: 36.2 | RS vs SPY: +23.4%
+5. AMD  | $197.73 | RSI: 48.6 | RS vs SPY: +22.5%
+
+=== BEST WITH MACD BULLISH + RSI 40-70 ===
+(Volume below 1.2x threshold)
+
+- INTC: MACD bullish, RSI 54.3, RS +88.1%, Vol 0.43x
+- AMD:  MACD bullish, RSI 48.6, RS +22.5%, Vol 0.35x
+- TSLA: MACD bullish, RSI 42.6, RS -1.9%, Vol 0.47x
+- IBM:  MACD bullish, RSI 44.3, RS -3.5%, Vol 0.16x
+- AVGO: MACD bullish, RSI 51.7, RS -8.6%, Vol 0.25x

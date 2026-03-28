@@ -1,0 +1,102 @@
+============================================================
+BULLISH STOCK SCAN RESULTS
+Scan Date: March 3, 2026
+Scan Time: 09:29
+============================================================
+
+CRITERIA:
+- MACD bull cross on daily chart
+- RSI between 40-70 (sweet spot)
+- Volume > 1.2x 20-day average
+- Relative strength vs SPY
+
+------------------------------------------------------------
+TOP 10 STOCKS
+------------------------------------------------------------
+
+1. MA - $520.26
+   Score: 60/100
+   RSI: 40.1
+   MACD Bull Cross: Yes
+   Volume Ratio: 0.42x
+   RS vs SPY: -3.9%
+   Reasons: RSI in sweet spot: 40.1, MACD bull cross (daily)
+
+2. NVDA - $179.89
+   Score: 45/100
+   RSI: 41.0
+   MACD Bull Cross: No
+   Volume Ratio: 0.54x
+   RS vs SPY: +1.4%
+   Reasons: RSI in sweet spot: 41.0, RS vs SPY: +1.4%
+
+3. NFLX - $96.35
+   Score: 45/100
+   RSI: 69.8
+   MACD Bull Cross: No
+   Volume Ratio: 0.55x
+   RS vs SPY: +22.2%
+   Reasons: RSI in sweet spot: 69.8, RS vs SPY: +22.2%
+
+4. COST - $1006.72
+   Score: 45/100
+   RSI: 62.6
+   MACD Bull Cross: No
+   Volume Ratio: 0.37x
+   RS vs SPY: +4.6%
+   Reasons: RSI in sweet spot: 62.6, RS vs SPY: +4.6%
+
+5. CRM - $195.18
+   Score: 45/100
+   RSI: 51.4
+   MACD Bull Cross: No
+   Volume Ratio: 0.37x
+   RS vs SPY: +1.0%
+   Reasons: RSI in sweet spot: 51.4, RS vs SPY: +1.0%
+
+6. ADBE - $268.73
+   Score: 45/100
+   RSI: 53.3
+   MACD Bull Cross: No
+   Volume Ratio: 0.48x
+   RS vs SPY: +0.5%
+   Reasons: RSI in sweet spot: 53.3, RS vs SPY: +0.5%
+
+7. PYPL - $46.21
+   Score: 45/100
+   RSI: 66.3
+   MACD Bull Cross: No
+   Volume Ratio: 0.29x
+   RS vs SPY: +12.5%
+   Reasons: RSI in sweet spot: 66.3, RS vs SPY: +12.5%
+
+8. AMAT - $354.92
+   Score: 45/100
+   RSI: 59.9
+   MACD Bull Cross: No
+   Volume Ratio: 0.37x
+   RS vs SPY: +13.2%
+   Reasons: RSI in sweet spot: 59.9, RS vs SPY: +13.2%
+
+9. KO - $79.18
+   Score: 45/100
+   RSI: 62.4
+   MACD Bull Cross: No
+   Volume Ratio: 0.43x
+   RS vs SPY: +4.6%
+   Reasons: RSI in sweet spot: 62.4, RS vs SPY: +4.6%
+
+10. PEP - $165.08
+   Score: 45/100
+   RSI: 46.3
+   MACD Bull Cross: No
+   Volume Ratio: 0.27x
+   RS vs SPY: +3.0%
+   Reasons: RSI in sweet spot: 46.3, RS vs SPY: +3.0%
+
+------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------
+Total stocks scanned: 30
+Stocks with bullish signals: 17
+Top performer: MA (score: 60)

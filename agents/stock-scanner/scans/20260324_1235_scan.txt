@@ -1,0 +1,16 @@
+BULLISH STOCK SCAN — 2026-03-24 12:35 CST
+
+Criteria: MACD bull cross on daily, RSI 40-70, Volume >1.2x 20-day avg, RS vs SPY
+
+TOP 5 RESULTS:
+-------------------------------------------------------
+1. MU    | $  404.35 | RSI: 55.4 | RS vs SPY:+82.08% | Vol:0.72x [✗] | MACD:YES
+2. INTC  | $   44.01 | RSI: 52.3 | RS vs SPY:+24.41% | Vol:0.48x [✗] | MACD:YES
+3. GS    | $  831.27 | RSI: 40.6 | RS vs SPY:+7.65% | Vol:0.32x [✗] | MACD:YES
+4. TSLA  | $  380.85 | RSI: 44.4 | RS vs SPY:-7.40% | Vol:0.66x [✗] | MACD:YES
+5. JPM   | $  289.91 | RSI: 31.6 | RS vs SPY:-0.84% | Vol:0.40x [✗] | MACD:YES
+
+-------------------------------------------------------
+Matched all 3 criteria: 0/30
+Volume filter (>1.2x) is restrictive — most stocks show avg or below-avg volume on scan date.
+Scan date is mid-session (12:30 PM) — volume data incomplete for today.

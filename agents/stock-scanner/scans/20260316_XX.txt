@@ -1,0 +1,13 @@
+BULLISH STOCK SCAN - March 16, 2026
+=====================================
+Scan: MACD bull cross (daily), RSI 40-70, Volume >1.2x avg, RS vs SPY
+Stocks: 30 (AAPL, MSFT, GOOGL, AMZN, NVDA, META, TSLA, AMD, NFLX, AVGO, COST, ORCL, CRM, ADBE, PYPL, INTC, QCOM, TXN, AMAT, MU, IBM, GS, JPM, BAC, WFC, V, MA, DIS, KO, PEP)
+
+TOP 5 RESULTS:
+--------------
+1. MU    | $446.74 | RSI: 56.7 | RS vs SPY: +1.2% | Vol: 1.09x
+2. INTC | $46.41  | RSI: 50.8 | RS vs SPY: +0.5% | Vol: 1.21x ✓
+3. GOOGL | $305.47 | RSI: 44.2 | RS vs SPY: +0.0% | Vol: 0.49x
+4. TSLA | $396.28 | RSI: 42.7 | RS vs SPY: -0.3% | Vol: 0.84x
+
+Note: Only INTC meets ALL criteria (volume >1.2x). MU closest on volume.

@@ -1,0 +1,208 @@
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 68°F - Patchy rain nearby
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 50°F - Clear
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 52°F - Sunny
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 47°F - Clear
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 67°F - Sunny
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 57°F - Clear
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 68°F - Sunny
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 68°F - Clear
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 76°F - Partly cloudy
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 43°F - Clear
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 39°F - Sunny
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 29°F - Clear
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 76°F - Sunny
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 66°F - Clear
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 77°F - Sunny
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 79°F - Sunny
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 72°F - Clear
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 74°F - Sunny
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 67°F - Partly cloudy
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 67°F - Sunny
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 69°F - Clear
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 76°F - Overcast
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 65°F - Clear
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 75°F - Partly cloudy
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: N/A°F - N/A
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 71°F - Overcast
+Fetching dashboard data for Greenville, TX...
+Data saved to /home/colton/.openclaw/workspace/dashboard/data/dashboard_data.json
+
+Weather: 58°F - Overcast

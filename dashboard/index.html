@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenville, TX Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; color: #fff; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 20px; }
+        h1 { font-size: 2rem; margin-bottom: 5px; }
+        .last-updated { color: rgba(255,255,255,0.5); font-size: 0.8rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: rgba(255,255,255,0.05); border-radius: 15px; padding: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .card h2 { font-size: 1.1rem; margin-bottom: 15px; color: rgba(255,255,255,0.8); }
+        .weather-main { text-align: center; padding: 15px 0; }
+        .temp { font-size: 3.5rem; font-weight: bold; }
+        .condition { font-size: 1.2rem; color: rgba(255,255,255,0.7); margin: 5px 0; }
+        .weather-details { display: flex; justify-content: center; gap: 20px; margin-top: 10px; color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+        .hourly { display: flex; gap: 10px; margin-top: 15px; overflow-x: auto; }
+        .hourly-item { background: rgba(0,0,0,0.2); border-radius: 8px; padding: 12px; text-align: center; min-width: 80px; }
+        .hourly-time { font-size: 0.9rem; color: rgba(255,255,255,0.7); font-weight: bold; }
+        .hourly-temp { font-size: 1.3rem; font-weight: bold; margin: 5px 0; }
+        .hourly-cond { font-size: 0.75rem; color: rgba(255,255,255,0.5); }
+        .radar { margin-top: 15px; border-radius: 10px; overflow: hidden; }
+        .radar img { width: 100%; height: 200px; object-fit: cover; }
+        #map { height: 180px; border-radius: 10px; background: rgba(0,0,0,0.3); }
+        .traffic-status { text-align: center; padding: 10px; background: rgba(0,0,0,0.2); border-radius: 8px; margin-bottom: 10px; }
+        .traffic-level { font-size: 1.3rem; font-weight: bold; color: #4ade80; }
+        
+        /* Jail section */
+        .jail-count { text-align: center; padding: 12px; background: rgba(0,0,0,0.2); border-radius: 8px; margin-bottom: 12px; }
+        .jail-count-num { font-size: 2rem; font-weight: bold; color: #f87171; }
+        .jail-days { font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-top: 4px; }
+        .jail-table { max-height: 300px; overflow-y: auto; font-size: 0.85rem; }
+        .jail-table table { width: 100%; border-collapse: collapse; }
+        .jail-table th, .jail-table td { padding: 10px 8px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .jail-table th { position: sticky; top: 0; background: rgba(0,0,0,0.3); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .jail-name { cursor: pointer; color: #60a5fa; font-weight: 500; }
+        .jail-name:hover { color: #93c5fd; text-decoration: underline; }
+        .jail-charge { max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .jail-bond { color: #fbbf24; font-weight: 500; }
+        
+        /* Modal for inmate details */
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; justify-content: center; align-items: center; }
+        .modal-overlay.active { display: flex; }
+        .modal { background: linear-gradient(145deg, #1e293b, #0f172a); border-radius: 16px; padding: 24px; max-width: 420px; width: 90%; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 25px 50px rgba(0,0,0,0.5); }
+        .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .modal-title { font-size: 1.3rem; font-weight: 600; }
+        .modal-close { background: none; border: none; color: rgba(255,255,255,0.5); font-size: 1.5rem; cursor: pointer; padding: 0; line-height: 1; }
+        .modal-close:hover { color: #fff; }
+        .modal-mugshot { width: 180px; height: 180px; border-radius: 12px; object-fit: cover; margin: 0 auto 20px; display: block; border: 3px solid rgba(255,255,255,0.2); background: #1e293b; }
+        .modal-detail { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .modal-label { color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+        .modal-value { font-weight: 500; text-align: right; max-width: 60%; word-break: break-word; }
+        .modal-charge { background: rgba(239,68,68,0.15); padding: 12px; border-radius: 8px; margin-top: 12px; border-left: 3px solid #ef4444; }
+        .modal-charge-label { color: rgba(255,255,255,0.5); font-size: 0.75rem; margin-bottom: 4px; }
+        .modal-charge-value { color: #fca5a5; font-weight: 500; }
+        
+        .news-list { max-height: 200px; overflow-y: auto; }
+        .news-item { padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .news-item a { color: #fff; text-decoration: none; font-size: 0.85rem; }
+        .news-item a:hover { color: #4ade80; }
+        .placeholder { color: rgba(255,255,255,0.4); font-style: italic; text-align: center; padding: 20px; }
+        footer { text-align: center; padding: 20px; color: rgba(255,255,255,0.4); font-size: 0.75rem; }
+        .refresh-btn { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 8px 16px; border-radius: 6px; cursor: pointer; margin-top: 15px; }
+        .refresh-btn:hover { background: rgba(255,255,255,0.2); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📍 Greenville, TX</h1>
+            <p class="last-updated">Last updated: <span id="last-updated">Loading...</span></p>
+        </header>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>🌤️ Weather</h2>
+                <div class="weather-main">
+                    <div class="temp" id="temp">--°F</div>
+                    <div class="condition" id="condition">Loading...</div>
+                    <div class="weather-details">
+                        <span>💧 <span id="humidity">--</span>%</span>
+                        <span>💨 <span id="wind">--</span> mph</span>
+                    </div>
+                </div>
+                <div class="hourly" id="hourly"></div>
+            </div>
+            
+            <div class="card">
+                <h2>🛰️ Radar</h2>
+                <div class="radar" id="radar"><div class="placeholder">Radar unavailable - using Open-Meteo</div></div>
+            </div>
+            
+            <div class="card">
+                <h2>🚗 Traffic</h2>
+                <div class="traffic-status"><div class="traffic-level" id="traffic-level">--</div></div>
+                <div id="map"></div>
+            </div>
+            
+            <div class="card">
+                <h2>🏢 Hunt County Jail (Last 7 Days)</h2>
+                <div class="jail-count">
+                    <div class="jail-count-num" id="jail-count">--</div>
+                    <div>Recent Arrests</div>
+                    <div class="jail-days" id="jail-days"></div>
+                </div>
+                <div class="jail-table" id="jail-list"></div>
+            </div>
+            
+            <div class="card">
+                <h2>📰 Local News</h2>
+                <div class="news-list" id="news-list"></div>
+            </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <button class="refresh-btn" onclick="location.reload()">🔄 Refresh</button>
+        </div>
+        
+        <footer><p>Greenville, TX Community Dashboard</p></footer>
+    </div>
+    
+    <!-- Modal for inmate details -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title" id="modal-title">Inmate Details</div>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <img class="modal-mugshot" id="modal-mugshot" src="" alt="Mugshot">
+            <div class="modal-detail">
+                <span class="modal-label">Booking Date</span>
+                <span class="modal-value" id="modal-date"></span>
+            </div>
+            <div class="modal-detail">
+                <span class="modal-label">DOB</span>
+                <span class="modal-value" id="modal-dob"></span>
+            </div>
+            <div class="modal-detail">
+                <span class="modal-label">Sex / Race</span>
+                <span class="modal-value" id="modal-sex-race"></span>
+            </div>
+            <div class="modal-detail">
+                <span class="modal-label">Bond</span>
+                <span class="modal-value" id="modal-bond" style="color: #fbbf24;"></span>
+            </div>
+            <div class="modal-charge">
+                <div class="modal-charge-label">CHARGE</div>
+                <div class="modal-charge-value" id="modal-charge"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="data.js"></script>
+    <script>
+        // Map setup
+        const greenville = [33.1568, -96.1105];
+        const map = L.map('map').setView(greenville, 11);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '© OSM'}).addTo(map);
+        L.marker(greenville).addTo(map).bindPopup('<b>Greenville, TX</b>');
+        
+        // Base data (static)
+        const baseData = {"location": "Greenville, TX 75402", "updated": "2026-03-01T07:36:18.039002", "weather": {"source": "open-meteo.com", "temp_f": "56", "condition": "Overcast", "humidity": "75", "wind_mph": "15", "feels_like": "56", "hourly": [{"hour": "8 AM", "temp": "57", "condition": "Clear"}, {"hour": "9 AM", "temp": "56", "condition": "Clear"}, {"hour": "10 AM", "temp": "56", "condition": "Clear"}, {"hour": "11 AM", "temp": "55", "condition": "Clear"}], "radar": null}, "news": {"source": "heraldbanner.com", "status": "ok", "count": 10}};
+        
+        // Combine base data with jail data from data.js
+        let data = { ...baseData, jail: { status: 'ok', total_count: 0, inmates: [] }};
+        if (typeof jailData !== 'undefined') {
+            data.jail = jailData;
+            data.updated = jailData.updated || data.updated;
+        }
+        
+        document.getElementById('last-updated').textContent = new Date(data.updated).toLocaleString();
+        
+        // Weather
+        if (data.weather && !data.weather.error) {
+            document.getElementById('temp').textContent = data.weather.temp_f + '°F';
+            document.getElementById('condition').textContent = data.weather.condition;
+            document.getElementById('humidity').textContent = data.weather.humidity;
+            document.getElementById('wind').textContent = data.weather.wind_mph;
+            
+            if (data.weather.hourly && data.weather.hourly.length > 0) {
+                let html = '';
+                data.weather.hourly.forEach(h => {
+                    html += '<div class="hourly-item"><div class="hourly-time">' + h.hour + '</div><div class="hourly-temp">' + h.temp + '°</div><div class="hourly-cond">' + h.condition + '</div></div>';
+                });
+                document.getElementById('hourly').innerHTML = html;
+            }
+        }
+        
+        // Traffic
+        document.getElementById('traffic-level').textContent = 'Light';
+        
+        // Jail - with clickable names
+        if (data.jail && data.jail.status === 'ok') {
+            const count = data.jail.inmates ? data.jail.inmates.length : data.jail.total_count;
+            document.getElementById('jail-count').textContent = count;
+            
+            if (data.jail.days_shown) {
+                document.getElementById('jail-days').textContent = 'Last ' + data.jail.days_shown + ' days';
+            }
+            
+            if (data.jail.inmates && data.jail.inmates.length > 0) {
+                let html = '<table><thead><tr><th>Name</th><th>Charge</th><th>Bond</th></tr></thead><tbody>';
+                data.jail.inmates.forEach((i, idx) => {
+                    const charge = i.charge ? i.charge.replace(/&gt;/g, '>').replace(/&lt;/g, '<') : 'N/A';
+                    const bond = i.bond || '-';
+                    html += '<tr>';
+                    html += '<td><span class="jail-name" onclick="showInmate(' + idx + ')">' + i.name + '</span></td>';
+                    html += '<td class="jail-charge" title="' + charge + '">' + charge + '</td>';
+                    html += '<td class="jail-bond">' + bond + '</td>';
+                    html += '</tr>';
+                });
+                html += '</tbody></table>';
+                document.getElementById('jail-list').innerHTML = html;
+            }
+        }
+        
+        // News
+        if (data.news && data.news.status === 'ok') {
+            let html = '';
+            data.news.headlines.slice(0, 8).forEach(item => {
+                html += '<div class="news-item"><a href="' + item.url + '" target="_blank">' + item.title + '</a></div>';
+            });
+            document.getElementById('news-list').innerHTML = html;
+        }
+        
+        // Modal functions
+        function showInmate(idx) {
+            const inmate = data.jail.inmates[idx];
+            if (!inmate) return;
+            
+            document.getElementById('modal-title').textContent = inmate.name || 'Inmate Details';
+            document.getElementById('modal-date').textContent = inmate.booking_date || '-';
+            document.getElementById('modal-dob').textContent = inmate.dob || '-';
+            document.getElementById('modal-sex-race').textContent = (inmate.sex || '-') + ' / ' + (inmate.race || '-');
+            document.getElementById('modal-bond').textContent = inmate.bond || '-';
+            
+            let charge = inmate.charge || 'N/A';
+            charge = charge.replace(/&gt;/g, '>').replace(/&lt;/g, '<');
+            document.getElementById('modal-charge').textContent = charge;
+            
+            if (inmate.mugshot) {
+                document.getElementById('modal-mugshot').src = inmate.mugshot;
+                document.getElementById('modal-mugshot').style.display = 'block';
+            } else {
+                document.getElementById('modal-mugshot').style.display = 'none';
+            }
+            
+            document.getElementById('modal').classList.add('active');
+        }
+        
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+        
+        // Close modal on overlay click
+        document.getElementById('modal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+        
+        // Close modal on Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+</html>

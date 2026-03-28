@@ -1,0 +1,7 @@
+BULLISH SCAN - 2026-03-13 10:32
+Criteria: RSI 35-75, MACD Bullish, Vol >0.9x
+
+TOP 5:
+ADBE: $251.3 | RSI: 53.2 | RS vs SPY: Ticker
+SPY   -30.5
+dtype: float64%

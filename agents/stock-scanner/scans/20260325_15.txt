@@ -1,0 +1,12 @@
+Hourly Bullish Scan - 2026-03-25 15:30 UTC
+30 Stocks: AAPL, MSFT, GOOGL, AMZN, NVDA, META, TSLA, AMD, NFLX, AVGO, COST, ORCL, CRM, ADBE, PYPL, INTC, QCOM, TXN, AMAT, MU, IBM, GS, JPM, BAC, WFC, V, MA, DIS, KO, PEP
+
+SCAN FAILED: No stock data API available.
+- Web search (Brave API) not configured
+- No direct market data credentials found
+
+To enable this scan:
+1. Configure Brave Search API key: openclaw configure --section web
+2. Or add stock API credentials to TOOLS.md or skill config
+
+No results to report.

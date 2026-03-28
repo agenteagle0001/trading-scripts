@@ -1,0 +1,16 @@
+BULLISH STOCK SCAN — 2026-03-25 13:33 CST
+
+Criteria: MACD bull cross on daily, RSI 40-70, Volume >1.2x 20-day avg, RS vs SPY
+
+TOP 5 RESULTS:
+-------------------------------------------------------
+1. MU    | $  395.53 | RSI: 48.8 | RS vs SPY:+78.91% | Vol:1.11x [✗] | MACD:YES
+2. AMAT  | $  373.99 | RSI: 57.0 | RS vs SPY:+57.12% | Vol:0.43x [✗] | MACD:YES
+3. GS    | $  835.72 | RSI: 40.5 | RS vs SPY:+7.91% | Vol:0.31x [✗] | MACD:YES
+4. JPM   | $  292.40 | RSI: 38.2 | RS vs SPY:-0.38% | Vol:0.42x [✗] | MACD:YES
+5. WFC   | $   79.61 | RSI: 36.0 | RS vs SPY:-3.31% | Vol:0.31x [✗] | MACD:YES
+
+-------------------------------------------------------
+Matched all 3 criteria: 0/30
+Volume filter (>1.2x) is restrictive — most stocks show avg or below-avg volume on scan date.
+Scan date is mid-session (12:30 PM) — volume data incomplete for today.

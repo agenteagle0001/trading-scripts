@@ -1,0 +1,70 @@
+BULLISH STOCK SCAN REPORT
+Date: 2026-03-25
+Time: 14:30 CST
+
+SCAN CRITERIA:
+- MACD bull cross on daily (visual confirmation)
+- RSI in range 40-70
+- Volume >1.2x average (Rel Volume > 1.2)
+- Relative Strength vs SPY positive
+
+SPY BENCHMARK:
+- SPY YTD: -3.68%
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TOP 5 BULLISH CANDIDATES:
+
+1. MU (Micron Technology)
+   Price: $379.46
+   RSI: 41.94
+   RS vs SPY: +36.63%
+   Volume: 1.46x avg ✓ (HIGH VOLUME)
+   YTD: +32.95%
+   Note: Strong momentum, RSI approaching oversold bounce
+
+2. INTC (Intel)
+   Price: $47.03
+   RSI: 54.55
+   RS vs SPY: +31.12%
+   Volume: 0.87x avg (below threshold)
+   YTD: +27.44%
+   Today: +6.73% (price hike news)
+
+3. COST (Costco)
+   Price: $975.64
+   RSI: 45.60
+   RS vs SPY: +16.82%
+   Volume: 0.33x avg (below threshold)
+   YTD: +13.14%
+
+4. TXN (Texas Instruments)
+   Price: $196.89
+   RSI: 47.35
+   RS vs SPY: +17.17%
+   Volume: 0.38x avg (below threshold)
+   YTD: +13.49%
+
+5. WFC (Wells Fargo)
+   Price: $80.52
+   RSI: 48.75
+   RS vs SPY: -9.93%
+   Volume: 0.46x avg (below threshold)
+   YTD: -13.61%
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ADDITIONAL WATCHLIST (RSI 40-70, positive RS, low volume):
+- AAPL: RSI 42.93, RS +3.32%, Vol 0.41x
+- TSLA: RSI 43.22, RS +10.53%, Vol 0.63x
+- BAC: RSI 46.32, RS +7.77%, Vol 0.57x
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SCAN NOTES:
+- Market is in broad weakness (most tech stocks down YTD)
+- ONLY MU meets ALL volume criteria (>1.2x)
+- INTC showing strength on CPU price hike news
+- MACD bull cross not confirmed from available data
+
+SCAN BY: agentEagle

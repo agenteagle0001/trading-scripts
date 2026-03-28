@@ -1,0 +1,12 @@
+BULLISH STOCK SCAN - March 13, 2026
+==================================================
+Criteria: MACD bull cross, RSI 40-70, Vol>1.2x, RS vs SPY
+SPY 60-day: -2.1%
+
+TOP 5 (by RS vs SPY, min 2 bullish criteria):
+--------------------------------------------------
+MU     $ 423.89  RSI: 50.7  RS vs SPY: +84.5%
+INTC   $  45.69  RSI: 55.0  RS vs SPY: +24.6%
+COST   $1007.38  RSI: 57.8  RS vs SPY: +19.4%
+NFLX   $  94.61  RSI: 82.8  RS vs SPY:  +2.2%
+GOOGL  $ 301.53  RSI: 38.7  RS vs SPY:  +0.5%

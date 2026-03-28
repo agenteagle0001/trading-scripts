@@ -1,0 +1,102 @@
+============================================================
+BULLISH STOCK SCAN RESULTS
+Scan Date: March 20, 2026
+Scan Time: 11:32
+============================================================
+
+CRITERIA:
+- MACD bull cross on daily chart
+- RSI between 40-70 (sweet spot)
+- Volume > 1.2x 20-day average
+- Relative strength vs SPY
+
+------------------------------------------------------------
+TOP 10 STOCKS
+------------------------------------------------------------
+
+1. JPM - $287.83
+   Score: 55/100
+   RSI: 31.4
+   MACD Bull Cross: Yes
+   Volume Ratio: 0.48x
+   RS vs SPY: +1.1%
+   Reasons: MACD bull cross (daily), RS vs SPY: +1.1%
+
+2. GOOGL - $301.81
+   Score: 45/100
+   RSI: 44.7
+   MACD Bull Cross: No
+   Volume Ratio: 0.47x
+   RS vs SPY: +1.4%
+   Reasons: RSI in sweet spot: 44.7, RS vs SPY: +1.4%
+
+3. AMZN - $206.55
+   Score: 45/100
+   RSI: 47.7
+   MACD Bull Cross: No
+   Volume Ratio: 0.58x
+   RS vs SPY: +5.0%
+   Reasons: RSI in sweet spot: 47.7, RS vs SPY: +5.0%
+
+4. AMD - $201.38
+   Score: 45/100
+   RSI: 52.0
+   MACD Bull Cross: No
+   Volume Ratio: 0.46x
+   RS vs SPY: +6.9%
+   Reasons: RSI in sweet spot: 52.0, RS vs SPY: +6.9%
+
+5. AVGO - $317.04
+   Score: 45/100
+   RSI: 48.9
+   MACD Bull Cross: No
+   Volume Ratio: 0.37x
+   RS vs SPY: +0.4%
+   Reasons: RSI in sweet spot: 48.9, RS vs SPY: +0.4%
+
+6. ORCL - $151.25
+   Score: 45/100
+   RSI: 52.3
+   MACD Bull Cross: No
+   Volume Ratio: 0.43x
+   RS vs SPY: +11.5%
+   Reasons: RSI in sweet spot: 52.3, RS vs SPY: +11.5%
+
+7. CRM - $193.90
+   Score: 45/100
+   RSI: 51.0
+   MACD Bull Cross: No
+   Volume Ratio: 0.47x
+   RS vs SPY: +13.3%
+   Reasons: RSI in sweet spot: 51.0, RS vs SPY: +13.3%
+
+8. ADBE - $247.41
+   Score: 45/100
+   RSI: 40.6
+   MACD Bull Cross: No
+   Volume Ratio: 0.46x
+   RS vs SPY: +4.7%
+   Reasons: RSI in sweet spot: 40.6, RS vs SPY: +4.7%
+
+9. PYPL - $43.85
+   Score: 45/100
+   RSI: 42.3
+   MACD Bull Cross: No
+   Volume Ratio: 0.31x
+   RS vs SPY: +4.3%
+   Reasons: RSI in sweet spot: 42.3, RS vs SPY: +4.3%
+
+10. INTC - $44.92
+   Score: 45/100
+   RSI: 48.6
+   MACD Bull Cross: No
+   Volume Ratio: 0.66x
+   RS vs SPY: +7.4%
+   Reasons: RSI in sweet spot: 48.6, RS vs SPY: +7.4%
+
+------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------
+Total stocks scanned: 30
+Stocks with bullish signals: 20
+Top performer: JPM (score: 55)

@@ -1,0 +1,16 @@
+BULLISH STOCK SCAN - March 20, 2026 08:30 CST
+Criteria: MACD bull cross, RSI 40-70, Vol >1.2x avg, RS vs SPY
+
+TOP 5 RESULTS (by score):
+Rank | Symbol | Price  | RSI  | RS vs SPY | MACD | Vol | Score
+-----|--------|--------|------|-----------|------|-----|------
+1    | INTC   | $46.65 | 52.9 | +10.9%    | ✓    | ✗   | 80
+2    | JPM    | $286.71| 30.1 | +0.3%     | ✓    | ✗   | 55
+3    | GOOGL  | $304.03| 47.2 | +1.7%     | ✗    | ✗   | 45
+4    | AMZN   | $206.79| 48.0 | +4.7%     | ✗    | ✗   | 45
+5    | AMD    | $204.66| 54.6 | +8.1%     | ✗    | ✗   | 45
+
+NOTE: Volume ratios < 1.0 on all stocks (likely due to early Friday AM).
+Full scan complete: 30 stocks, 20 with at least 1 bullish signal.
+
+Output saved: 20260320_0830.txt
