@@ -12,8 +12,8 @@ SCAN_DIR = "/home/colton/.openclaw/workspace/agents/stock-scanner/scans"
 
 # Exit rules
 TAKE_PROFIT_PCT = 0.55  # Close when we've earned 55% of premium
-TAKE_PROFIT_PCT = 0.55  # Keep 55% of premium
 STOP_LOSS_PCT = 0.25   # Lose premium + 25% of premium = 1.25x premium
+MAX_DTE = 3             # Close if >= 3 DTE (never hold through expiry)
 
 def get_alpaca_option(symbol, option_type="put"):
     """Get option in Alpaca format using yfinance"""
@@ -117,6 +117,18 @@ def save_log(log):
     with open(PAPER_LOG, "w") as f:
         json.dump(log, f, indent=2)
 
+def get_dte(opt_symbol):
+    """Parse DTE from option symbol like MU260327P00360000"""
+    try:
+        # Format: SYMYYMMDDP... (8-char date starting at index of P - 8)
+        p_idx = opt_symbol.index('P')
+        date_str = opt_symbol[p_idx - 8 : p_idx]
+        expiry = datetime.strptime(date_str, "%y%m%d")
+        dte = (expiry.date() - datetime.now().date()).days
+        return dte
+    except:
+        return 999
+
 def check_exits(positions, log):
     """Check if any positions hit exit conditions"""
     headers = {'APCA-API-KEY-ID': API_KEY, 'APCA-API-SECRET-KEY': SECRET_KEY}
@@ -171,6 +183,15 @@ def check_exits(positions, log):
             close_position(opt_symbol, f"STOP LOSS {pnl_pct:.1%}")
             trade['status'] = 'closed'
             trade['exit_reason'] = 'stop_loss'
+            trade['exit_pnl_pct'] = pnl_pct
+            trade['closed_at'] = datetime.now().isoformat()
+
+        # DTE rule: close if <= MAX_DTE to avoid assignment risk
+        dte = get_dte(opt_symbol)
+        if 0 < dte <= MAX_DTE:
+            close_position(opt_symbol, f"DTE {dte}d - closing before expiry")
+            trade['status'] = 'closed'
+            trade['exit_reason'] = 'dte_exit'
             trade['exit_pnl_pct'] = pnl_pct
             trade['closed_at'] = datetime.now().isoformat()
     
