@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Create Instagram posts - uses quotes DB and raw images"""
 
-import os, glob, json, random, fcntl
+import os, glob, json, random, fcntl, argparse
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 CONTENT_DIR = "/home/colton/.openclaw/workspace/instagram/content"
@@ -153,13 +153,32 @@ def pick_unused_bokeh_image():
                 fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
     raise RuntimeError("Failed to pick bokeh image after 10 attempts")
 
-def create_post(output_name=None):
+def create_post(output_name=None, reuse_quote=False):
     # Pick unused bokeh background
     img_file = pick_unused_bokeh_image()
     img_path = f"{RAW_DIR}/{img_file}"
     
-    # Get quote
-    quote = get_quote()
+    # Get quote - reuse last used if requested
+    if reuse_quote:
+        db = load_quotes()
+        used = db.get("used", [])
+        if used:
+            last_quote_text = used[-1]
+            # Find the full quote object
+            quote = next((q for q in db["quotes"] if q["quote"].rstrip('.').strip().lower() == last_quote_text.lower()), None)
+            if quote:
+                print(f"Reusing quote: {quote['quote'][:50]}...")
+            else:
+                # Stripped quote not found exactly - try matching
+                quote = next((q for q in db["quotes"] if last_quote_text.lower() in q["quote"].lower()), None)
+                if not quote:
+                    print("Couldn't find last quote, picking new one")
+                    quote = get_quote()
+        else:
+            print("No previous quote to reuse, picking new one")
+            quote = get_quote()
+    else:
+        quote = get_quote()
     print(f"Using: {quote['quote'][:50]}...")
     
     # Load and process image
@@ -218,4 +237,7 @@ def create_post(output_name=None):
     return output_name
 
 if __name__ == "__main__":
-    create_post()
+    parser = argparse.ArgumentParser(description="Create Instagram quote posts")
+    parser.add_argument("--reuse-quote", action="store_true", help="Reuse the last quote instead of picking a new one")
+    args = parser.parse_args()
+    create_post(reuse_quote=args.reuse_quote)
