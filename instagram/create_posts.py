@@ -59,21 +59,92 @@ def save_used_images(images):
     with open(USED_IMAGES_FILE, 'w') as f:
         json.dump(list(images), f)
 
+HASH_FILE = f"{CONTENT_DIR}/../image_hashes.json"
+
+def _avg_hash(img_path, hash_size=8):
+    """Perceptual hash - identical images give same hash"""
+    try:
+        img = Image.open(img_path).convert('L').resize((hash_size, hash_size), Image.LANCZOS)
+        pixels = list(img.getdata())
+        avg = sum(pixels) / len(pixels)
+        bits = [1 if p >= avg else 0 for p in pixels]
+        return ''.join(f'{b:04b}' for b in bits)
+    except:
+        return None
+
+def _rehash_all():
+    """Rebuild hash file with all current images"""
+    hashes = {}
+    for fname in os.listdir(RAW_DIR):
+        if not fname.startswith('bokeh_') or not fname.endswith('.jpg'):
+            continue
+        h = _avg_hash(os.path.join(RAW_DIR, fname))
+        if h:
+            hashes[fname] = h
+    json.dump(hashes, open(HASH_FILE, 'w'), indent=2)
+    return hashes
+
+def _get_available_hashes():
+    """Get set of unique image hashes (deduped)"""
+    try:
+        hashes = json.load(open(HASH_FILE))
+    except:
+        hashes = {}
+
+    # Rehash any new images not yet in the file
+    rehash_needed = False
+    for fname in os.listdir(RAW_DIR):
+        if not fname.startswith('bokeh_') or not fname.endswith('.jpg'):
+            continue
+        if fname not in hashes:
+            rehash_needed = True
+            break
+
+    if rehash_needed:
+        hashes = _rehash_all()
+
+    # Find unique hashes only (not duplicates of another file)
+    hash_to_primary = {}
+    for fname, h in hashes.items():
+        if h not in hash_to_primary:
+            hash_to_primary[h] = fname
+
+    return set(hash_to_primary.keys())
+
 def pick_unused_bokeh_image():
-    """Pick a bokeh image that hasn't been used yet - race-condition safe"""
+    """Pick a visually unique bokeh image that hasn't been used yet"""
     lock_path = USED_IMAGES_FILE + '.lock'
     for attempt in range(10):
         with open(lock_path, 'w') as lock:
             fcntl.flock(lock.fileno(), fcntl.LOCK_EX)
             try:
                 used = load_used_images()
-                available = [f for f in os.listdir(RAW_DIR) if f.startswith('bokeh_') and f not in used]
+                hashes = json.load(open(HASH_FILE))
+                hash_to_primary = {}
+                for fname, h in hashes.items():
+                    if h not in hash_to_primary:
+                        hash_to_primary[h] = fname
+
+                unique_hashes = set(hash_to_primary.keys())
+                available = [
+                    fname for fname, h in hashes.items()
+                    if h in unique_hashes and fname not in used
+                ]
+
+                if not available:
+                    # All used - try to find any unused hash
+                    for h, fname in hash_to_primary.items():
+                        if fname not in used:
+                            available = [fname]
+                            break
+
                 if not available:
                     print("All bokeh images used! Resetting...")
                     used = set()
-                    available = [f for f in os.listdir(RAW_DIR) if f.startswith('bokeh_')]
-                    if not available:
-                        raise RuntimeError("No bokeh images found!")
+                    save_used_images(used)
+                    # Pick any image (all are "used" now)
+                    available = list(hash_to_primary.values())
+
                 chosen = random.choice(available)
                 used.add(chosen)
                 save_used_images(used)
