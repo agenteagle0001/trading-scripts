@@ -153,32 +153,54 @@ def pick_unused_bokeh_image():
                 fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
     raise RuntimeError("Failed to pick bokeh image after 10 attempts")
 
-def create_post(output_name=None, reuse_quote=False):
-    # Pick unused bokeh background
-    img_file = pick_unused_bokeh_image()
-    img_path = f"{RAW_DIR}/{img_file}"
+def create_post(output_name=None, reuse_quote=None, reuse_image=None):
+    """
+    Create an Instagram quote post.
+    reuse_quote: None = pick new, str = reuse that exact quote text, True = reuse last-used quote
+    reuse_image: None = pick new, str = reuse that exact image filename
+    """
+    # Pick bokeh background
+    if reuse_image:
+        img_file = reuse_image
+        img_path = f"{RAW_DIR}/{img_file}"
+        if not os.path.exists(img_path):
+            print(f"Image not found: {img_file}, picking new")
+            img_file = pick_unused_bokeh_image()
+            img_path = f"{RAW_DIR}/{img_file}"
+        else:
+            print(f"Reusing image: {img_file}")
+    else:
+        img_file = pick_unused_bokeh_image()
+        img_path = f"{RAW_DIR}/{img_file}"
     
-    # Get quote - reuse last used if requested
-    if reuse_quote:
+    if reuse_quote is None:
+        quote = get_quote()
+    elif isinstance(reuse_quote, str):
+        # Reuse a specific quote by text match
+        db = load_quotes()
+        norm = reuse_quote.rstrip('.').strip().lower()
+        quote = next((q for q in db["quotes"] if q["quote"].rstrip('.').strip().lower() == norm), None)
+        if not quote:
+            print(f"Quote not found in DB: {reuse_quote[:50]}...")
+            quote = get_quote()
+        else:
+            print(f"Reusing: {quote['quote'][:50]}...")
+    else:
+        # reuse_quote=True - reuse last used
         db = load_quotes()
         used = db.get("used", [])
         if used:
-            last_quote_text = used[-1]
-            # Find the full quote object
-            quote = next((q for q in db["quotes"] if q["quote"].rstrip('.').strip().lower() == last_quote_text.lower()), None)
+            last_norm = used[-1].lower()
+            quote = next((q for q in db["quotes"] if q["quote"].rstrip('.').strip().lower() == last_norm), None)
             if quote:
-                print(f"Reusing quote: {quote['quote'][:50]}...")
+                print(f"Reusing last: {quote['quote'][:50]}...")
             else:
-                # Stripped quote not found exactly - try matching
-                quote = next((q for q in db["quotes"] if last_quote_text.lower() in q["quote"].lower()), None)
-                if not quote:
-                    print("Couldn't find last quote, picking new one")
-                    quote = get_quote()
+                print("Couldn't find last quote, picking new one")
+                quote = get_quote()
         else:
             print("No previous quote to reuse, picking new one")
             quote = get_quote()
-    else:
-        quote = get_quote()
+
     print(f"Using: {quote['quote'][:50]}...")
     
     # Load and process image
@@ -238,6 +260,21 @@ def create_post(output_name=None, reuse_quote=False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Create Instagram quote posts")
-    parser.add_argument("--reuse-quote", action="store_true", help="Reuse the last quote instead of picking a new one")
+    parser.add_argument("--reuse-quote", nargs="?", const=True, default=None,
+                        help="Reuse a specific quote (pass quote text) or last-used quote (no arg)")
+    parser.add_argument("--reuse-image", nargs="?", const=True, default=None,
+                        help="Reuse last-used image (or pass filename to reuse a specific one)")
     args = parser.parse_args()
-    create_post(reuse_quote=args.reuse_quote)
+
+    reuse_img = None
+    if args.reuse_image is not None:
+        if isinstance(args.reuse_image, str):
+            reuse_img = args.reuse_image
+        else:
+            # --reuse-image with no arg = use last used (last in insertion order)
+            used = load_used_images()
+            used_list = list(used)
+            reuse_img = used_list[-1] if used_list else None
+        print(f"Reusing image: {reuse_img}")
+
+    create_post(reuse_quote=args.reuse_quote, reuse_image=reuse_img)
