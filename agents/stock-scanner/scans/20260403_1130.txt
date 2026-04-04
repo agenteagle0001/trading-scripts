@@ -1,0 +1,18 @@
+BULLISH STOCK SCAN - 2026-04-03 11:30
+=====================================
+SPY 20-day return: -3.48%
+
+SCAN CRITERIA: MACD bull cross, RSI 40-70, Volume >1.2x avg, RS vs SPY
+
+=== TOP 5 BULLISH STOCKS ===
+
+1. INTC: Price=$50.38, RSI=59, RS vs SPY=-4.61x
+   - 20d Return: +16.0%, Vol Ratio: 1.29x, MACD Bull Cross: YES
+
+NOTE: Only 1 stock met ALL strict criteria (MACD bull cross + RSI 40-70 + Vol >1.2x).
+Market showing weak breadth - SPY down 3.48% over 20 days.
+
+=== BEST ALTERNATIVES (by composite score, sorted) ===
+Full results in: 20260403_full_scan.txt
+
+Generated: 2026-04-03 11:30 UTC

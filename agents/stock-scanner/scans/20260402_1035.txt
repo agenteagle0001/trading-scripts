@@ -1,0 +1,14 @@
+=== BULLISH SCAN 2026-04-02 10:35 ===
+
+Filters: MACD bull cross (daily), RSI 40-70
+
+Top 5 by RS vs SPY:
+Symbol        Price    RSI  RS vs SPY %
+----------------------------------------
+INTC     $    49.59   58.6       +11.5%
+COST     $  1007.29   62.4        +6.1%
+GOOGL    $   295.79   48.0        +2.0%
+TXN      $   194.41   47.7        +1.8%
+AAPL     $   254.88   48.8        +1.5%
+
+Scanned: 30 stocks | Matched: 10

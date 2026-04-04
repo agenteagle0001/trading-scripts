@@ -17,6 +17,7 @@ TRAINING_LOG = "/home/colton/.openclaw/workspace/kalshi/ml_training_log.json"
 STATE_FILE = "/home/colton/.openclaw/workspace/kalshi/executor_state.json"
 TRADE_LOG = "/home/colton/.openclaw/workspace/kalshi/trade_log.json"
 
+TARGET_DOLLAR = 4.00  # Fixed position size per trade
 RISK_FREE = 0.05
 IMPLIED_VOL = 0.55
 
@@ -412,12 +413,13 @@ def execute_trade(ticker, direction, price):
     
     h = {"KALSHI-ACCESS-KEY": API_KEY, "KALSHI-ACCESS-SIGNATURE": base64.b64encode(sig).decode(), 
          "KALSHI-ACCESS-TIMESTAMP": ts, "Content-Type": "application/json"}
+    count = max(1, round(TARGET_DOLLAR / price))
     data = {"ticker": ticker, "action": "buy" if direction == "yes" else "sell", 
-            "side": direction, "count": 5, "type": "limit", f"{direction}_price": min(99, max(1, int(price * 100) + 1)), 
+            "side": direction, "count": count, "type": "limit", f"{direction}_price": min(99, max(1, int(price * 100) + 1)), 
             "client_order_id": str(uuid.uuid4())}
     
     r = requests.post("https://api.elections.kalshi.com" + path, headers=h, json=data)
-    return r.status_code, r.text
+    return r.status_code, r.text, count
 
 if __name__ == "__main__":
     signals = get_all_signals()

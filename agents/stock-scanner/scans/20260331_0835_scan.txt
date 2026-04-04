@@ -1,0 +1,16 @@
+BULLISH STOCK SCAN — 2026-03-31 08:35 CST
+
+Criteria: MACD bull cross on daily, RSI 40-70, Volume >1.2x 20-day avg, RS vs SPY
+
+TOP 5 RESULTS:
+-------------------------------------------------------
+1. GS    | $  807.60 | RSI: 41.7 | RS vs SPY:+7.19% | Vol:0.68x [✗] | MACD:YES
+2. JPM   | $  283.77 | RSI: 42.9 | RS vs SPY:-1.16% | Vol:1.05x [✗] | MACD:YES
+3. V     | $  299.54 | RSI: 33.3 | RS vs SPY:-2.58% | Vol:1.28x [✓] | MACD:YES
+4. WFC   | $   76.80 | RSI: 44.6 | RS vs SPY:-3.06% | Vol:0.72x [✗] | MACD:YES
+5. BAC   | $   47.23 | RSI: 40.2 | RS vs SPY:-3.75% | Vol:0.96x [✗] | MACD:YES
+
+-------------------------------------------------------
+Matched all 3 criteria: 0/30
+Volume filter (>1.2x) is restrictive — most stocks show avg or below-avg volume on scan date.
+Scan date is mid-session (12:30 PM) — volume data incomplete for today.

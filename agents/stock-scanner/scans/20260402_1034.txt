@@ -1,0 +1,8 @@
+=== BULLISH SCAN 2026-04-02 10:34 ===
+
+Filters: MACD bull cross (daily), RSI 40-70, Vol >0.9x avg
+
+Top 5 by RS vs SPY:
+No stocks match all filters.
+
+Scanned: 30 stocks | Matched: 0

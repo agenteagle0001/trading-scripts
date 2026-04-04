@@ -1,0 +1,43 @@
+BULLISH STOCK SCAN — 2026-04-01 09:30 UTC
+==================================================
+SPY: $654.45 (20d RS base: $679.45)
+Filters: RSI 40-70, Vol>1.2x avg, MACD bull cross
+
+TOP 5 BULLISH SIGNALS:
+1. INTC | $47.68 | RSI: 55.4 | RS vs SPY: +7.4% | Vol: 0.54x
+2. AMZN | $210.38 | RSI: 50.8 | RS vs SPY: -0.2% | Vol: 0.24x
+3. AAPL | $253.44 | RSI: 46.7 | RS vs SPY: +1.0% | Vol: 0.20x
+4. GOOGL | $295.36 | RSI: 44.3 | RS vs SPY: +1.9% | Vol: 0.35x
+5. AMD | $209.63 | RSI: 57.7 | RS vs SPY: +8.8% | Vol: 0.38x
+
+FULL RESULTS:
+AMD | RSI:57.7 | RS:+8.8% | Vol:0.38x | MACD:False
+INTC | RSI:55.4 | RS:+7.4% | Vol:0.54x | MACD:True
+GS | RSI:71.8 | RS:+6.4% | Vol:0.21x | MACD:False
+AMAT | RSI:57.3 | RS:+6.3% | Vol:0.21x | MACD:False
+COST | RSI:45.1 | RS:+5.0% | Vol:0.17x | MACD:False
+JPM | RSI:64.5 | RS:+3.9% | Vol:0.18x | MACD:False
+KO | RSI:42.0 | RS:+2.8% | Vol:0.23x | MACD:False
+TXN | RSI:57.2 | RS:+2.7% | Vol:0.11x | MACD:False
+BAC | RSI:63.1 | RS:+2.6% | Vol:0.18x | MACD:False
+GOOGL | RSI:44.3 | RS:+1.9% | Vol:0.35x | MACD:False
+WFC | RSI:68.3 | RS:+1.9% | Vol:0.22x | MACD:False
+AAPL | RSI:46.7 | RS:+1.0% | Vol:0.20x | MACD:False
+PEP | RSI:40.0 | RS:+0.6% | Vol:0.15x | MACD:True
+AMZN | RSI:50.8 | RS:-0.2% | Vol:0.24x | MACD:True
+NFLX | RSI:52.4 | RS:-0.4% | Vol:0.24x | MACD:False
+NVDA | RSI:42.2 | RS:-0.4% | Vol:0.27x | MACD:False
+IBM | RSI:46.2 | RS:-1.4% | Vol:0.10x | MACD:False
+DIS | RSI:42.1 | RS:-1.6% | Vol:0.20x | MACD:False
+QCOM | RSI:44.3 | RS:-2.0% | Vol:0.15x | MACD:False
+ORCL | RSI:35.7 | RS:-2.0% | Vol:0.18x | MACD:False
+MA | RSI:48.3 | RS:-2.1% | Vol:0.24x | MACD:False
+AVGO | RSI:38.1 | RS:-2.5% | Vol:0.15x | MACD:False
+V | RSI:40.4 | RS:-3.1% | Vol:0.29x | MACD:False
+PYPL | RSI:49.9 | RS:-3.2% | Vol:0.22x | MACD:False
+TSLA | RSI:42.2 | RS:-3.3% | Vol:0.28x | MACD:False
+CRM | RSI:36.0 | RS:-4.2% | Vol:0.17x | MACD:False
+MU | RSI:41.3 | RS:-4.8% | Vol:0.58x | MACD:False
+MSFT | RSI:27.4 | RS:-6.1% | Vol:0.26x | MACD:False
+META | RSI:36.4 | RS:-8.7% | Vol:0.38x | MACD:False
+ADBE | RSI:28.0 | RS:-11.1% | Vol:0.16x | MACD:False

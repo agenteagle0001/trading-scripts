@@ -1,0 +1,15 @@
+BULLISH STOCK SCAN | 2026-04-03 08:34
+
+SCAN: MACD bullish | RSI 40-70 | Vol >1.2x avg | RS vs SPY
+
+TOP 5 (by RS vs SPY):
+1. AMAT | $348.47 | RSI: 52.8 | RS vs SPY: +24.0%
+2. INTC | $50.38 | RSI: 59.4 | RS vs SPY: +22.8%
+3. PEP | $157.01 | RSI: 43.9 | RS vs SPY: +20.3%
+4. COST | $1014.96 | RSI: 53.5 | RS vs SPY: +19.8%
+5. KO | $76.72 | RSI: 46.1 | RS vs SPY: +19.0%
+
+FULL SIGNALS (all 4 criteria): 1
+• INTC | $50.38 | RSI: 59.4 | RS vs SPY: +22.8%
+
+30 stocks | SPY 60d: -4.6%

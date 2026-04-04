@@ -1,0 +1,54 @@
+TOP 5 BULLISH SIGNALS - 2026-04-03 10:30 CDT
+
+1. CRM | Price: $187.18 | RSI: 43.4 | RS vs SPY: +292.9%
+   MACD bull cross + RSI 43 + volume 0.9x
+
+2. ADBE | Price: $242.92 | RSI: 43.2 | RS vs SPY: +378.4%
+   MACD bull cross + RSI 43 + volume 0.6x
+
+3. IBM | Price: $248.16 | RSI: 51.7 | RS vs SPY: +124.0%
+   MACD bull cross + RSI 52 + volume 0.7x
+
+4. MA | Price: $493.44 | RSI: 47.5 | RS vs SPY: +135.8%
+   MACD bull cross + RSI 48 + volume 0.9x
+
+5. PYPL | Price: $45.34 | RSI: 51.9 | RS vs SPY: +211.9%
+   MACD bull cross + RSI 52 + volume 0.7x
+
+
+Full scan details:
+SPY 20d change: -3.48%
+SPY 60d change: -4.94%
+
+All results (sorted by score):
+
+  CRM    | $  187.18 | RSI:  43.4 | Vol: 0.89x | RS: +292.9% | MACD: True | Score: 48.4
+  ADBE   | $  242.92 | RSI:  43.2 | Vol: 0.56x | RS: +378.4% | MACD: True | Score: 48.2
+  IBM    | $  248.16 | RSI:  51.7 | Vol: 0.66x | RS: +124.0% | MACD: True | Score: 45.2
+  MA     | $  493.44 | RSI:  47.5 | Vol: 0.87x | RS: +135.8% | MACD: True | Score: 42.9
+  PYPL   | $   45.34 | RSI:  51.9 | Vol: 0.72x | RS: +211.9% | MACD: False | Score: 41.9
+  INTC   | $   50.38 | RSI:  59.4 | Vol: 1.29x | RS: -499.9% | MACD: True | Score: 41.7
+  AMZN   | $  209.77 | RSI:  51.9 | Vol: 0.71x | RS:  +91.1% | MACD: True | Score: 40.6
+  V      | $  300.80 | RSI:  42.9 | Vol: 0.59x | RS: +144.3% | MACD: True | Score: 39.5
+  TSLA   | $  360.59 | RSI:  38.6 | Vol: 1.31x | RS: +228.5% | MACD: False | Score: 37.7
+  DIS    | $   96.61 | RSI:  41.0 | Vol: 0.57x | RS: +140.0% | MACD: True | Score: 37.0
+  BAC    | $   49.38 | RSI:  68.7 | Vol: 0.63x | RS:  +38.5% | MACD: False | Score: 34.5
+  NFLX   | $   98.66 | RSI:  59.2 | Vol: 0.96x | RS: -182.0% | MACD: True | Score: 34.2
+  QCOM   | $  126.80 | RSI:  41.0 | Vol: 0.65x | RS: +311.1% | MACD: False | Score: 31.0
+  META   | $  574.46 | RSI:  40.3 | Vol: 0.79x | RS: +217.6% | MACD: False | Score: 30.3
+  ORCL   | $  146.38 | RSI:  40.1 | Vol: 0.50x | RS: +223.5% | MACD: False | Score: 30.1
+  MSFT   | $  373.46 | RSI:  33.8 | Vol: 0.74x | RS: +250.6% | MACD: False | Score: 30.0
+  COST   | $ 1014.96 | RSI:  53.5 | Vol: 1.07x | RS: -292.2% | MACD: True | Score: 28.5
+  AAPL   | $  255.92 | RSI:  59.4 | Vol: 0.78x | RS:  -51.9% | MACD: True | Score: 26.6
+  JPM    | $  294.60 | RSI:  63.7 | Vol: 0.60x | RS:  +15.8% | MACD: False | Score: 26.1
+  AMD    | $  217.50 | RSI:  64.9 | Vol: 1.13x | RS: -245.0% | MACD: False | Score: 24.9
+  NVDA   | $  177.39 | RSI:  46.9 | Vol: 0.80x | RS:   -0.2% | MACD: True | Score: 21.9
+  KO     | $   76.72 | RSI:  46.1 | Vol: 0.91x | RS: -244.4% | MACD: True | Score: 21.1
+  PEP    | $  157.01 | RSI:  43.9 | Vol: 0.85x | RS: -221.2% | MACD: True | Score: 18.9
+  GOOGL  | $  295.77 | RSI:  45.6 | Vol: 0.73x | RS:  -17.5% | MACD: True | Score: 18.0
+  AVGO   | $  314.55 | RSI:  46.1 | Vol: 0.51x | RS:  +59.9% | MACD: False | Score: 15.1
+  TXN    | $  194.87 | RSI:  54.8 | Vol: 0.55x | RS:  -98.7% | MACD: True | Score: 15.0
+  WFC    | $   80.60 | RSI:  74.1 | Vol: 0.55x | RS:  +88.0% | MACD: False | Score: 13.2
+  AMAT   | $  348.47 | RSI:  52.8 | Vol: 0.62x | RS: -288.8% | MACD: False | Score: 12.8
+  GS     | $  863.04 | RSI:  75.0 | Vol: 0.77x | RS:  -54.4% | MACD: False | Score: -8.2
+  MU     | $  366.24 | RSI:  36.8 | Vol: 1.01x | RS:  -56.6% | MACD: False | Score: -8.5

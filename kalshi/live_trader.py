@@ -14,7 +14,7 @@ from datetime import datetime
 API_KEY = "7c519784-3932-46e6-8547-fa945541304e"
 KEY_PATH = "/home/colton/.openclaw/workspace/secrets/kalshi.pem"
 LIVE_LOG = "/home/colton/.openclaw/workspace/kalshi/live_trades.json"
-SHARES = 5
+TARGET_DOLLAR = 4.00  # Fixed position size per trade
 
 def load_log():
     try:
@@ -56,11 +56,13 @@ def resolve_trades():
 
             won = (direction == "YES" and result == "yes") or (direction == "NO" and result == "no")
             entry = trade["entry_price"]
+            count = trade.get("count", 1)
+            position_cost = entry * count
 
             if won:
-                pnl = (1.0 - entry) * SHARES
+                pnl = (1.0 - entry) * count
             else:
-                pnl = -entry * SHARES
+                pnl = -position_cost
 
             trade["result"] = result
             trade["won"] = won
@@ -154,9 +156,11 @@ def main():
         print(f"Confidence: {ml_confidence:.0%} | Fair prob: {signals['fair']:.1%}")
 
     # Execute trade
-    status, resp = execute_trade(signals['ticker'], direction, signals['kalshi'])
+    status, resp, count = execute_trade(signals['ticker'], direction, signals['kalshi'])
+    position_cost = signals['kalshi'] * count
 
     print(f"Status: {status}")
+    print(f"Contracts: {count} @ ${signals['kalshi']:.3f} = ${position_cost:.2f}")
     print(f"Response: {resp[:200] if resp else 'None'}")
 
     if status == 201:
@@ -167,6 +171,8 @@ def main():
             "ticker": signals['ticker'],
             "direction": ml_direction,
             "entry_price": signals['kalshi'],
+            "count": count,
+            "position_cost": position_cost,
             "fair_prob": signals['fair'],
             "momentum_15min": signals['momentum_15min'],
             "momentum_45min": signals['momentum_45min'],
