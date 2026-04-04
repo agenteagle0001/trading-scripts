@@ -1,134 +1,141 @@
+#!/usr/bin/env python3
 import yfinance as yf
 import pandas as pd
 import numpy as np
-from datetime import datetime, timedelta
+from datetime import datetime
 
-stocks = ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "META", "TSLA", "AMD", "NFLX", "AVGO",
-          "COST", "ORCL", "CRM", "ADBE", "PYPL", "INTC", "QCOM", "TXN", "AMAT", "MU",
-          "IBM", "GS", "JPM", "BAC", "WFC", "V", "MA", "DIS", "KO", "PEP"]
+# Stock list
+stocks = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'NVDA', 'META', 'TSLA', 'AMD', 'NFLX', 'AVGO',
+          'COST', 'ORCL', 'CRM', 'ADBE', 'PYPL', 'INTC', 'QCOM', 'TXN', 'AMAT', 'MU',
+          'IBM', 'GS', 'JPM', 'BAC', 'WFC', 'V', 'MA', 'DIS', 'KO', 'PEP']
 
-end = datetime.now()
-start = end - timedelta(days=120)
-
-def calc_rsi(prices, period=14):
-    delta = prices.diff()
-    gain = delta.clip(lower=0).rolling(14).mean()
-    loss = (-delta.clip(upper=0)).rolling(14).mean()
-    rs = gain / loss
-    rsi = 100 - (100 / (1 + rs))
-    return rsi
-
-def calc_macd(prices, fast=12, slow=26, signal=9):
-    ema_fast = prices.ewm(span=fast).mean()
-    ema_slow = prices.ewm(span=slow).mean()
-    macd_line = ema_fast - ema_slow
-    signal_line = macd_line.ewm(span=signal).mean()
-    return macd_line, signal_line
-
-def get_series(data, col, sym):
-    if isinstance(data.columns, pd.MultiIndex):
-        s = data[col][sym].squeeze()
-    else:
-        s = data[col].squeeze()
-    return s
-
-spy_data = yf.download("SPY", start=start, end=end, progress=False, auto_adjust=True)
-spy_close = get_series(spy_data, "Close", "SPY").dropna()
-spy_ret = (spy_close.iloc[-1] / spy_close.iloc[0]) - 1
+# Fetch SPY for relative strength calculation
+print("Fetching SPY data...")
+spy_df = yf.download('SPY', period='3mo', progress=False)
+spy = spy_df['Close']['SPY'] if ('Close', 'SPY') in spy_df.columns else spy_df['Close'].iloc[:, 0]
+spy_returns = float(spy.pct_change(20).dropna().iloc[-1]) if len(spy) > 20 else 0
 
 results = []
 
-for sym in stocks:
+print(f"SPY 20-day return: {spy_returns*100:.2f}%\n")
+print("Scanning stocks...")
+
+for symbol in stocks:
     try:
-        data = yf.download(sym, start=start, end=end, progress=False, auto_adjust=True)
+        ticker = yf.Ticker(symbol)
+        hist = ticker.history(period='3mo')
         
-        if data.empty or len(data) < 60:
+        if len(hist) < 26:
             continue
+            
+        close = hist['Close']
+        volume = hist['Volume']
         
-        close = get_series(data, "Close", sym).dropna()
-        volume = get_series(data, "Volume", sym).dropna()
-        
-        if len(close) < 30 or close.isna().iloc[-1]:
-            continue
-        
+        # Current price
         price = close.iloc[-1]
         
-        macd_line, signal_line = calc_macd(close)
-        rsi = calc_rsi(close)
+        # RSI(14)
+        delta = close.diff()
+        gain = delta.where(delta > 0, 0).rolling(14).mean()
+        loss = (-delta.where(delta < 0, 0)).rolling(14).mean()
+        rs = gain / loss
+        rsi = 100 - (100 / (1 + rs))
+        rsi_current = float(rsi.iloc[-1])
         
-        # MACD bull cross: macd crossed above signal in last 10 days
-        macd_bull = False
-        for i in range(-10, 0):
-            if i == -10:
-                continue
-            if macd_line.iloc[i-1] < signal_line.iloc[i-1] and macd_line.iloc[i] > signal_line.iloc[i]:
-                macd_bull = True
+        # MACD (12, 26, 9)
+        ema12 = close.ewm(span=12).mean()
+        ema26 = close.ewm(span=26).mean()
+        macd = ema12 - ema26
+        signal = macd.ewm(span=9).mean()
+        
+        # MACD bull cross: MACD crosses above signal in last 5 days
+        macd_bull_cross = False
+        for i in range(-4, 0):
+            if macd.iloc[i] > signal.iloc[i] and macd.iloc[i-1] <= signal.iloc[i-1]:
+                macd_bull_cross = True
                 break
         
-        rsi_val = rsi.iloc[-1]
-        if rsi_val != rsi_val or np.isnan(rsi_val):
-            rsi_val = rsi.dropna().iloc[-1]
-        rsi_ok = 40 <= rsi_val <= 70
+        # Volume ratio
+        vol_avg20 = volume.rolling(20).mean().iloc[-1]
+        vol_ratio = float(volume.iloc[-1] / vol_avg20) if vol_avg20 > 0 else 0
         
-        avg_vol = volume.rolling(20).mean().iloc[-1]
-        vol_ratio = volume.iloc[-1] / avg_vol if avg_vol > 0 else 0
-        vol_ok = vol_ratio > 1.2
+        # 20-day return
+        ret_20d = float((close.iloc[-1] / close.iloc[-20] - 1)) if len(close) >= 20 else 0
         
-        stock_ret = (close.iloc[-1] / close.iloc[0]) - 1
-        rs_vs_spy = (stock_ret - spy_ret) * 100
+        # Relative strength vs SPY (ratio of returns)
+        rs_vs_spy = float(ret_20d / spy_returns) if spy_returns != 0 else 0
         
-        score = 0
-        if macd_bull: score += 2
-        if rsi_ok: score += 1
-        if vol_ok: score += 1
-        
+        # Store result
         results.append({
-            "Symbol": sym,
-            "Price": round(price, 2),
-            "MACD_Cross": "YES" if macd_bull else "no",
-            "RSI": round(rsi_val, 1),
-            "Vol_Ratio": round(vol_ratio, 2),
-            "RS_vs_SPY": round(rs_vs_spy, 2),
-            "Score": score,
-            "Has_MACD_RSI_Vol": macd_bull and rsi_ok and vol_ok
+            'symbol': symbol,
+            'price': float(price),
+            'rsi': rsi_current,
+            'macd_bull_cross': macd_bull_cross,
+            'vol_ratio': vol_ratio,
+            'ret_20d': ret_20d * 100,
+            'rs_vs_spy': rs_vs_spy,
         })
+        
     except Exception as e:
-        print(f"Error {sym}: {e}")
+        print(f"Error with {symbol}: {e}")
 
-results.sort(key=lambda x: (x["Score"], x["RS_vs_SPY"]), reverse=True)
+# Convert to DataFrame
+df = pd.DataFrame(results)
 
-# Filter: MACD bull cross + RSI 40-70 as base (vol >1.2 rare intraday)
-base_filter = [r for r in results if r["MACD_Cross"] == "YES" and 40 <= r["RSI"] <= 70]
-if len(base_filter) >= 5:
-    top5 = base_filter[:5]
+# Calculate a composite bullish score (higher = more bullish)
+# Weight: MACD cross (+30), RSI in 40-70 range (+20), volume spike (+25), RS vs SPY (+25)
+df['macd_score'] = df['macd_bull_cross'].astype(int) * 30
+df['rsi_score'] = df.apply(lambda x: 20 if 40 <= x['rsi'] <= 70 else (10 if 30 <= x['rsi'] < 40 or 70 < x['rsi'] <= 80 else 0), axis=1)
+df['vol_score'] = df['vol_ratio'].apply(lambda x: min(x / 1.2, 1.5) * 25 if x > 1.2 else x * 25)
+df['rs_score'] = df['rs_vs_spy'].clip(lower=0).rank(pct=True) * 25
+
+df['total_score'] = df['macd_score'] + df['rsi_score'] + df['vol_score'] + df['rs_score']
+
+# Sort by total score
+df_sorted = df.sort_values('total_score', ascending=False)
+
+# Filter: MACD bull cross, RSI 40-70, Volume > 1.2x
+bullish = df[
+    (df['macd_bull_cross'] == True) & 
+    (df['rsi'] >= 40) & (df['rsi'] <= 70) &
+    (df['vol_ratio'] > 1.2)
+].copy()
+
+if len(bullish) == 0:
+    print("NOTE: No stocks meet ALL criteria (MACD bull cross + RSI 40-70 + Vol >1.2x)")
+    print("Showing top 5 by composite bullish score instead:\n")
+    top5 = df_sorted.head(5)
 else:
-    top5 = results[:5]
+    bullish['score'] = (70 - bullish['rsi']) * 0.3 + bullish['vol_ratio'] * 10 + bullish['rs_vs_spy'] * 20
+    bullish = bullish.sort_values('score', ascending=False)
+    top5 = bullish.head(5)
 
-scan_time = datetime.now().strftime('%Y-%m-%d %H:%M')
+print(f"\n=== TOP 5 BULLISH STOCKS ===\n")
+for i, row in top5.iterrows():
+    criteria = []
+    if row['macd_bull_cross']: criteria.append("MACD")
+    if 40 <= row['rsi'] <= 70: criteria.append(f"RSI={row['rsi']:.0f}")
+    if row['vol_ratio'] > 1.2: criteria.append(f"Vol={row['vol_ratio']:.2f}x")
+    print(f"{row['symbol']}: Price=${row['price']:.2f}, RSI={row['rsi']:.1f}, RS vs SPY={row['rs_vs_spy']:.2f}x")
+    print(f"   20d Return={row['ret_20d']:.1f}%, Vol Ratio={row['vol_ratio']:.2f}x, MACD Bull Cross={'Yes' if row['macd_bull_cross'] else 'No'}")
+    print(f"   Criteria met: {', '.join(criteria) if criteria else 'Best available match'}\n")
 
-report = f"""BULLISH STOCK SCAN — {scan_time} CST
+# Save full results
+today_str = datetime.now().strftime('%Y%m%d')
+output_path = f'/home/colton/.openclaw/workspace/agents/stock-scanner/scans/{today_str}_full_scan.txt'
 
-Criteria: MACD bull cross on daily, RSI 40-70, Volume >1.2x 20-day avg, RS vs SPY
+with open(output_path, 'w') as f:
+    f.write(f"BULLISH STOCK SCAN RESULTS\n")
+    f.write(f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
+    f.write(f"SPY 20-day return: {spy_returns*100:.2f}%\n\n")
+    
+    f.write("=== ALL SCANNED STOCKS (sorted by score) ===\n")
+    f.write(df_sorted[['symbol','price','rsi','macd_bull_cross','vol_ratio','ret_20d','rs_vs_spy','total_score']].to_string(index=False))
+    f.write("\n\n")
+    
+    f.write("=== TOP 5 BULLISH STOCKS ===\n")
+    for i, row in top5.iterrows():
+        f.write(f"{row['symbol']}: Price=${row['price']:.2f}, RSI={row['rsi']:.1f}, RS vs SPY={row['rs_vs_spy']:.2f}x\n")
+        f.write(f"   20d Return={row['ret_20d']:.1f}%, Vol Ratio={row['vol_ratio']:.2f}x, MACD Bull Cross={'Yes' if row['macd_bull_cross'] else 'No'}\n\n")
 
-TOP 5 RESULTS:
-{'-'*55}
-"""
-for i, r in enumerate(top5, 1):
-    vol_flag = "✓" if r["Vol_Ratio"] > 1.2 else "✗"
-    report += f"{i}. {r['Symbol']:5} | ${r['Price']:8.2f} | RSI:{r['RSI']:5.1f} | RS vs SPY:{r['RS_vs_SPY']:+.2f}% | Vol:{r['Vol_Ratio']:.2f}x [{vol_flag}] | MACD:{r['MACD_Cross']}\n"
-
-matched_all = sum(1 for r in results if r["Has_MACD_RSI_Vol"])
-report += f"""
-{'-'*55}
-Matched all 3 criteria: {matched_all}/30
-Volume filter (>1.2x) is restrictive — most stocks show avg or below-avg volume on scan date.
-Scan date is mid-session (12:30 PM) — volume data incomplete for today.
-"""
-
-print(report)
-
-# Save to file
-outpath = f"/home/colton/.openclaw/workspace/agents/stock-scanner/scans/{datetime.now().strftime('%Y%m%d_%H%M')}_scan.txt"
-with open(outpath, "w") as f:
-    f.write(report)
-print(f"\nSaved to: {outpath}")
+print(f"Full results saved to: {output_path}")

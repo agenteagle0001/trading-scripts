@@ -1,0 +1,23 @@
+BULLISH STOCK SCAN - 2026-03-31 1:30 PM CST
+============================================================
+Criteria: MACD Bull Cross (daily), RSI 40-70, Volume >1.2x avg, RS vs SPY
+
+SCAN RESULTS:
+None of the 30 stocks met ALL four criteria today.
+
+TOP 5 BY RS vs SPY (showing available metrics):
+------------------------------------------------------------
+1. AMAT  | Price: $337.02 | RSI: 44.2 | RS vs SPY: +0.52%
+2. INTC  | Price: $43.84  | RSI: 40.3 | RS vs SPY: +0.38%
+3. COST  | Price: $989.53 | RSI: 48.6 | RS vs SPY: +0.34%
+4. TXN   | Price: $193.59 | RSI: 44.6 | RS vs SPY: +0.26% | MACD: BULL
+5. KO    | Price: $76.06  | RSI: 43.1 | RS vs SPY: +0.26%
+
+STOCKS WITH MACD BULL CROSS (but missing other criteria):
+- TXN, AAPL, GS, JPM, MA, BAC, IBM, WFC, PYPL, QCOM
+
+NOTES:
+- Market showing defensive rotation (AMAT, INTC, COST, KO leading)
+- Most stocks lack volume confirmation (avg vol ratios 0.3x-0.8x)
+- Semis (AMAT) leading on relative strength
+- Geopolitical tensions may be suppressing broad momentum

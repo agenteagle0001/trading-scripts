@@ -1,0 +1,9 @@
+BULLISH STOCK SCAN — 2026-04-02 08:35 UTC
+============================================================
+SCAN: MACD bull cross (daily), RSI 40-70, Vol >1.2x avg, RS vs SPY
+SCANNED: 30 stocks | MATCHES: 0
+
+TOP 5:
+No stocks passed all filters.
+
+ALL BULLISH (0): None

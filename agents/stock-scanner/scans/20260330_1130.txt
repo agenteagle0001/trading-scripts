@@ -1,0 +1,13 @@
+TOP 5 BULLISH STOCKS - March 30, 2026 11:30 CT
+==================================================
+Symbol        Price    RSI  RS vs SPY %
+--------------------------------------------------
+PYPL     $    44.94   49.7       96.7%
+KO       $    76.76   46.4       95.6%
+BAC      $    47.37   41.4       91.4%
+AMD      $   197.68   46.1       89.8%
+COST     $  1002.40   52.5       85.8%
+--------------------------------------------------
+
+Criteria: MACD bull cross, RSI 40-70, Vol >1.2x avg
+Found 11 qualifying stocks, showing top 5 by RS vs SPY

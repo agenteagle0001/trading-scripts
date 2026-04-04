@@ -1,0 +1,20 @@
+BULLISH STOCK SCAN - 2026-03-31 10:34
+
+SPY Price: 640.73 | SPY 20-ma: 660.19 | SPY % from ma: -2.9%
+
+TOP 5 (MACD Bull Cross Only - relaxed scan)
+-------------------------------------------------------
+COST | $993.33 | RSI: 50.6 | RS vs SPY: +3.4% | Vol: 0.28x
+PYPL | $45.01 | RSI: 47.6 | RS vs SPY: +2.4% | Vol: 0.21x
+MA | $493.63 | RSI: 43.8 | RS vs SPY: +1.0% | Vol: 0.35x
+
+Filters Applied:
+- MACD Bull Cross on Daily (strict)
+- RSI: 43.8 (showing all with bull cross)
+- Volume > 1.2x 20-day average: relaxed
+- Relative Strength vs SPY
+
+Note: Market showing weakness (SPY -2.9% from 20-ma).
+
+Total stocks scanned: 30
+Stocks with MACD bull cross: 3

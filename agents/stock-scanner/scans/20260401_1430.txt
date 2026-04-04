@@ -1,0 +1,46 @@
+BULLISH SCAN RESULTS - 2026-04-01 14:30 UTC
+=================================================
+
+TOP 5 BULLISH CANDIDATES:
+#1 INTC - Price: $47.79 | RSI: 55.6 | RS vs SPY: +7.48%
+#2 PEP - Price: $155.01 | RSI: 41.2 | RS vs SPY: +0.79%
+#3 AMZN - Price: $211.62 | RSI: 51.9 | RS vs SPY: +0.13%
+#4 AMD - Price: $210.78 | RSI: 58.3 | RS vs SPY: +9.15%
+#5 AMAT - Price: $353.40 | RSI: 56.5 | RS vs SPY: +5.46%
+
+FULL SCAN DATA:
+INTC   | Price: $47.79 | RSI:  55.6 | Vol Ratio: 1.24x | RS vs SPY: +7.48% | MACD: BULL   | Score: 8
+PEP    | Price: $155.01 | RSI:  41.2 | Vol Ratio: 0.46x | RS vs SPY: +0.79% | MACD: BULL   | Score: 7
+AMZN   | Price: $211.62 | RSI:  51.9 | Vol Ratio: 0.75x | RS vs SPY: +0.13% | MACD: BULL   | Score: 7
+AMD    | Price: $210.78 | RSI:  58.3 | Vol Ratio: 1.02x | RS vs SPY: +9.15% | MACD: NEUTRAL | Score: 4
+AMAT   | Price: $353.40 | RSI:  56.5 | Vol Ratio: 0.55x | RS vs SPY: +5.46% | MACD: NEUTRAL | Score: 4
+COST   | Price: $999.06 | RSI:  47.4 | Vol Ratio: 0.57x | RS vs SPY: +5.15% | MACD: NEUTRAL | Score: 4
+JPM    | Price: $295.63 | RSI:  65.6 | Vol Ratio: 0.55x | RS vs SPY: +4.18% | MACD: NEUTRAL | Score: 4
+KO     | Price: $76.27 | RSI:  44.8 | Vol Ratio: 0.61x | RS vs SPY: +3.17% | MACD: NEUTRAL | Score: 4
+BAC    | Price: $49.22 | RSI:  64.2 | Vol Ratio: 0.45x | RS vs SPY: +2.85% | MACD: NEUTRAL | Score: 4
+GOOGL  | Price: $297.26 | RSI:  45.8 | Vol Ratio: 0.94x | RS vs SPY: +2.34% | MACD: NEUTRAL | Score: 4
+WFC    | Price: $81.04 | RSI:  69.2 | Vol Ratio: 0.56x | RS vs SPY: +2.16% | MACD: NEUTRAL | Score: 4
+TXN    | Price: $195.21 | RSI:  56.4 | Vol Ratio: 0.39x | RS vs SPY: +2.07% | MACD: NEUTRAL | Score: 4
+AAPL   | Price: $255.50 | RSI:  49.6 | Vol Ratio: 0.61x | RS vs SPY: +1.63% | MACD: NEUTRAL | Score: 4
+NFLX   | Price: $95.78 | RSI:  54.6 | Vol Ratio: 0.57x | RS vs SPY: +0.05% | MACD: NEUTRAL | Score: 4
+MU     | Price: $368.08 | RSI:  42.5 | Vol Ratio: 1.36x | RS vs SPY: -3.79% | MACD: NEUTRAL | Score: 3
+GS     | Price: $860.30 | RSI:  72.1 | Vol Ratio: 0.60x | RS vs SPY: +6.45% | MACD: NEUTRAL | Score: 2
+NVDA   | Price: $175.98 | RSI:  42.5 | Vol Ratio: 0.72x | RS vs SPY: -0.54% | MACD: NEUTRAL | Score: 2
+IBM    | Price: $243.60 | RSI:  46.2 | Vol Ratio: 0.42x | RS vs SPY: -1.57% | MACD: NEUTRAL | Score: 2
+DIS    | Price: $96.71 | RSI:  41.0 | Vol Ratio: 0.53x | RS vs SPY: -2.10% | MACD: NEUTRAL | Score: 2
+PYPL   | Price: $44.74 | RSI:  51.6 | Vol Ratio: 0.63x | RS vs SPY: -2.62% | MACD: NEUTRAL | Score: 2
+TSLA   | Price: $380.46 | RSI:  43.8 | Vol Ratio: 0.78x | RS vs SPY: -2.71% | MACD: NEUTRAL | Score: 2
+MA     | Price: $492.20 | RSI:  47.2 | Vol Ratio: 0.73x | RS vs SPY: -2.71% | MACD: NEUTRAL | Score: 2
+V      | Price: $298.80 | RSI:  41.0 | Vol Ratio: 0.73x | RS vs SPY: -3.09% | MACD: NEUTRAL | Score: 2
+AVGO   | Price: $313.96 | RSI:  39.6 | Vol Ratio: 0.47x | RS vs SPY: -1.98% | MACD: NEUTRAL | Score: 0
+ORCL   | Price: $145.62 | RSI:  35.4 | Vol Ratio: 0.51x | RS vs SPY: -2.45% | MACD: NEUTRAL | Score: 0
+QCOM   | Price: $127.07 | RSI:  38.6 | Vol Ratio: 0.51x | RS vs SPY: -3.78% | MACD: NEUTRAL | Score: 0
+CRM    | Price: $185.38 | RSI:  35.8 | Vol Ratio: 0.70x | RS vs SPY: -4.48% | MACD: NEUTRAL | Score: 0
+MSFT   | Price: $368.92 | RSI:  26.7 | Vol Ratio: 0.64x | RS vs SPY: -6.70% | MACD: NEUTRAL | Score: 0
+META   | Price: $580.63 | RSI:  37.0 | Vol Ratio: 1.12x | RS vs SPY: -8.55% | MACD: NEUTRAL | Score: 0
+ADBE   | Price: $240.92 | RSI:  28.4 | Vol Ratio: 0.41x | RS vs SPY: -11.02% | MACD: NEUTRAL | Score: 0
+
+SUMMARY: 
+Found 3 stocks with 3+ bullish signals. Top plays: INTC, PEP, AMZN. 
+Watch: AVGO, ORCL, QCOM, CRM, MSFT, META, ADBE showing oversold conditions.
+Caution: GS approaching overbought.

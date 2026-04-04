@@ -1,0 +1,25 @@
+BULLISH STOCK SCAN - 2026-03-30
+================================
+Scan Time: 10:30 AM CT
+Criteria: RSI 40-70, Vol >1.2x avg, MACD bull cross, RS vs SPY
+
+TOP 5 RESULTS (by RS vs SPY):
+------------------------------
+1. AMAT  | $327.12 | RSI: 41.4 | RS vs SPY: +35.4% | Vol: 0.36x* | MACD: -8d
+2. COST  | $1004.49| RSI: 53.3 | RS vs SPY: +24.9% | Vol: 0.50x* | MACD: -
+3. KO    | $76.81  | RSI: 46.7 | RS vs SPY: +18.6% | Vol: 0.46x* | MACD: -
+4. PEP   | $157.54 | RSI: 42.9 | RS vs SPY: +18.5% | Vol: 0.52x* | MACD: -
+5. NFLX  | $94.12  | RSI: 40.7 | RS vs SPY: +7.8%  | Vol: 0.36x* | MACD: -
+
+* Volume below 1.2x average today (Monday / partial session)
+* No fresh MACD crosses today; AMAT had MACD bull cross 8 days ago
+
+ADDITIONAL WATCH (recent MACD cross, RSI near 40-70):
+- GS: RSI 44.8, RS -0.3%, MACD -8d
+- JPM: RSI 47.6, RS -4.2%, MACD -9d
+- BAC: RSI 42.4, RS -7.2%, MACD -8d
+
+NOTES:
+- Market broad strength: Only 5 of 30 stocks have RS vs SPY > 0
+- All stocks showing below-avg volume (typical Monday / pre-market)
+- Defensive names (KO, PEP, COST) leading on relative strength

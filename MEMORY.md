@@ -29,6 +29,16 @@
 - Never be verbose unless asked
 - Hard to tell you're hallucinating when you're hallucinating — competence handles it
 
+## EE Calc (elec-calc.com)
+
+- **URL:** https://elec-calc.com
+- **Repo:** github.com/agenteagle0001/vercel_calculators
+- **Live:** 2026-04-03
+- **Stack:** Next.js 14, Tailwind CSS, TypeScript
+- **Pages:** Ohm's Law, Resistor Color, Voltage Divider, dBm-Watts, FSPL, LPF, HPF, BPF, LED Resistor, Capacitor Charge
+- **SEO:** sitemap.xml, robots.txt, JSON-LD schema, OG tags — all done
+- **Monetization:** Not yet — affiliate links, AdSense, or sponsored calculators possible
+
 ## Todo
 
 - [ ] Test and verify Telegram integration (done)
@@ -36,4 +46,4 @@
 
 ---
 
-_Last updated: 2026-02-27_
+_Last updated: 2026-04-03_

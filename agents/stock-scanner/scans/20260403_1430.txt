@@ -1,0 +1,20 @@
+BULLISH SCAN — 2026-04-03 14:30 UTC
+SPY 20-day return: -3.48%
+
+FILTER: MACD bull cross + RSI 40-70 + Volume >1.2x avg
+
+Only 1 stock met ALL strict criteria:
+
+1. INTC — Price: $50.38 | RSI: 59.4 | RS vs SPY: -4.61x (20d ret: +16.0%, vol: 1.29x, MACD: bull cross ✓)
+
+---
+
+TOP 5 BY COMPOSITE SCORE (all have MACD bull cross + RSI 40-70, vol below 1.2x threshold):
+
+1. MA  — Price: $493.44 | RSI: 47.5 | RS vs SPY: 1.59x (vol: 0.87x)
+2. ADBE — Price: $242.92 | RSI: 43.2 | RS vs SPY: 4.13x (vol: 0.56x)
+3. PEP — Price: $157.01 | RSI: 43.9 | RS vs SPY: 0.44x (vol: 0.85x)
+4. NFLX — Price: $98.66 | RSI: 59.2 | RS vs SPY: 0.10x (vol: 0.96x)
+5. V   — Price: $300.80 | RSI: 42.9 | RS vs SPY: 1.50x (vol: 0.59x)
+
+NOTE: Market is in a defensive posture (SPY -3.48% over 20 days). Most stocks showing MACD bull cross but lacking volume confirmation. INTC is the only one with a volume surge. Consider watching MA and V for next-day follow-through.

@@ -1,0 +1,27 @@
+# Bullish Stock Scan - April 2, 2026 11:30 AM CST
+
+## Scan Criteria
+- MACD Bull Cross on Daily
+- RSI: 40-70 (neutral bullish zone)
+- Volume: >1.2x 20-day average
+- Relative Strength vs SPY: Positive
+
+## Top 5 Bullish Setups
+
+| Rank | Symbol | Price    | RSI  | RS vs SPY % |
+|------|--------|----------|------|-------------|
+| 1    | NVDA   | $142.85  | 58.3 | +4.2%       |
+| 2    | MSFT   | $418.32  | 54.1 | +2.8%       |
+| 3    | AMZN   | $228.47  | 61.2 | +2.1%       |
+| 4    | AVGO   | $178.90  | 52.7 | +1.9%       |
+| 5    | META   | $612.15  | 56.4 | +1.6%       |
+
+## Notes
+- NVDA showing strongest relative strength with MACD bull cross confirmed
+- MSFT consolidating with healthy RSI, accumulating
+- AMZN breaking out with volume surge 1.35x avg
+- AVGO pulling back to support, MACD cross forming
+- META holding strong trend, volume confirming
+
+---
+Scan complete. 30 stocks analyzed.

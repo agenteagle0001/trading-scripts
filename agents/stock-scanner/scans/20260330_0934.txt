@@ -1,0 +1,45 @@
+BULLISH STOCK SCAN - 2026-03-30 09:34 UTC
+Criteria: MACD bull cross (daily), RSI 40-70, Volume >1.2x avg, RS vs SPY
+============================================================
+
+TOP 5 BY RS vs SPY (no full signals found):
+------------------------------------------------------------
+1. AMAT | Price:$328.0 | RSI:41.7 | RS vs SPY:+28.8% | no cross
+2. COST | Price:$995.85 | RSI:49.2 | RS vs SPY:+23.3% | no cross
+3. KO | Price:$76.64 | RSI:45.5 | RS vs SPY:+18.3% | no cross
+4. PEP | Price:$157.14 | RSI:41.8 | RS vs SPY:+18.1% | no cross
+5. MU | Price:$340.66 | RSI:35.1 | RS vs SPY:+14.6% | no cross
+
+============================================================
+
+ALL STOCKS SCANNED:
+AMAT   | $  328.00 | RSI: 41.7 | RS: +28.8% | Vol:0.17x | MACD: 
+COST   | $  995.85 | RSI: 49.2 | RS: +23.3% | Vol:0.12x | MACD: 
+KO     | $   76.64 | RSI: 45.5 | RS: +18.3% | Vol:0.22x | MACD: 
+PEP    | $  157.14 | RSI: 41.8 | RS: +18.1% | Vol:0.20x | MACD: 
+MU     | $  340.66 | RSI: 35.1 | RS: +14.6% | Vol:0.49x | MACD: 
+TXN    | $  189.41 | RSI: 39.5 | RS: +14.0% | Vol:0.10x | MACD: 
+INTC   | $   42.13 | RSI: 37.7 | RS: +13.6% | Vol:0.17x | MACD: 
+NFLX   | $   93.23 | RSI: 37.4 | RS:  +9.1% | Vol:0.17x | MACD: 
+AAPL   | $  247.58 | RSI: 28.8 | RS:  -1.9% | Vol:0.14x | MACD: 
+AMD    | $  202.62 | RSI: 49.5 | RS:  -2.7% | Vol:0.25x | MACD: 
+AMZN   | $  201.65 | RSI: 37.5 | RS:  -4.3% | Vol:0.19x | MACD: 
+GS     | $  809.63 | RSI: 42.4 | RS:  -4.3% | Vol:0.14x | MACD: 
+NVDA   | $  166.92 | RSI: 27.2 | RS:  -5.0% | Vol:0.26x | MACD: 
+JPM    | $  284.83 | RSI: 44.5 | RS:  -5.5% | Vol:0.13x | MACD: 
+MA     | $  491.55 | RSI: 37.4 | RS:  -5.9% | Vol:0.13x | MACD: 
+GOOGL  | $  274.26 | RSI: 21.0 | RS:  -6.3% | Vol:0.24x | MACD: 
+V      | $  298.15 | RSI: 31.1 | RS:  -7.1% | Vol:0.21x | MACD: 
+AVGO   | $  295.25 | RSI: 22.4 | RS:  -8.4% | Vol:0.21x | MACD: 
+BAC    | $   47.23 | RSI: 40.2 | RS:  -8.5% | Vol:0.18x | MACD: 
+DIS    | $   94.34 | RSI: 26.3 | RS:  -9.0% | Vol:0.20x | MACD: 
+TSLA   | $  363.24 | RSI: 33.3 | RS: -10.4% | Vol:0.24x | MACD: 
+IBM    | $  238.92 | RSI: 39.1 | RS: -10.9% | Vol:0.08x | MACD: 
+META   | $  534.21 | RSI: 18.8 | RS: -11.2% | Vol:0.40x | MACD: 
+WFC    | $   77.39 | RSI: 46.7 | RS: -11.7% | Vol:0.08x | MACD: 
+MSFT   | $  363.70 | RSI: 18.6 | RS: -16.3% | Vol:0.21x | MACD: 
+PYPL   | $   44.64 | RSI: 48.4 | RS: -16.3% | Vol:0.17x | MACD: 
+QCOM   | $  128.16 | RSI: 32.0 | RS: -18.8% | Vol:0.22x | MACD: 
+ADBE   | $  241.48 | RSI: 25.3 | RS: -20.9% | Vol:0.17x | MACD: 
+CRM    | $  183.29 | RSI: 38.5 | RS: -21.1% | Vol:0.16x | MACD: 
+ORCL   | $  139.05 | RSI: 40.4 | RS: -22.1% | Vol:0.16x | MACD: 

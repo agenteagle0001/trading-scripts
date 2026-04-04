@@ -1,0 +1,50 @@
+BULLISH STOCK SCAN - April 02, 2026 02:30 PM CDT
+Criteria: MACD bull cross (daily), RSI 40-70, Volume >1.2x avg, RS vs SPY
+==========================================================================
+
+TOP 5 BULLISH STOCKS
+-------------------
+1. GOOGL | $294.85 | RSI: 45.1 | RS vs SPY: +1.2%
+2. NVDA | $177.05 | RSI: 46.5 | RS vs SPY: +2.0%
+3. KO   | $76.65  | RSI: 45.6 | RS vs SPY: +2.6%
+4. ADBE | $241.93 | RSI: 42.0 | RS vs SPY: -12.3%
+5. DIS  | $96.57  | RSI: 40.9 | RS vs SPY: -2.5%
+
+FULL SCAN RESULTS (30 stocks)
+-----------------------------
+AAPL: score=45, RSI=57.9, RS=+1.5%, vol=0.46x, MACD=N
+MSFT: score=0,  RSI=32.8, RS=-6.5%, vol=0.51x, MACD=N
+GOOGL: score=80, RSI=45.1, RS=+1.2%, vol=0.53x, MACD=Y ★
+AMZN: score=45, RSI=51.4, RS=+0.5%, vol=0.55x, MACD=N
+NVDA: score=80, RSI=46.5, RS=+2.0%, vol=0.66x, MACD=Y ★
+META: score=25, RSI=40.2, RS=-8.5%, vol=0.64x, MACD=N
+TSLA: score=0,  RSI=38.5, RS=-6.9%, vol=1.07x, MACD=N
+AMD:  score=45, RSI=64.6, RS=+15.1%, vol=0.95x, MACD=N
+NFLX: score=45, RSI=57.3, RS=+1.2%, vol=0.70x, MACD=N
+AVGO: score=25, RSI=45.4, RS=-2.6%, vol=0.37x, MACD=N
+COST: score=45, RSI=51.3, RS=+3.7%, vol=0.73x, MACD=N
+ORCL: score=0,  RSI=39.5, RS=-2.2%, vol=0.42x, MACD=N
+CRM:  score=25, RSI=41.6, RS=-5.7%, vol=0.59x, MACD=N
+ADBE: score=60, RSI=42.0, RS=-12.3%, vol=0.42x, MACD=Y ★
+PYPL: score=25, RSI=51.5, RS=-1.3%, vol=0.58x, MACD=N
+INTC: score=45, RSI=59.0, RS=+18.0%, vol=1.10x, MACD=N
+QCOM: score=25, RSI=40.9, RS=-4.2%, vol=0.41x, MACD=N
+TXN:  score=45, RSI=54.7, RS=+3.2%, vol=0.32x, MACD=N
+AMAT: score=45, RSI=52.8, RS=+9.8%, vol=0.41x, MACD=N
+MU:   score=20, RSI=36.5, RS=+0.8%, vol=0.88x, MACD=N
+IBM:  score=25, RSI=50.5, RS=-2.3%, vol=0.36x, MACD=N
+GS:   score=20, RSI=74.9, RS=+7.4%, vol=0.54x, MACD=N
+JPM:  score=45, RSI=63.1, RS=+4.0%, vol=0.38x, MACD=N
+BAC:  score=45, RSI=68.0, RS=+3.7%, vol=0.46x, MACD=N
+WFC:  score=20, RSI=73.7, RS=+2.5%, vol=0.34x, MACD=N
+V:    score=25, RSI=43.1, RS=-2.8%, vol=0.42x, MACD=N
+MA:   score=25, RSI=47.2, RS=-3.2%, vol=0.63x, MACD=N
+DIS:  score=60, RSI=40.9, RS=-2.5%, vol=0.39x, MACD=Y ★
+KO:   score=80, RSI=45.6, RS=+2.6%, vol=0.44x, MACD=Y ★
+PEP:  score=45, RSI=41.7, RS=+0.3%, vol=0.53x, MACD=N
+
+NOTES:
+- Volume was below 1.2x average for all stocks today (low vol day)
+- 4 stocks showed MACD bull crosses: GOOGL, NVDA, ADBE, DIS, KO
+- Top RS vs SPY: INTC (+18%), AMD (+15.1%), AMAT (+9.8%)
+- Only stocks with MACD bull cross + RSI 40-70 + positive RS qualify for top 5

@@ -1,0 +1,53 @@
+BULLISH STOCK SCAN - 2026-03-30 14:33
+
+Filters Applied:
+- MACD Bullish (above signal line)
+- RSI in range 40-70
+- Volume > 1.2x 20-day average
+- Sorted by RS vs SPY (relative strength)
+
+TOP 5 BULLISH SETUPS:
+==================================================
+
+Symbol        Price      RSI  RS vs SPY %
+------------------------------------------
+AMD      $   193.57     43.6        +8.6%
+PYPL     $    44.48     47.7        +3.4%
+JPM      $   282.51     40.9        +1.3%
+GS       $   804.25     40.4        +0.4%
+WFC      $    76.63     44.1        +0.1%
+
+FULL SCAN RESULTS:
+==================================================
+Symbol        Price      RSI    RSvsSPY VolRatio   MACD  Score
+------------------------------------------------------------
+AMD      $   193.57     43.6       +8.6%     0.97   BULL      3
+PYPL     $    44.48     47.7       +3.4%     0.62   BULL      3
+JPM      $   282.51     40.9       +1.3%     0.43   BULL      3
+GS       $   804.25     40.4       +0.4%     0.45   BULL      3
+WFC      $    76.63     44.1       +0.1%     0.38   BULL      3
+COST     $   993.51     47.9       +5.8%     0.71   BEAR      2
+KO       $    76.24     42.6       +4.0%     0.70   BEAR      2
+PEP      $   156.55     40.2       +3.0%     0.87   BEAR      2
+BAC      $    47.00     38.1       +1.8%     0.56   BULL      2
+INTC     $    40.74     35.2       +1.7%     0.76   BEAR      2
+MA       $   492.20     37.8       +1.1%     0.52   BEAR      2
+V        $   298.64     31.9       +0.3%     0.70   BEAR      2
+IBM      $   236.67     36.3       +3.7%     0.31   BEAR      1
+AMZN     $   200.03     35.5       +3.0%     0.71   BEAR      1
+NFLX     $    92.50     35.6       +1.9%     0.55   BEAR      1
+CRM      $   183.34     38.5       +0.7%     0.60   BEAR      1
+AAPL     $   245.85     27.3       +0.4%     0.55   BEAR      1
+QCOM     $   126.49     27.2       -0.6%     0.52   BULL      1
+TXN      $   185.11     35.5       -1.5%     0.45   BEAR      1
+MU       $   321.36     32.2       -8.1%     1.35   BEAR      1
+AVGO     $   290.86     21.3       -0.1%     0.63   BEAR      0
+ORCL     $   137.52     39.3       -0.5%     0.48   BEAR      0
+AMAT     $   321.70     39.4       -1.2%     0.60   BEAR      0
+NVDA     $   164.39     25.6       -1.5%     0.80   BEAR      0
+DIS      $    93.90     24.0       -1.9%     0.63   BEAR      0
+GOOGL    $   272.29     20.3       -3.0%     0.74   BEAR      0
+TSLA     $   352.33     29.8       -3.0%     0.92   BEAR      0
+ADBE     $   239.94     23.6       -4.2%     0.45   BEAR      0
+MSFT     $   357.05      9.6       -4.4%     0.98   BEAR      0
+META     $   533.62     18.5      -11.3%     1.16   BEAR      0
