@@ -210,6 +210,10 @@ def main():
     print("\nGenerating signal...")
     signal = get_signal()
     
+    # scanner.main() returns a wrapper dict with 'signal' as the inner signal
+    if isinstance(signal, dict) and 'signal' in signal and isinstance(signal['signal'], dict):
+        signal = signal['signal']
+    
     if not signal or signal.get('signal') == "SKIP":
         print("No trade signal - confidence below threshold")
         return
