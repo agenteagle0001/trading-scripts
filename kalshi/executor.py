@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Executor - combines signals and decides to trade"""
 
-import pickle, requests, numpy as np, time, json
+import pickle, requests, re, numpy as np, time, json
 from datetime import datetime
 from scipy.stats import norm
 from scipy.optimize import root_scalar
@@ -183,6 +183,18 @@ def get_all_signals():
     ticker = market['ticker']
     strike = float(market.get('floor_strike', btc_price))
     
+    # Parse time to expiry from ticker (format: KXBTC15M-YYMMDDHHMM-TYPE)
+    tte_minutes = 15  # default 15-min contracts
+    m = re.search(r'-(\d{2})(\w{3})(\d{2})(\d{4})-', ticker)
+    if m:
+        yy, mon, dd, hhmm = m.group(1), m.group(2), m.group(3), m.group(4)
+        months = {'JAN':1,'FEB':2,'MAR':3,'APR':4,'MAY':5,'JUN':6,'JUL':7,'AUG':8,'SEP':9,'OCT':10,'NOV':11,'DEC':12}
+        try:
+            expiry_dt = datetime(int("20"+yy), months[mon.upper()], int(dd), int(hhmm[:2]), int(hhmm[2:]))
+            tte_minutes = max(1, min(120, (expiry_dt - datetime.now()).total_seconds() / 60))
+        except:
+            pass
+    
     yes_bid = float(market.get('yes_bid_dollars', 50) or 50)
     yes_ask = float(market.get('yes_ask_dollars', 50) or 50)
     kalshi_prob = (yes_bid + yes_ask) / 2
@@ -211,8 +223,8 @@ def get_all_signals():
     ml_confidence_v2 = None
     if use_v2:
         try:
-            X_v2 = scaler_v2.transform([[fair_prob, momentum["momentum_15min"], momentum["momentum_45min"], 
-                                        momentum["btc_direction"], kalshi_prob]])
+            X_v2 = scaler_v2.transform([[fair_prob, kalshi_prob, momentum["momentum_15min"], momentum["momentum_45min"],
+                                        tte_minutes / 120.0]])
             pred_v2 = model_v2.predict(X_v2)[0]
             conf_v2 = model_v2.predict_proba(X_v2)[0][1]
             ml_direction_v2 = "YES" if pred_v2 == 1 else "NO"
@@ -238,6 +250,7 @@ def get_all_signals():
         "ml_confidence_v1": conf_v1,
         "ml_direction_v2": ml_direction_v2,
         "ml_confidence_v2": ml_confidence_v2,
+        "tte_minutes": tte_minutes,
     })
     
     return {
@@ -246,6 +259,7 @@ def get_all_signals():
         'strike': strike,
         'fair': fair_prob,
         'kalshi': kalshi_prob,
+        'tte_minutes': tte_minutes,
         'mispricing': mispricing,
         'momentum_15min': momentum["momentum_15min"],
         'momentum_45min': momentum["momentum_45min"],

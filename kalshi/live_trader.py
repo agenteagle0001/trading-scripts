@@ -15,6 +15,80 @@ API_KEY = "7c519784-3932-46e6-8547-fa945541304e"
 KEY_PATH = "/home/colton/.openclaw/workspace/secrets/kalshi.pem"
 LIVE_LOG = "/home/colton/.openclaw/workspace/kalshi/live_trades.json"
 TARGET_DOLLAR = 4.00  # Fixed position size per trade
+HISTORY_LOG = "/home/colton/.openclaw/workspace/kalshi/market_history.json"
+
+def load_history():
+    try:
+        with open(HISTORY_LOG) as f:
+            return json.load(f)
+    except:
+        return {"snapshots": [], "resolved": {}}
+
+def save_history(h):
+    with open(HISTORY_LOG, "w") as f:
+        json.dump(h, f, indent=2)
+
+def log_market_snapshot(ticker, signals, traded=False):
+    """Log a market snapshot for training purposes (not just traded markets)."""
+    h = load_history()
+    
+    # Check if we already logged this ticker (one snapshot per ticker)
+    for s in h["snapshots"]:
+        if s.get("ticker") == ticker:
+            return  # Already have a snapshot for this ticker
+    
+    snapshot = {
+        "timestamp": datetime.now().isoformat(),
+        "ticker": ticker,
+        "fair_prob": signals.get("fair", 0.5),
+        "kalshi_prob": signals.get("kalshi", 0.5),
+        "mispricing": signals.get("mispricing", 0),
+        "momentum_15min": signals.get("momentum_15min", 0),
+        "momentum_45min": signals.get("momentum_45min", 0),
+        "ml_direction_v1": signals.get("ml_direction", None),
+        "ml_confidence_v1": signals.get("ml_confidence", 0),
+        "tte_minutes": signals.get("tte_minutes", 15),
+        "traded": traded,
+    }
+    h["snapshots"].append(snapshot)
+    save_history(h)
+
+def check_market_resolutions():
+    """Check ALL markets for settlement and update market history."""
+    h = load_history()
+    
+    try:
+        r = requests.get(
+            "https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXBTC15M&limit=200",
+            headers={"apikey": API_KEY}, timeout=10
+        )
+        markets = r.json().get("markets", [])
+    except Exception as e:
+        print(f"Error fetching markets for history: {e}")
+        return
+    
+    finalized = {m['ticker']: m for m in markets if m['status'] == 'finalized'}
+    
+    updated = 0
+    for ticker, m in finalized.items():
+        result = m.get("result", "")  # "yes" or "no"
+        if ticker in h["resolved"]:
+            continue
+        
+        # Mark all unresolved snapshots for this ticker as resolved
+        for s in h["snapshots"]:
+            if s.get("ticker") == ticker and "result" not in s:
+                s["result"] = result
+                s["resolved_at"] = datetime.now().isoformat()
+                updated += 1
+        
+        h["resolved"][ticker] = result
+        save_history(h)
+        updated += 1
+    
+    if updated:
+        print(f"[Market History] Resolved {updated} snapshots")
+
 
 def load_log():
     try:
@@ -102,6 +176,9 @@ def main():
 
     # Resolve any finalized trades first
     resolve_trades()
+    
+    # Check all market resolutions (not just our trades)
+    check_market_resolutions()
 
     # Check for existing position
     position = get_position()
@@ -123,6 +200,9 @@ def main():
     print(f"V2 ML: {ml_direction} {ml_confidence:.0%}" if ml_direction else "V2: No signal")
     print(f"Momentum: 15min={signals['momentum_15min']:+.3f}, 45min={signals['momentum_45min']:+.3f}")
     print(f"Order flow: {order_flow}")
+
+    # Log market snapshot for ALL tickers we see (for training data, not just trades)
+    log_market_snapshot(signals['ticker'], signals, traded=False)
 
     # Decide to trade
     if ml_direction is None:
@@ -164,7 +244,8 @@ def main():
     print(f"Response: {resp[:200] if resp else 'None'}")
 
     if status == 201:
-        # Log the trade
+        # Log the trade AND mark snapshot as traded
+        log_market_snapshot(signals['ticker'], signals, traded=True)
         log = load_log()
         log["trades"].append({
             "timestamp": datetime.now().isoformat(),
