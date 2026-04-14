@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Alpaca Paper Trading - Sell puts on bullish signals with exit rules"""
 import yfinance as yf
+import os
 import json, subprocess, glob, re, requests
 from datetime import datetime
 
@@ -63,8 +64,9 @@ def get_latest_scan():
     scans = glob.glob(f"{SCAN_DIR}/*.txt")
     if not scans:
         return []
-    bullish_files = sorted([s for s in scans if 'bullish_scan' in s], reverse=True)
-    scan_files = sorted([s for s in scans if '_scan.txt' in s and 'bullish_scan' not in s], reverse=True)
+    # Prefer bullish_scan files, sort by mtime descending
+    bullish_files = sorted([s for s in scans if 'bullish' in s], key=lambda f: -os.path.getmtime(f))
+    scan_files = sorted([s for s in scans if '_scan.txt' in s and 'bullish_scan' not in s], key=lambda f: -os.path.getmtime(f))
     candidates = bullish_files + scan_files
     if not candidates:
         return []
@@ -73,14 +75,28 @@ def get_latest_scan():
     symbols = []
     with open(latest) as f:
         for line in f:
-            # Match lines like "1. MU (Micron Technology)" or "1. AMAT  | $374.70"
-            match = re.match(r'\s*\d+\.\s+([A-Z]+)\s*\(', line)
-            if match:
-                symbols.append(match.group(1))
-            elif re.search(r'\d+\.\s+([A-Z]+)\s+\|', line):
-                sym = re.search(r'\d+\.\s+([A-Z]+)\s+\|', line)
-                if sym:
-                    symbols.append(sym.group(1))
+            parts = line.strip().split()
+            # Need at least: SYMBOL $ PRICE
+            if len(parts) < 3:
+                continue
+            # Skip header/noise lines
+            first = parts[0]
+            if first in ('TOP', 'Symbol', 'Filters', 'Scan', 'Total', 'Rank', 'NOTE:', 'SCAN', 'BULLISH', 'DATA', 'SPY', '-', 'OBSERVATIONS', 'Showing'):
+                continue
+            if first.startswith('=') or first.startswith('---'):
+                continue
+            # Old numbered format: "1. MU" or "  1   INTC  $  62.59"
+            if first[0].isdigit():
+                for p in parts:
+                    if p.replace('.', '').replace(',', '').isalpha() and len(p) >= 2 and p.replace('.', '').replace(',', '').isupper():
+                        sym = p.replace('.', '').replace(',', '')
+                        if sym not in ('USD', 'RSI', 'MACD', 'YES', 'NO', 'BULL'):
+                            symbols.append(sym)
+                        break
+                continue
+            # New tabular format: "SYMBOL $ PRICE" (parts[0]=SYMBOL, parts[1]='$')
+            if parts[1] == '$' and len(parts[0]) >= 2 and parts[0].isalpha():
+                symbols.append(parts[0])
     return symbols[:3]
 
 def get_positions():
