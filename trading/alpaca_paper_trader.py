@@ -15,6 +15,7 @@ SCAN_DIR = "/home/colton/.openclaw/workspace/agents/stock-scanner/scans"
 TAKE_PROFIT_PCT = 0.55  # Close when we've earned 55% of premium
 STOP_LOSS_PCT = 0.25   # Lose premium + 25% of premium = 1.25x premium
 MAX_DTE = 3             # Close if <= 3 DTE (never hold through expiry)
+COOLDOWN_HOURS = 24     # Don't re-enter a symbol within this many hours of closing
 
 def get_alpaca_option(symbol, option_type="put"):
     """Get option in Alpaca format using yfinance"""
@@ -151,33 +152,44 @@ def check_exits(positions, log):
     
     for pos in positions:
         opt_symbol = pos.get('symbol', '')
+        trade = None
         if 'P' not in opt_symbol:  # Only handle put options
             continue
         
-        # Find matching trade in log
-        trade = None
+        # Get premium collected from trade log, or estimate from avg_entry_price
+        premium_collected = 0
         for t in log.get('trades', []):
             if t.get('option_symbol') == opt_symbol and t.get('status') == 'open':
-                trade = t
+                premium_collected = t.get('premium_collected', 0)
                 break
         
-        if not trade:
-            continue
-        
-        premium_collected = trade.get('premium_collected', 0)
+        # Fallback: estimate premium from avg_entry_price if not in log
         if premium_collected <= 0:
+            try:
+                avg_entry = float(pos.get('avg_entry_price', 0))
+                if avg_entry > 0:
+                    premium_collected = avg_entry
+            except:
+                pass
+        
+        if premium_collected <= 0:
+            print(f"  {opt_symbol}: no premium data, skipping exit check")
             continue
         
-        # Get current option price
-        r = requests.get(f'{PAPER_URL}/v2/options/{opt_symbol}', headers=headers)
-        if r.status_code != 200:
-            continue
-        
-        opt_data = r.json()
-        current_price = float(opt_data.get('trade', {}).get('p', 0) or opt_data.get('quote', {}).get('ap', 0))
-        
+        # Get current price directly from position data (already has current_price)
+        current_price = float(pos.get('current_price', 0))
         if current_price <= 0:
-            continue
+            # Fallback: try market data API
+            try:
+                r = requests.get(f'{PAPER_URL}/v2/stocks/{opt_symbol[:4]}/quotes/latest', headers=headers, timeout=5)
+                if r.status_code == 200:
+                    q = r.json().get('quote', {})
+                    current_price = float(q.get('ap', 0))
+            except:
+                pass
+            if current_price <= 0:
+                print(f"  {opt_symbol}: could not get current price, skipping")
+                continue
         
         # Calculate P&L as percentage of premium collected
         # When we sell a put, we collect premium. If price goes up, we gain (price drops).
@@ -189,27 +201,30 @@ def check_exits(positions, log):
         # Take profit: we've kept 55% of the premium
         if pnl_pct >= TAKE_PROFIT_PCT:
             close_position(opt_symbol, f"TAKE PROFIT {pnl_pct:.1%}")
-            trade['status'] = 'closed'
-            trade['exit_reason'] = 'take_profit'
-            trade['exit_pnl_pct'] = pnl_pct
-            trade['closed_at'] = datetime.now().isoformat()
+            if trade:
+                trade['status'] = 'closed'
+                trade['exit_reason'] = 'take_profit'
+                trade['exit_pnl_pct'] = pnl_pct
+                trade['closed_at'] = datetime.now().isoformat()
         
         # Stop loss: we've lost 25% of premium
         elif pnl_pct <= -STOP_LOSS_PCT:
             close_position(opt_symbol, f"STOP LOSS {pnl_pct:.1%}")
-            trade['status'] = 'closed'
-            trade['exit_reason'] = 'stop_loss'
-            trade['exit_pnl_pct'] = pnl_pct
-            trade['closed_at'] = datetime.now().isoformat()
+            if trade:
+                trade['status'] = 'closed'
+                trade['exit_reason'] = 'stop_loss'
+                trade['exit_pnl_pct'] = pnl_pct
+                trade['closed_at'] = datetime.now().isoformat()
 
         # DTE rule: close if <= MAX_DTE to avoid assignment risk
         dte = get_dte(opt_symbol)
         if 0 < dte <= MAX_DTE:
             close_position(opt_symbol, f"DTE {dte}d - closing before expiry")
-            trade['status'] = 'closed'
-            trade['exit_reason'] = 'dte_exit'
-            trade['exit_pnl_pct'] = pnl_pct
-            trade['closed_at'] = datetime.now().isoformat()
+            if trade:
+                trade['status'] = 'closed'
+                trade['exit_reason'] = 'dte_exit'
+                trade['exit_pnl_pct'] = pnl_pct
+                trade['closed_at'] = datetime.now().isoformat()
     
     return log
 
@@ -227,7 +242,7 @@ def main():
         print("No open put positions")
     else:
         print(f"Open positions: {len(opts)}")
-        log = check_exits(opts, log)
+        check_exits(opts, log)
         save_log(log)
     
     # Get signals and place new trades
@@ -235,10 +250,33 @@ def main():
     symbols = get_latest_scan()
     print(f"Top signals: {symbols}")
     
+    # Get recently closed symbols (within cooldown)
+    recently_closed = set()
+    cutoff = datetime.now().timestamp() - COOLDOWN_HOURS * 3600
+    for t in log.get('trades', []):
+        if t.get('status') == 'closed' and t.get('closed_at'):
+            try:
+                closed_ts = datetime.fromisoformat(t['closed_at']).timestamp()
+                if closed_ts >= cutoff:
+                    # Extract stock symbol from option symbol (e.g. "TSLA260415P00342500" -> "TSLA")
+                    opt = t.get('option_symbol', '')
+                    if opt:
+                        # Extract stock symbol: letters at start before digits
+                        import re
+                        m = re.match(r'^([A-Z]+)', opt)
+                        if m:
+                            recently_closed.add(m.group(1))
+            except:
+                pass
+    
     for symbol in symbols:
         # Check if already have position in this stock
         if any(symbol in p.get('symbol', '') for p in opts):
             print(f"{symbol}: Already have position")
+            continue
+        # Check cooldown
+        if symbol in recently_closed:
+            print(f"{symbol}: Cooldown ({COOLDOWN_HOURS}h since last close)")
             continue
         
         # Sell put
