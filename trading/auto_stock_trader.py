@@ -4,8 +4,8 @@
 import requests, time
 from datetime import datetime
 
-ALPACA_KEY = "PK2XSTA527FYCWHKBHA7LLN67W"
-ALPACA_SECRET = "53Afp7yyB8Mzw8rXpVWUZnJ8uyRbVi1zqDzBbDthQM5o"
+ALPACA_KEY = "PKINE663HL65ZL4UCILI3CKFFS"
+ALPACA_SECRET = "E23srWhSph8d97FH1oErGwomqhto4jNdWgemk9egV2Wh"
 BASE_URL = "https://paper-api.alpaca.markets/v2"
 HEADERS = {"APCA-API-KEY-ID": ALPACA_KEY, "APCA-API-SECRET-KEY": ALPACA_SECRET}
 
