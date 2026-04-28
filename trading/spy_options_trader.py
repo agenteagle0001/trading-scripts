@@ -12,8 +12,8 @@ sys.path.insert(0, '/home/colton/.openclaw/workspace/trading')
 from spy_options_scanner import get_signal as get_scanner_signal
 
 # Alpaca Paper credentials
-API_KEY = "PK2XSTA527FYCWHKBHA7LLN67W"
-SECRET_KEY = "53Afp7yyB8Mzw8rXpVWUZnJ8uyRbVi1zqDzBbDthQM5o"
+API_KEY = "PKINE663HL65ZL4UCILI3CKFFS"
+SECRET_KEY = "E23srWhSph8d97FH1oErGwomqhto4jNdWgemk9egV2Wh"
 PAPER_URL = "https://paper-api.alpaca.markets"
 TRADE_LOG = "/home/colton/.openclaw/workspace/trading/spy_live_trades.json"
 

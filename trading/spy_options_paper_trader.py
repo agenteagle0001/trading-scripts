@@ -15,8 +15,8 @@ from spy_options_scanner import main as get_signal
 
 # Alpaca API (Paper)
 BASE_URL = "https://paper-api.alpaca.markets"
-API_KEY = "PK2XSTA527FYCWHKBHA7LLN67W"
-SECRET_KEY = "53Afp7yyB8Mzw8rXpVWUZnJ8uyRbVi1zqDzBbDthQM5o"
+API_KEY = "PKINE663HL65ZL4UCILI3CKFFS"
+SECRET_KEY = "E23srWhSph8d97FH1oErGwomqhto4jNdWgemk9egV2Wh"
 
 HEADERS = {
     "APCA-API-KEY-ID": API_KEY,
