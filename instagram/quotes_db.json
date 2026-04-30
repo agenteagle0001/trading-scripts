@@ -52,31 +52,38 @@
     },
     {
       "quote": "My brain has too many tabs open and they're all playing music.",
-      "author": "Anonymous"
+      "author": "Unknown",
+      "source": "Unknown"
     },
     {
       "quote": "I'm not lazy, I'm just on energy-saving mode.",
-      "author": "Anonymous"
+      "author": "Unknown",
+      "source": "Unknown"
     },
     {
       "quote": "I don't need anger management. I need people who don't annoy me.",
-      "author": "Anonymous"
+      "author": "Unknown",
+      "source": "Unknown"
     },
     {
       "quote": "Adulting is like folding a fitted sheet. No one really knows how.",
-      "author": "Anonymous"
+      "author": "Unknown",
+      "source": "Unknown"
     },
     {
       "quote": "My bed is a magical place where I suddenly remember everything I forgot.",
-      "author": "Anonymous"
+      "author": "Unknown",
+      "source": "Unknown"
     },
     {
       "quote": "I'm not arguing, I'm just explaining why I'm right.",
-      "author": "Anonymous"
+      "author": "Unknown",
+      "source": "Unknown"
     },
     {
       "quote": "Sarcasm: the ability to insult idiots without them noticing.",
-      "author": "Anonymous"
+      "author": "Unknown",
+      "source": "Unknown"
     },
     {
       "quote": "I love deadlines. I especially love the whooshing sound they make as they fly by.",
@@ -92,127 +99,290 @@
     },
     {
       "quote": "The only limit to our realization of tomorrow is our doubts of today.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Franklin D. Roosevelt",
+      "source": "Speech"
     },
     {
       "quote": "Everything you've ever wanted is on the other side of fear.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "George Adel",
+      "source": "Attributed"
     },
     {
       "quote": "The difference between ordinary and extraordinary is that little extra.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Jimmy Johnson",
+      "source": "Attributed"
     },
     {
       "quote": "You miss 100% of the shots you don't take.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Wayne Gretzky",
+      "source": "Attributed"
     },
     {
       "quote": "Dream big and dare to fail.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Norman Vaughan",
+      "source": "Attributed"
     },
     {
       "quote": "Act as if what you do makes a difference. It does.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "William James",
+      "source": "Attributed"
     },
     {
       "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Winston Churchill",
+      "source": "Speech"
     },
     {
       "quote": "Hard work beats talent when talent doesn't work hard.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Tim Notke",
+      "source": "Attributed"
     },
     {
       "quote": "The best revenge is massive success.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Frank Sinatra",
+      "source": "Attributed"
     },
     {
       "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Chinese Proverb",
+      "source": "Ancient"
     },
     {
       "quote": "In the middle of difficulty lies opportunity.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Albert Einstein",
+      "source": "Remark"
     },
     {
       "quote": "It does not matter how slowly you go as long as you do not stop.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Confucius",
+      "source": "Analects"
     },
     {
       "quote": "The only way to do great work is to love what you do.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Steve Jobs",
+      "source": "Stanford Commencement"
     },
     {
       "quote": "Don't count the days, make the days count.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Muhammad Ali",
+      "source": "Attributed"
     },
     {
       "quote": "The future belongs to those who believe in the beauty of their dreams.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Eleanor Roosevelt",
+      "source": "Attributed"
     },
     {
       "quote": "Believe you can and you're halfway there.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Theodore Roosevelt",
+      "source": "Attributed"
     },
     {
       "quote": "Life is what happens when you're busy making other plans.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "John Lennon",
+      "source": "Beautiful Boy"
     },
     {
       "quote": "Simplicity is the ultimate sophistication.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Leonardo da Vinci",
+      "source": "Notes"
     },
     {
       "quote": "The mind is everything. What you think you become.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Buddha",
+      "source": "Attributed"
     },
     {
       "quote": "The journey of a thousand miles begins with one step.",
-      "author": "Anonymous",
-      "source": "Anonymous"
+      "author": "Lao Tzu",
+      "source": "Ancient Chinese philosopher"
+    },
+    {
+      "quote": "The only impossible journey is the one you never begin.",
+      "author": "Tony Robbins",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.586846"
+    },
+    {
+      "quote": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+      "author": "Ralph Waldo Emerson",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.587373"
+    },
+    {
+      "quote": "I have not failed. I have not failed. I've just found 10,000 ways that won't work.",
+      "author": "Thomas Edison",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.588811"
+    },
+    {
+      "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+      "author": "Nelson Mandela",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.589209"
+    },
+    {
+      "quote": "It is during our darkest moments that we must focus to see the light.",
+      "author": "Aristotle",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.589561"
+    },
+    {
+      "quote": "The way to get started is to quit talking and begin doing.",
+      "author": "Walt Disney",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.589901"
+    },
+    {
+      "quote": "If you look at what you have in life, you'll always have more.",
+      "author": "Oprah Winfrey",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.590257"
+    },
+    {
+      "quote": "Life is really simple, but we insist on making it complicated.",
+      "author": "Confucius",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.590605"
+    },
+    {
+      "quote": "In the depth of winter, I finally learned that within me there lay an invincible summer.",
+      "author": "Albert Camus",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.590957"
+    },
+    {
+      "quote": "The unexamined life is not worth living.",
+      "author": "Socrates",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.591320"
+    },
+    {
+      "quote": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+      "author": "Ralph Waldo Emerson",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.592986"
+    },
+    {
+      "quote": "First they ignore you, then they laugh at you, then they fight you, then you win.",
+      "author": "Mahatma Gandhi",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.593392"
+    },
+    {
+      "quote": "The only thing we have to fear is fear itself.",
+      "author": "Franklin D. Roosevelt",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.593762"
+    },
+    {
+      "quote": "Darkness cannot drive out darkness: only light can do that.",
+      "author": "Martin Luther King Jr.",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.594148"
+    },
+    {
+      "quote": "The mind is not a vessel to be filled but a fire to be kindled.",
+      "author": "Plutarch",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.594536"
+    },
+    {
+      "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+      "author": "Ralph Waldo Emerson",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.594924"
+    },
+    {
+      "quote": "Stay hungry, stay foolish.",
+      "author": "Steve Jobs",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.595333"
+    },
+    {
+      "quote": "The two most important days in your life are the day you are born and the day you find out why.",
+      "author": "Mark Twain",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.595737"
+    },
+    {
+      "quote": "Your time is limited, don't waste it living someone else's life.",
+      "author": "Steve Jobs",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.596144"
+    },
+    {
+      "quote": "The only person you are destined to become is the person you decide to be.",
+      "author": "Ralph Waldo Emerson",
+      "source": "added-2026-04-15",
+      "added": "2026-04-15 08:14:26.596559"
+    },
+    {
+      "quote": "Not all those who wander are lost.",
+      "author": "J.R.R. Tolkien",
+      "source": "manual"
+    },
+    {
+      "quote": "Be the change you wish to see in the world.",
+      "author": "Mahatma Gandhi",
+      "source": "manual"
+    },
+    {
+      "quote": "The greatest wealth is health.",
+      "author": "Virgil",
+      "source": "manual"
+    },
+    {
+      "quote": "An unexamined life is not worth living.",
+      "author": "Socrates",
+      "source": "manual"
+    },
+    {
+      "quote": "Knowledge is power.",
+      "author": "Francis Bacon",
+      "source": "manual"
+    },
+    {
+      "quote": "Courage is not the absence of fear, but rather the judgement that something else is more important than fear.",
+      "author": "Theodore Roosevelt",
+      "source": "manual"
+    },
+    {
+      "quote": "Life shrinks or expands in proportion to one's courage.",
+      "author": "Anais Nin",
+      "source": "manual"
+    },
+    {
+      "quote": "Success usually comes to those who are too busy to be looking for it.",
+      "author": "Henry David Thoreau",
+      "source": "manual"
+    },
+    {
+      "quote": "Don't be afraid to give up the good to go for the great.",
+      "author": "John D. Rockefeller",
+      "source": "manual"
     }
   ],
   "used": [
-    "It is nothing to die; it is dreadful not to live",
     "I am no bird; and no net ensnares me: I am a free human being with an independent will",
-    "I am not afraid of storms, for I am learning how to sail my ship",
-    "I am not afraid of storms, for I am learning how to sail my ship.",
-    "I'm not arguing, I'm just explaining why I'm right",
-    "I don't need anger management. I need people who don't annoy me",
-    "Adulting is like folding a fitted sheet. No one really knows how",
-    "I'm not superstitious, but I am a little stitious",
-    "Believe you can and you're halfway there",
-    "I take my sanity very seriously, but I also know that it fluctuates",
-    "Simplicity is the ultimate sophistication",
     "The best time to plant a tree was 20 years ago. The second best time is now",
+    "I'm not superstitious, but I am a little stitious",
     "The only limit to our realization of tomorrow is our doubts of today",
-    "Success is not final, failure is not fatal: it is the courage to continue that counts",
-    "I love deadlines. I especially love the whooshing sound they make as they fly by",
-    "Act as if what you do makes a difference. It does",
-    "It does not matter how slowly you go as long as you do not stop",
-    "In the middle of difficulty lies opportunity",
-    "Don't count the days, make the days count",
-    "I'm not lazy, I'm just on energy-saving mode",
+    "Life is really simple, but we insist on making it complicated",
+    "The greatest glory in living lies not in never falling, but in rising every time we fall",
+    "Sarcasm: the ability to insult idiots without them noticing",
     "Hard work beats talent when talent doesn't work hard",
-    "Life is what happens when you're busy making other plans"
+    "Your time is limited, don't waste it living someone else's life",
+    "I'm not arguing, I'm just explaining why I'm right",
+    "The mind is everything. What you think you become",
+    "Success is not final, failure is not fatal: it is the courage to continue that counts",
+    "In the depth of winter, I finally learned that within me there lay an invincible summer",
+    "The only person you are destined to become is the person you decide to be",
+    "My brain has too many tabs open and they're all playing music",
+    "Simplicity is the ultimate sophistication",
+    "The difference between ordinary and extraordinary is that little extra",
+    "The best revenge is massive success",
+    "Life is what happens when you're busy making other plans",
+    "I have not failed. I have not failed. I've just found 10,000 ways that won't work"
   ]
 }
